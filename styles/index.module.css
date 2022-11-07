@@ -1,0 +1,59 @@
+/** Hero */
+
+.hero {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-image: url('/images/salmorejotech-fondo.jpg');
+  background-size: cover;
+  background-position: center;
+
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+
+  color: white;
+}
+
+.hero .logo {
+  width: 80vw;
+}
+
+.hero .subtitle {
+  font-size: 3.5em;
+}
+
+.hero .date {
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.hero span,
+.hero span::selection,
+.hero .subtitle::selection,
+.hero .date::selection {
+  background: var(--purple);
+  color: white;
+}
+
+@media (max-width: 1400px) {
+  .hero {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .hero {
+    font-size: 8px;
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    font-size: 5.5px;
+  }
+  .hero .logo {
+    width: 95vw;
+  }
+}
