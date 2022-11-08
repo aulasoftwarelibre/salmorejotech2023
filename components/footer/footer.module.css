@@ -10,7 +10,7 @@
 
 .footer {
   flex-direction: column;
-  background-image: url('/images/salmorejotech-fondo.jpg');
+  /* background-image: url('/images/salmorejotech-fondo.jpg'); */
   background-position: center;
   background-size: cover;
   color: white;

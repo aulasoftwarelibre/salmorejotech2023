@@ -1,0 +1,26 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509 461" width="509" height="461">
+	<title>fondo-salmorejotech-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m511.22 390.75h-508v-285.75h508z"/>
+		</clipPath>
+		<linearGradient id="g1" x1="244.3" y1="228.8" x2="256.5" y2="326.3" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#a4266f"/>
+			<stop offset="1" stop-color="#58117b"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { opacity: .5;fill: url(#g1) } 
+	</style>
+	<g id="layer1">
+		<g id="g2276">
+			<g id="Clip-Path: g2314-6" clip-path="url(#cp1)">
+				<g id="g2314-6">
+				</g>
+			</g>
+			<g id="g2306-3">
+			</g>
+		</g>
+	</g>
+	<path id="path410-5" class="s0" d="m255.8 318.2c-9.2 19-52.1 14.8-56.4-39.3-2.2-27.1 20.3-47.1 41.2-49.7 30.7-3.8 56.7 7.4 58.6 28.5 3 33-30.6 33.7-43.4 60.5z"/>
+</svg>

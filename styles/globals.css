@@ -4,12 +4,76 @@ html {
   --blue: #7FABD7;
 }
 
+main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.moleculas {
+  transform-style: preserve-3d;
+  position: absolute;
+  top: -100vh;
+  width: 100vh;
+  height: 100vh;
+}
+
+.parallax::after {
+  content: "";
+  position: absolute;
+  transform: translateZ(-2px);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg1::after {
+  background-image: url('/images/fondo-salmorejotech-svg.svg');
+  background-size: cover;
+  transform: translateZ(-2px) translatey(150vh) scale(1.5);
+}
+.bg2::after {
+  background-image: url('/images/fondo-salmorejotech-svg(1).svg');
+  background-size: cover;
+  transform: translateZ(-2px) translatex(100vh) translatey(50vh) scale(1.5);
+}
+.bg3::after {
+  background-image: url('/images/fondo-salmorejotech-svg(2).svg');
+  background-size: cover;
+  transform: translateZ(-2px) translatex(-80vh) translatey(10vh) scale(1.5);
+}
+.bg4::after {
+  background-image: url('/images/fondo-salmorejotech-svg(3).svg');
+  background-size: cover;
+  transform: translateZ(-2px) translatex(-80vh) translatey(200vh) scale(1.5);
+}
+.bg5::after {
+  background-image: url('/images/fondo-salmorejotech-svg(4).svg');
+  background-size: cover;
+  transform: translateZ(-2px) translatex(100vh) translatey(250vh) scale(1.5);
+
+}
+.bg6::after {
+  background-image: url('/images/fondo-salmorejotech-svg(5).svg');
+  background-size: cover;
+  transform: translateZ(-2px) translatex(100vh) translatey(110vh) scale(1.5);
+}
+.bg7::after {
+  background-image: url('/images/fondo-salmorejotech-svg(6).svg');
+  background-size: cover;
+  transform: translateZ(-2px) translatex(0vh) translatey(10vh) scale(1.5);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: linear-gradient(-50deg, #FD8F30, #F41F4F);
 }
 
 a {

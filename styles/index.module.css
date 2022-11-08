@@ -6,7 +6,7 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  background-image: url('/images/salmorejotech-fondo.jpg');
+  /* background-image: url('/images/salmorejotech-fondo.jpg'); */
   background-size: cover;
   background-position: center;
 
