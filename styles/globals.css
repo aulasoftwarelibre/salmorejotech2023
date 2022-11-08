@@ -5,10 +5,12 @@ html {
 }
 
 main {
+  z-index: 0;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 2px;
+  
 }
 
 .moleculas {
@@ -17,6 +19,7 @@ main {
   top: -100vh;
   width: 100vh;
   height: 100vh;
+  z-index: -1;
 }
 
 .parallax::after {
@@ -27,7 +30,6 @@ main {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -1;
 }
 
 .bg1::after {
