@@ -1,6 +1,6 @@
 html {
   --orange: #FD8B31;
-  --purple: #CE2D60;
+  --purple: linear-gradient(110deg,#F41F4F, #BE5346);
   --blue: #7FABD7;
   --red: #F41F4F
   
@@ -141,7 +141,7 @@ main {
 }
 
 .boton p{
-  font-size: 1.7rem;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -149,11 +149,11 @@ button {
   text-decoration: none;
   position: absolute;
   border: none;
-  font-size: 14px;
+  font-size: 1em;
   font-family: inherit;
   color: rgb(0, 0, 0);
-  width: 12em;
-  height: 5em;
+  width: 15em;
+  height: 7em;
   line-height: 2em;
   text-align: center;
   background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
