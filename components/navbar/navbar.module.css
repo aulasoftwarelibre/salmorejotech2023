@@ -1,0 +1,33 @@
+.main {
+  /* From https://css.glass */
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 148, 148, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+}
+
+.nav {
+  width: 100vw;
+  align-items: center;
+  margin: 1rem;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.nav div{
+  align-content: center;
+  display: flex;
+  gap: 2rem;
+}
+
+.emphasis h1{
+  color: black;
+  padding: 0.5rem;
+  background: linear-gradient(90deg,#ffbb00,#ffee00);
+  border-radius: 3px;
+}

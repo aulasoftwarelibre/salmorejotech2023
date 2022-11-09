@@ -1,24 +1,24 @@
 .footer, .row_wrapper, .SM, .Contact_us, .icons, .CopyLeft {
   display: flex;
   flex: 1;
-/* 
-  align-items: center;
-  align-content: center; */
   justify-content: center;
   justify-items: center;
 }
 
 .footer {
-  font-size: calc((1.5*(0.1rem + 1vw) - 0.5rem));
   flex-direction: column;
   color: white;
   text-align: center;
 }
 
 .row_wrapper {
-  flex-direction: row;
-  align-content: space-between;
-  /* gap: 5rem; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 1rem;
+  gap: 1rem;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .SM, .Contact_us {
@@ -32,18 +32,13 @@
 
 .logo {
   width: var(--width);
+  max-width: 400px;
   padding: 1em;
 }
 
-.icons {
-  width: var(--width);
-  flex-direction: row;
-}
-
 .icons a {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: .2em;
-
   transition: transform .25s ease-out;
 }
 

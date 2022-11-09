@@ -1,0 +1,112 @@
+.moleculas {
+  transform-style: preserve-3d;
+  position: absolute;
+  top: -100vh;
+  width: 100vh;
+  height: 100vh;
+  z-index: -1;
+}
+
+.parallax::after {
+  content: "";
+  position: absolute;
+  transform: translateZ(-2px);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg1 {
+  background-image: url('/images/fondo-salmorejotech-svg.svg');
+  background-size: cover;
+  left: 1vw;
+  transform: translateZ(-2px) translatey(150vh) scale(1.5);
+}
+.bg2 {
+  background-image: url('/images/fondo-salmorejotech-svg(1).svg');
+  background-size: cover;
+  left: 80vw;
+  transform: translateZ(-2px) scale(1.5);
+}
+.bg3 {
+  background-image: url('/images/fondo-salmorejotech-svg(2).svg');
+  background-size: cover;
+  right: 80vw;
+  transform: translateZ(-2px) scale(1.5);
+}
+.bg4 {
+  background-image: url('/images/fondo-salmorejotech-svg(3).svg');
+  background-size: cover;
+  right: 60vw;
+  transform: translateZ(-2px) translatey(200vh) scale(1.5);
+}
+.bg5 {
+  background-image: url('/images/fondo-salmorejotech-svg(4).svg');
+  background-size: cover;
+  left: 80vw;
+  transform: translateZ(-2px) translatey(250vh) scale(1.5);
+
+}
+.bg6 {
+  background-image: url('/images/fondo-salmorejotech-svg(5).svg');
+  background-size: cover;
+  left: 80vw;
+  transform: translateZ(-2px) translatey(50vh) scale(1.5);
+}
+.bg7 {
+  background-image: url('/images/fondo-salmorejotech-svg(6).svg');
+  background-size: cover;
+  right: 1vw;
+  transform: translateZ(-2px) translatey(10vh) scale(1.5);
+}
+.bg01 {
+  background-image: url('/images/fondo-salmorejotech-svg.svg');
+  filter: brightness(70%);
+  background-size: cover;
+  left: 100vw;
+  transform: translateZ(-4px) translatey(0vh) scale(1.5);
+}
+.bg02 {
+  background-image: url('/images/fondo-salmorejotech-svg(1).svg');
+  filter: brightness(70%);
+  background-size: cover;
+  right: 1vw;
+  transform: translateZ(-4px) translatey(300vh) scale(1.5);
+}
+.bg03 {
+  background-image: url('/images/fondo-salmorejotech-svg(2).svg');
+  filter: brightness(70%);
+  background-size: cover;
+  left: 90vw;
+  transform: translateZ(-4px) translatey(250vh) scale(1.5);
+}
+.bg04 {
+  background-image: url('/images/fondo-salmorejotech-svg(3).svg');
+  filter: brightness(70%);
+  background-size: cover;
+  left: 90vw;
+  transform: translateZ(-4px) translatey(150vh) scale(1.5);
+}
+.bg05 {
+  background-image: url('/images/fondo-salmorejotech-svg(4).svg');
+  filter: brightness(70%);
+  background-size: cover;
+  right: 70vw;
+  transform: translateZ(-4px) translatey(50vh) scale(1.5);
+
+}
+.bg06 {
+  background-image: url('/images/fondo-salmorejotech-svg(5).svg');
+  filter: brightness(70%);
+  background-size: cover;
+  right: 70vw;
+  transform: translateZ(-4px) translatey(10vh) scale(1.5);
+}
+.bg07 {
+  background-image: url('/images/fondo-salmorejotech-svg(6).svg');
+  filter: brightness(70%);
+  background-size: cover;
+  right: 110vw;
+  transform: translateZ(-4px) translatey(100vh) scale(1.5);
+}
