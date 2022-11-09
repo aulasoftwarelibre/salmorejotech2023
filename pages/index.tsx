@@ -40,20 +40,20 @@ const Home: NextPage = () => {
           <div className="boton"><button><p>ENTRADAS</p></button></div>
         </section>
         
-        <div className="moleculas parallax bg1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
-        <div className="moleculas parallax bg2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
-        <div className="moleculas parallax bg3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
-        <div className="moleculas parallax bg4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
-        <div className="moleculas parallax bg5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
-        <div className="moleculas parallax bg6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
-        <div className="moleculas parallax bg7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
-        {/* <div className="moleculas parallax bg01">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div> */}
-        <div className="moleculas parallax bg02">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
-        {/* <div className="moleculas parallax bg03">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div> */}
-        <div className="moleculas parallax bg04">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
-        {/* <div className="moleculas parallax bg05">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div> */}
-        {/* <div className="moleculas parallax bg06">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div> */}
-        <div className="moleculas parallax bg07">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
+        <div className="moleculas parallax bg1"></div>
+        <div className="moleculas parallax bg2"></div>
+        <div className="moleculas parallax bg3"></div>
+        <div className="moleculas parallax bg4"></div>
+        <div className="moleculas parallax bg5"></div>
+        <div className="moleculas parallax bg6"></div>
+        <div className="moleculas parallax bg7"></div>
+        {/* <div className="moleculas parallax bg01"></div> */}
+        <div className="moleculas parallax bg02"></div>
+        {/* <div className="moleculas parallax bg03"></div> */}
+        <div className="moleculas parallax bg04"></div>
+        {/* <div className="moleculas parallax bg05"></div> */}
+        {/* <div className="moleculas parallax bg06"></div> */}
+        <div className="moleculas parallax bg07"></div>
         
         <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "50vh" }} />
 

@@ -6,9 +6,6 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  /* background-image: url('/images/salmorejotech-fondo.jpg'); */
-  background-size: cover;
-  background-position: center;
 
   justify-content: center;
   justify-items: center;

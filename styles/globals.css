@@ -1,7 +1,9 @@
 html {
   --orange: #FD8B31;
-  --purple: #9266CC;
+  --purple: #CE2D60;
   --blue: #7FABD7;
+  --red: #F41F4F
+  
 }
 
 main {
@@ -10,7 +12,6 @@ main {
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 2px;
-  
 }
 
 .moleculas {
@@ -32,84 +33,98 @@ main {
   left: 0;
 }
 
-.bg1::after {
+.bg1 {
   background-image: url('/images/fondo-salmorejotech-svg.svg');
   background-size: cover;
-  transform: translateZ(-2px) translatex(0vw) translatey(150vh) scale(1.5);
+  left: 1vw;
+  transform: translateZ(-2px) translatey(150vh) scale(1.5);
 }
-.bg2::after {
+.bg2 {
   background-image: url('/images/fondo-salmorejotech-svg(1).svg');
   background-size: cover;
-  transform: translateZ(-2px) translatex(70vw) translatey(0vh) scale(1.5);
+  left: 80vw;
+  transform: translateZ(-2px) scale(1.5);
 }
-.bg3::after {
+.bg3 {
   background-image: url('/images/fondo-salmorejotech-svg(2).svg');
   background-size: cover;
-  transform: translateZ(-2px) translatex(-55vw) translatey(10vh) scale(1.5);
+  right: 80vw;
+  transform: translateZ(-2px) scale(1.5);
 }
-.bg4::after {
+.bg4 {
   background-image: url('/images/fondo-salmorejotech-svg(3).svg');
   background-size: cover;
-  transform: translateZ(-2px) translatex(-60vw) translatey(200vh) scale(1.5);
+  right: 60vw;
+  transform: translateZ(-2px) translatey(200vh) scale(1.5);
 }
-.bg5::after {
+.bg5 {
   background-image: url('/images/fondo-salmorejotech-svg(4).svg');
   background-size: cover;
-  transform: translateZ(-2px) translatex(70vw) translatey(250vh) scale(1.5);
+  left: 80vw;
+  transform: translateZ(-2px) translatey(250vh) scale(1.5);
 
 }
-.bg6::after {
+.bg6 {
   background-image: url('/images/fondo-salmorejotech-svg(5).svg');
   background-size: cover;
-  transform: translateZ(-2px) translatex(70vw) translatey(50vh) scale(1.5);
+  left: 80vw;
+  transform: translateZ(-2px) translatey(50vh) scale(1.5);
 }
-.bg7::after {
+.bg7 {
   background-image: url('/images/fondo-salmorejotech-svg(6).svg');
   background-size: cover;
-  transform: translateZ(-2px) translatex(0vw) translatey(10vh) scale(1.5);
+  right: 1vw;
+  transform: translateZ(-2px) translatey(10vh) scale(1.5);
 }
-.bg01::after {
+.bg01 {
   background-image: url('/images/fondo-salmorejotech-svg.svg');
   filter: brightness(70%);
   background-size: cover;
-  transform: translateZ(-4px) translatex(100vw) translatey(0vh) scale(1.5);
+  left: 100vw;
+  transform: translateZ(-4px) translatey(0vh) scale(1.5);
 }
-.bg02::after {
+.bg02 {
   background-image: url('/images/fondo-salmorejotech-svg(1).svg');
   filter: brightness(70%);
   background-size: cover;
-  transform: translateZ(-4px) translatex(0vw) translatey(300vh) scale(1.5);
+  right: 1vw;
+  transform: translateZ(-4px) translatey(300vh) scale(1.5);
 }
-.bg03::after {
+.bg03 {
   background-image: url('/images/fondo-salmorejotech-svg(2).svg');
   filter: brightness(70%);
   background-size: cover;
-  transform: translateZ(-4px) translatex(90vw) translatey(250vh) scale(1.5);
+  left: 90vw;
+  transform: translateZ(-4px) translatey(250vh) scale(1.5);
 }
-.bg04::after {
+.bg04 {
   background-image: url('/images/fondo-salmorejotech-svg(3).svg');
   filter: brightness(70%);
   background-size: cover;
-  transform: translateZ(-4px) translatex(80vw) translatey(150vh) scale(1.5);
+  left: 90vw;
+  transform: translateZ(-4px) translatey(150vh) scale(1.5);
 }
-.bg05::after {
+.bg05 {
   background-image: url('/images/fondo-salmorejotech-svg(4).svg');
   filter: brightness(70%);
   background-size: cover;
-  transform: translateZ(-4px) translatex(-70vw) translatey(50vh) scale(1.5);
+  right: 70vw;
+  transform: translateZ(-4px) translatey(50vh) scale(1.5);
 
 }
-.bg06::after {
+.bg06 {
   background-image: url('/images/fondo-salmorejotech-svg(5).svg');
   filter: brightness(70%);
   background-size: cover;
-  transform: translateZ(-4px) translatex(-70vw) translatey(10vh) scale(1.5);
+  right: 70vw;
+  transform: translateZ(-4px) translatey(10vh) scale(1.5);
 }
-.bg07::after {
+.bg07 {
   background-image: url('/images/fondo-salmorejotech-svg(6).svg');
   filter: brightness(70%);
   background-size: cover;
-  transform: translateZ(-4px) translatex(-80vw) translatey(100vh) scale(1.5);
+  right: 110vw;
+  transform: translateZ(-4px) translatey(100vh) scale(1.5);
 }
 
 .boton{
@@ -184,7 +199,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: linear-gradient(-50deg, #FD8F30, #F41F4F);
+  background: linear-gradient(-50deg, var(--orange), var(--red));
 }
 
 a {
