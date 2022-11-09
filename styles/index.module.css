@@ -1,7 +1,6 @@
 /** Hero */
 
 .hero {
-  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex: 1;
@@ -20,13 +19,11 @@
 }
 
 .hero .subtitle {
-  font-size: calc((3*(0.5rem + 1vw) - 0.5rem));
-
+  font-size: calc(3*(0.5rem + 1vw) - 0.5rem);
 }
 
 .hero .date {
   font-size: calc(3*(0.5rem + 1vw) - 0.5rem);
-  /* font-size: 4em; */
   text-transform: uppercase;
 }
 

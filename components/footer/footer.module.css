@@ -1,30 +1,29 @@
 .footer, .row_wrapper, .SM, .Contact_us, .icons, .CopyLeft {
   display: flex;
   flex: 1;
-
+/* 
   align-items: center;
-  align-content: center;
+  align-content: center; */
   justify-content: center;
   justify-items: center;
 }
 
 .footer {
+  font-size: calc((1.5*(0.1rem + 1vw) - 0.5rem));
   flex-direction: column;
-  /* background-image: url('/images/salmorejotech-fondo.jpg'); */
-  background-position: center;
-  background-size: cover;
   color: white;
   text-align: center;
 }
 
 .row_wrapper {
   flex-direction: row;
+  align-content: space-between;
+  /* gap: 5rem; */
 }
 
 .SM, .Contact_us {
   flex-direction: column;
-  width: 50vw;
-  padding: 3em 0 1em 0;
+  align-items: center;
 }
 
 .SM {
@@ -65,39 +64,9 @@
   transform: scale(1.2);
 }
 
-
 .CopyLeft {
   flex-direction: row;
-  width: 100vw;
-  padding-bottom: 2em;
-  font-size: 3em;
+  padding: 2em;
+  font-size: 2em;
   font-weight: bold;
-}
-
-@media (max-width: 1400px) {
-  .CopyLeft {
-    font-size: 2em;
-  }
-}
-
-@media (max-width: 1000px) {
-  .row_wrapper {
-    flex-direction: column;
-  }
-  .SM,
-  .Contact_us {
-    width: 100vw;
-  }
-}
-
-@media (max-width: 800px) {
-  .footer {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 600px) {
-  .footer {
-    font-size: 10px;
-  }
 }

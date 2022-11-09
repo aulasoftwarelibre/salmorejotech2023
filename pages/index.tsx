@@ -33,13 +33,6 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <section id="Hero" className={styles.hero}>
-          <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" />
-          <h3 className={styles.subtitle}>Más <span>{content}</span></h3>
-          <h2 className={styles.date}>28 de abril de 2023</h2>
-          <div className="boton"><button><p>ENTRADAS</p></button></div>
-        </section>
-        
         <div className="moleculas parallax bg1"></div>
         <div className="moleculas parallax bg2"></div>
         <div className="moleculas parallax bg3"></div>
@@ -54,10 +47,22 @@ const Home: NextPage = () => {
         {/* <div className="moleculas parallax bg05"></div> */}
         {/* <div className="moleculas parallax bg06"></div> */}
         <div className="moleculas parallax bg07"></div>
-        
-        <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "50vh" }} />
 
-        <Footer/>
+        <div className='anchoMaximo'>
+          <section id="Hero" className={styles.hero}>
+            <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" />
+            <h3 className={styles.subtitle}>Más <span>{content}</span></h3>
+            <h2 className={styles.date}>28 de abril de 2023</h2>
+            <div className="boton"><button><p>ENTRADAS</p></button></div>
+          </section>
+
+          <div className='glass'></div>
+          
+          
+          <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "50vh" }} />
+
+          <Footer/>
+        </div>
       </main>
     </div>
   )
