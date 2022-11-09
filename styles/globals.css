@@ -35,38 +35,147 @@ main {
 .bg1::after {
   background-image: url('/images/fondo-salmorejotech-svg.svg');
   background-size: cover;
-  transform: translateZ(-2px) translatey(150vh) scale(1.5);
+  transform: translateZ(-2px) translatex(0vw) translatey(150vh) scale(1.5);
 }
 .bg2::after {
   background-image: url('/images/fondo-salmorejotech-svg(1).svg');
   background-size: cover;
-  transform: translateZ(-2px) translatex(100vh) translatey(50vh) scale(1.5);
+  transform: translateZ(-2px) translatex(70vw) translatey(0vh) scale(1.5);
 }
 .bg3::after {
   background-image: url('/images/fondo-salmorejotech-svg(2).svg');
   background-size: cover;
-  transform: translateZ(-2px) translatex(-80vh) translatey(10vh) scale(1.5);
+  transform: translateZ(-2px) translatex(-55vw) translatey(10vh) scale(1.5);
 }
 .bg4::after {
   background-image: url('/images/fondo-salmorejotech-svg(3).svg');
   background-size: cover;
-  transform: translateZ(-2px) translatex(-80vh) translatey(200vh) scale(1.5);
+  transform: translateZ(-2px) translatex(-60vw) translatey(200vh) scale(1.5);
 }
 .bg5::after {
   background-image: url('/images/fondo-salmorejotech-svg(4).svg');
   background-size: cover;
-  transform: translateZ(-2px) translatex(100vh) translatey(250vh) scale(1.5);
+  transform: translateZ(-2px) translatex(70vw) translatey(250vh) scale(1.5);
 
 }
 .bg6::after {
   background-image: url('/images/fondo-salmorejotech-svg(5).svg');
   background-size: cover;
-  transform: translateZ(-2px) translatex(100vh) translatey(110vh) scale(1.5);
+  transform: translateZ(-2px) translatex(70vw) translatey(50vh) scale(1.5);
 }
 .bg7::after {
   background-image: url('/images/fondo-salmorejotech-svg(6).svg');
   background-size: cover;
-  transform: translateZ(-2px) translatex(0vh) translatey(10vh) scale(1.5);
+  transform: translateZ(-2px) translatex(0vw) translatey(10vh) scale(1.5);
+}
+.bg01::after {
+  background-image: url('/images/fondo-salmorejotech-svg.svg');
+  filter: brightness(70%);
+  background-size: cover;
+  transform: translateZ(-4px) translatex(100vw) translatey(0vh) scale(1.5);
+}
+.bg02::after {
+  background-image: url('/images/fondo-salmorejotech-svg(1).svg');
+  filter: brightness(70%);
+  background-size: cover;
+  transform: translateZ(-4px) translatex(0vw) translatey(300vh) scale(1.5);
+}
+.bg03::after {
+  background-image: url('/images/fondo-salmorejotech-svg(2).svg');
+  filter: brightness(70%);
+  background-size: cover;
+  transform: translateZ(-4px) translatex(90vw) translatey(250vh) scale(1.5);
+}
+.bg04::after {
+  background-image: url('/images/fondo-salmorejotech-svg(3).svg');
+  filter: brightness(70%);
+  background-size: cover;
+  transform: translateZ(-4px) translatex(80vw) translatey(150vh) scale(1.5);
+}
+.bg05::after {
+  background-image: url('/images/fondo-salmorejotech-svg(4).svg');
+  filter: brightness(70%);
+  background-size: cover;
+  transform: translateZ(-4px) translatex(-70vw) translatey(50vh) scale(1.5);
+
+}
+.bg06::after {
+  background-image: url('/images/fondo-salmorejotech-svg(5).svg');
+  filter: brightness(70%);
+  background-size: cover;
+  transform: translateZ(-4px) translatex(-70vw) translatey(10vh) scale(1.5);
+}
+.bg07::after {
+  background-image: url('/images/fondo-salmorejotech-svg(6).svg');
+  filter: brightness(70%);
+  background-size: cover;
+  transform: translateZ(-4px) translatex(-80vw) translatey(100vh) scale(1.5);
+}
+
+.boton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.boton p{
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+button {
+  text-decoration: none;
+  position: absolute;
+  border: none;
+  font-size: 14px;
+  font-family: inherit;
+  color: rgb(0, 0, 0);
+  width: 12em;
+  height: 5em;
+  line-height: 2em;
+  text-align: center;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 300%;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+button:hover {
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+button:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg,#ffbb00,#ffee00,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+button:hover::before {
+  filter: blur(20px);
+}
+
+button:active {
+  background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
 }
 
 html,

@@ -37,6 +37,7 @@ const Home: NextPage = () => {
           <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" />
           <h3 className={styles.subtitle}>Más <span>{content}</span></h3>
           <h2 className={styles.date}>28 de abril de 2023</h2>
+          <div className="boton"><button><p>ENTRADAS</p></button></div>
         </section>
         
         <div className="moleculas parallax bg1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
@@ -46,10 +47,15 @@ const Home: NextPage = () => {
         <div className="moleculas parallax bg5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
         <div className="moleculas parallax bg6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
         <div className="moleculas parallax bg7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
+        {/* <div className="moleculas parallax bg01">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div> */}
+        <div className="moleculas parallax bg02">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
+        {/* <div className="moleculas parallax bg03">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div> */}
+        <div className="moleculas parallax bg04">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
+        {/* <div className="moleculas parallax bg05">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div> */}
+        {/* <div className="moleculas parallax bg06">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div> */}
+        <div className="moleculas parallax bg07">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum atque assumenda rem maxime aut error? Neque quia, architecto molestias explicabo ex ipsum distinctio temporibus aut laudantium quisquam minus illo?</div>
         
         <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "50vh" }} />
-       
-        
 
         <Footer/>
       </main>
