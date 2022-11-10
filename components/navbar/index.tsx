@@ -1,12 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import styles from './navbar.module.css';
+import Image from 'next/image';
+
 
 export const Navbar = () => {
   return (
     <header className={styles.main}>
       <nav className={styles.nav}>
         <div>
+          <Link href="/"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></Link>
           <Link href="/"><h1>Información</h1></Link>
           <Link href="/"><h1>Localización</h1></Link>
           <Link href="/"><h1>Ponentes</h1></Link>

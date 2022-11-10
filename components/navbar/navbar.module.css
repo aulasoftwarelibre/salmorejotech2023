@@ -6,13 +6,12 @@
   display: flex;
   justify-content: center;
   background: rgba(255, 148, 148, 0);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
 }
 
 .nav {
   width: 100vw;
-  align-items: center;
   margin: 1rem;
   display: flex;
   color: white;
@@ -23,6 +22,7 @@
   align-content: center;
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .emphasis h1{

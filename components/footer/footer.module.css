@@ -45,23 +45,22 @@
 
 .Contact_us h1 {
   font-size: 3em;
+  margin: 0.5em;
 }
 
 .contact {
-  font-size: 1.5em;
-  font-weight: bold;
-  transition: transform .25s ease-out;
+  font-size: 1.4em;
+  transition: transform .025s ease-out;
 }
 
 .icons a:hover,
 .contact:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.02);
 }
 
 .CopyLeft {
   flex-direction: row;
-  padding: 2em;
-  font-size: 2em;
-  font-weight: bold;
+  margin: 2em;
+  font-size: 1.4em;
 }

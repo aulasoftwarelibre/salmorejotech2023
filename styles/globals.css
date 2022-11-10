@@ -3,8 +3,8 @@ html {
   --purple: linear-gradient(110deg,#F41F4F, #BE5346);
   --blue: #7FABD7;
   --red: #F41F4F;
-  --shadow: 0px 0px 25px rgba(0, 0, 0, 0.267);
-  --lightShadow: 0px 0px 25px rgba(0, 0, 0, 0.075);
+  --shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+  --lightShadow: 0px 0px 25px rgba(0, 0, 0, 0.07);
 }
 
 main {

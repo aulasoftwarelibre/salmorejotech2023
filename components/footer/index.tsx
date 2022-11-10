@@ -12,7 +12,7 @@ export const Footer = () => {
         <section className={styles.SM} id="SocialMedia">
           <img
             className={styles.logo}
-            src="/images/logo-aula-blanco.png"
+            src="/images/logo-cuadrado-invertido-blender.svg"
             alt="Logo del Aula de Software Libre"
           />
           <div className={styles.icons}>
