@@ -16,6 +16,7 @@
   display: flex;
   color: white;
   justify-content: space-between;
+  transition: var(--transition);
 }
 
 .nav div{
@@ -23,6 +24,11 @@
   display: flex;
   gap: 2rem;
   align-items: center;
+}
+
+.nav a:hover{
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .emphasis h1{

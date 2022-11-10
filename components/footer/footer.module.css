@@ -27,30 +27,30 @@
 }
 
 .SM {
-  --width: 20em;
+  --width: 20rem;
 }
 
 .logo {
   width: var(--width);
   max-width: 400px;
-  padding: 1em;
+  padding: 1rem;
 }
 
 .icons a {
-  font-size: 1.8em;
-  margin: .2em;
-  transition: transform .25s ease-out;
+  font-size: 1.8rem;
+  margin: .4rem;
+  transition: var(--transition);
 }
 
 
 .Contact_us h1 {
-  font-size: 3em;
-  margin: 0.5em;
+  font-size: 3rem;
+  margin: 1rem;
 }
 
 .contact {
-  font-size: 1.4em;
-  transition: transform .025s ease-out;
+  font-size: 1.4rem;
+  transition: var(--transition);
 }
 
 .icons a:hover,
@@ -61,6 +61,6 @@
 
 .CopyLeft {
   flex-direction: row;
-  margin: 2em;
-  font-size: 1.4em;
+  margin: 2rem;
+  font-size: 1.4rem;
 }

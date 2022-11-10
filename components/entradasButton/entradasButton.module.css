@@ -11,8 +11,8 @@
   align-items: center;
   position: absolute;
   color: rgb(0, 0, 0);
-  width: 14em;
-  height: 6em;
+  width: 14rem;
+  height: 6rem;
   background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
   background-size: 300%;
   border-radius: 3px;
@@ -22,7 +22,7 @@
 }
 
 .boton p{
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
 }
 
