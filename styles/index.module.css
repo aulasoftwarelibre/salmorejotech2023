@@ -20,11 +20,11 @@
 }
 
 .hero .subtitle {
-  font-size: calc(3*(0.5rem + 1vw) - 0.5rem);
+  font-size: calc(2*(0.5rem + 1vw));
 }
 
 .hero .date {
-  font-size: calc(3*(0.5rem + 1vw) - 0.5rem);
+  font-size: calc(2*(0.5rem + 1vw));
   text-transform: uppercase;
 }
 
