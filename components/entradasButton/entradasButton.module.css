@@ -17,6 +17,8 @@
   background-size: 300%;
   border-radius: 3px;
   z-index: 1;
+  box-shadow: var(--shadow);
+
 }
 
 .boton p{

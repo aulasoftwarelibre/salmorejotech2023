@@ -7,7 +7,7 @@
   justify-content: center;
   background: rgba(255, 148, 148, 0);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
 }
 
 .nav {
@@ -30,4 +30,6 @@
   padding: 0.5rem;
   background: linear-gradient(90deg,#ffbb00,#ffee00);
   border-radius: 3px;
+  box-shadow: var(--shadow);
+
 }

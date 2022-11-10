@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { EntradasButton } from '../components/entradasButton'
 import { Footer } from '../components/footer'
+import GridPonentes from '../components/gridPonentes'
 import { Moleculas } from '../components/moleculas'
 import { Navbar } from '../components/navbar'
 import { useContentWritter } from '../hooks/useContentWritter'
@@ -46,7 +47,9 @@ const Home: NextPage = () => {
             <EntradasButton/>
           </section>
           
-          <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "100vh" }} />
+          <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "10vh" }} />
+          <GridPonentes/>
+          <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "30vh" }} />
           
           <Footer/>
         </div>
