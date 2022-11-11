@@ -9,11 +9,11 @@
 }
 
 .speakerCard{
-  padding: 1rem;
   background: rgba(255, 181, 124, 0.281);
   box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
   border-radius: 5px;
+  padding: 1rem;
 }
 
 .speakerImage{

@@ -16,7 +16,7 @@ export const Navbar = () => {
           <Link href="/"><h1>Sponsors</h1></Link>
         </div>
         <div className={styles.emphasis}>
-          <Link href="/"><h1>Equipo</h1></Link>
+          <Link href="/team"><h1>Equipo</h1></Link>
           <Link href="/"><h1>Entradas</h1></Link>
         </div>
       </nav>
