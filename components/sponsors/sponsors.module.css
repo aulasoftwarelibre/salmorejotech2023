@@ -1,3 +1,7 @@
+.background {
+  background-color: white;
+}
+
 .container{
   margin: 0 auto;
   display: flex;
@@ -5,7 +9,6 @@
   justify-content: center;
   gap: 1rem;
   flex-grow: 1;
-  color: white;
   max-width: 1500px;
 }
 
@@ -19,4 +22,26 @@
 
 .speakerImage{
   border-radius: 3px;
+}
+
+.divider1 {
+  fill: #FFFFFF;
+}
+
+.divider1 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+.divider2 {
+  fill: #FFFFFF;
+}
+
+.divider2 svg {
+  position: relative;
+  display: block;
+  width: calc(141% + 1.3px);
+  height: 93px;
+  transform: rotate(180deg);
 }

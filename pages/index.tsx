@@ -6,6 +6,7 @@ import { Footer } from '../components/footer'
 import GridPonentes from '../components/gridPonentes'
 import { Moleculas } from '../components/moleculas'
 import { Navbar } from '../components/navbar'
+import Sponsors from '../components/sponsors'
 import { useContentWritter } from '../hooks/useContentWritter'
 import styles from '../styles/index.module.css'
 
@@ -46,11 +47,14 @@ const Home: NextPage = () => {
             <h2 className={styles.date}>28 de abril de 2023</h2>
             <EntradasButton/>
           </section>
+        </div>
           
-          <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "10vw" }} />
-          <GridPonentes/>
-          <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "30vw" }} />
+        <GridPonentes/>
+        <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "10vw" }} />
+        
+        <Sponsors/>
           
+        <div className='anchoMaximo'>
           <Footer/>
         </div>
       </main>
