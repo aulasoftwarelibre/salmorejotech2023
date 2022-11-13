@@ -10,13 +10,16 @@ export default function Sponsors() {
       </div>
       <div className={styles.background}>
         <div className={styles.container}>
-          <h1>aqui van los patrocinadores</h1>
-          <h1>aqui van los patrocinadores</h1>
-          <h1>aqui van los patrocinadores</h1>
-          <h1>aqui van los patrocinadores</h1>
-          <h1>aqui van los patrocinadores</h1>
-          <h1>aqui van los patrocinadores</h1>
-          <h1>aqui van los patrocinadores</h1>
+          <h1>aquí van los patrocinadores</h1>
+          <h1>aquí van los patrocinadores</h1>
+          <h1>aquí van los patrocinadores</h1>
+          <h1>aquí van los patrocinadores</h1>
+          <h1>aquí van los patrocinadores</h1>
+          <h1>aquí van los patrocinadores</h1>
+          <h1>aquí van los patrocinadores</h1>
+          <h1>aquí van los patrocinadores</h1>
+          <h1>aquí van los patrocinadores</h1>
+          <h1>aquí van los patrocinadores</h1>
         </div>
       </div>
       <div className={styles.divider2}>
