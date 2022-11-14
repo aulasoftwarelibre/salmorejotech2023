@@ -48,6 +48,7 @@
 .tomate {
   display: block;
   width: 9vw;
+  max-width: 168.75px;
   margin-bottom: 0.5rem;
   /* Animation to spin and move the sphere */
   -webkit-animation: spin 3s linear , moveLeftToRight 3s linear ;
