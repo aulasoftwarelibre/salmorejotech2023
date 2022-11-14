@@ -6,7 +6,7 @@ import { Navbar } from '../components/navbar'
 import styles from '../styles/loading.module.css'
 
 const Home: NextPage = () => {
-
+  
   return (
     <div className={styles.container}>
       <Head>

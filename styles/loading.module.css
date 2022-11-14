@@ -51,10 +51,10 @@
   max-width: 168.75px;
   margin-bottom: 0.5rem;
   /* Animation to spin and move the sphere */
-  -webkit-animation: spin 3s linear , moveLeftToRight 3s linear ;
-  -moz-animation: spin 3s linear , moveLeftToRight 3s linear ;
-  -ms-animation: spin 3s linear , moveLeftToRight 3s linear ;
-  animation: spin 3s linear , moveLeftToRight 3s linear ;
+  -webkit-animation: spin 0.6s linear , moveLeftToRight 0.6s linear ;
+  -moz-animation: spin 0.6s linear , moveLeftToRight 0.6s linear ;
+  -ms-animation: spin 0.6s linear , moveLeftToRight 0.6s linear ;
+  animation: spin 0.6s linear , moveLeftToRight 0.6s linear ;
   animation-fill-mode: forwards;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -65,57 +65,57 @@
 
 /* Spinning the sphere using key frames */
 @-ms-keyframes spin {
-  from { -ms-transform: rotate(0deg); }
+  from { -ms-transform: rotate(90deg); }
   to { -ms-transform: rotate(720deg); }
 }
 @-moz-keyframes spin {
-  from { -moz-transform: rotate(0deg); }
+  from { -moz-transform: rotate(90deg); }
   to { -moz-transform: rotate(720deg); }
 }
 @keyframes spin {
-  from { transform: rotate(0deg); }
+  from { transform: rotate(90deg); }
   to { transform: rotate(720deg); }
 }
 @-webkit-keyframes spin {
-  from { -webkit-transform: rotate(0deg); }
+  from { -webkit-transform: rotate(90deg); }
   to { -webkit-transform: rotate(720deg); }
 }
 
 /* Move sphere from left to right */
 @-moz-keyframes moveLeftToRight {
-  0%   { left: -100px; }
+  0%   { left: 15%; }
   100% { left: 52.5%; }
 }
 @-ms-keyframes moveLeftToRight {
-  0%   { left: -100px; }
+  0%   { left: 15%; }
   100% { left: 52.5%; }
 }
 @keyframes moveLeftToRight {
-  0%   { left: -100px; }
+  0%   { left: 15%; }
   100% { left: 52.5%; }
 }
 @-webkit-keyframes moveLeftToRight {
-  0%   { left: -100px; }
+  0%   { left: 15%; }
   100% { left: 52.5%; }
 
 
   
 }/* Move tapa from left to right */
 @-moz-keyframes moveLeftToRight2 {
-  0%   { left: -100px; }
-  100% { left: 100%; }
+  0%   { left: 8%; }
+  100% { left: 94%; }
 }
 @-ms-keyframes moveLeftToRight2 {
-  0%   { left: -100px; }
-  100% { left: 100%; }
+  0%   { left: 8%; }
+  100% { left: 94%; }
 }
 @keyframes moveLeftToRight2 {
-  0%   { left: -100px; }
-  100% { left: 100%; }
+  0%   { left: 8%; }
+  100% { left: 94%; }
 }
 @-webkit-keyframes moveLeftToRight2 {
-  0%   { left: -100px; }
-  100% { left: 100%; }
+  0%   { left: 8%; }
+  100% { left: 94%; }
 }
 
 
@@ -126,10 +126,10 @@
   height: 20vw;
   background-color: black;
   /* Animation to spin and move the sphere */
-  -webkit-animation: moveLeftToRight2 5.5s linear ;
-  -moz-animation: moveLeftToRight2 5.5s linear ;
-  -ms-animation: moveLeftToRight2 5.5s linear ;
-  animation: moveLeftToRight2 5.5s linear ;
+  -webkit-animation: moveLeftToRight2 1.15s linear ;
+  -moz-animation: moveLeftToRight2 1.15s linear ;
+  -ms-animation: moveLeftToRight2 1.15s linear ;
+  animation: moveLeftToRight2 1.15s linear ;
   animation-fill-mode: forwards;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
