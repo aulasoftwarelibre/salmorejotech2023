@@ -1,7 +1,8 @@
 /** Hero */
 
 .hero {
-  min-height: 100vh;
+  margin-top: 12rem;
+  margin-bottom: 6rem;
   display: flex;
   flex: 1;
   flex-direction: column;

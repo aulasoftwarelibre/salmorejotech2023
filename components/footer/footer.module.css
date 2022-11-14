@@ -6,6 +6,7 @@
 }
 
 .footer {
+  margin-top: 2rem;
   flex-direction: column;
   color: white;
   text-align: center;
