@@ -14,8 +14,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "sourceRoot": "src"
   },
-  "include": ["next-env.d.ts"],
+  "include": ["next-env.d.ts", "src"],
   "exclude": ["node_modules", "src/stories"]
 }
