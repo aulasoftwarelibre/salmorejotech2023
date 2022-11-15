@@ -4,6 +4,7 @@ import { BiWorld } from 'react-icons/bi';
 import { BsTwitter, BsInstagram, BsGithub, BsYoutube, BsTelegram, BsFacebook, BsPinFill } from 'react-icons/bs';
 import { RiCopyleftLine } from 'react-icons/ri';
 import { GrMail } from 'react-icons/gr';
+import React from 'react';
 
 export const Footer = () => {
   return (

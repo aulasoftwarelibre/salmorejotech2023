@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './sponsors.module.css'
 
 export default function Sponsors() {
