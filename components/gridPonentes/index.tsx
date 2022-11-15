@@ -80,7 +80,7 @@ export default function GridPonentes() {
         name={"Juanjo"}
         bio={"El de las vistas"}
         urlPhoto={"https://pbs.twimg.com/profile_images/1352946531628969984/NNfdBgII_400x400.jpg"}
-        contacts={""}
+        contacts={[]}
         published={true}
       />
       <SpeakerCard
@@ -89,7 +89,7 @@ export default function GridPonentes() {
         name={"Leiva"}
         bio={"El de neón"}
         urlPhoto={"https://pbs.twimg.com/profile_images/1451939478810005510/H1Ql5yYD_400x400.jpg"}
-        contacts={""}
+        contacts={[]}
         published={false}
       />
       <SpeakerCard
@@ -98,7 +98,7 @@ export default function GridPonentes() {
         name={"Tomás"}
         bio={"El xulacoh"}
         urlPhoto={"https://pbs.twimg.com/profile_images/1428402345910706181/6v9LHnxJ_400x400.jpg"}
-        contacts={""}
+        contacts={[]}
         published={false}
       />
       <SpeakerCard
@@ -107,7 +107,7 @@ export default function GridPonentes() {
         name={"Arturo"}
         bio={"El monumento ;)"}
         urlPhoto={"https://pbs.twimg.com/profile_images/1414362780996673540/hHSRLMfQ_400x400.jpg"}
-        contacts={""}
+        contacts={[]}
         published={true}
       />
       </div>
