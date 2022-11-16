@@ -37,8 +37,8 @@ const Home: NextPage = () => {
         content="evento, ASL, salmorejo, salmorejotech, tech, salmorejotech2023, 2023, salmorejotech2022, 2022, salmorejotech2021, congreso, mesa redonda, conferencia, libre, software libre" />
       <link rel="canonical" href="https://salmorejo.tech" />
     </Head>
-    <Navbar />
     <main>
+      <Navbar />
       <Loading /> 
       <Moleculas />
       <div className='anchoMaximo'>
