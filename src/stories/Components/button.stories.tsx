@@ -18,4 +18,4 @@ export default {
   },
 } as ComponentMeta<typeof Button>;
 
-export const Customizable: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+export const Button_Primary: ComponentStory<typeof Button> = (args) => <Button {...args} />;
