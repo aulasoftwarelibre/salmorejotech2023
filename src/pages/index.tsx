@@ -38,27 +38,27 @@ const Home: NextPage = () => {
       <link rel="canonical" href="https://salmorejo.tech" />
     </Head>
     <Navbar />
-    <Loading /> 
     <main>
-        <Moleculas />
-        <div className='anchoMaximo'>
-          <section id="Hero" className={styles.hero}>
-            <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" />
-            <h3 className={styles.subtitle}>Más <span>{content}</span></h3>
-            <h2 className={styles.date}>28 de abril de 2023</h2>
-            <EntradasButton />
-          </section>
-        </div>
+      <Loading /> 
+      <Moleculas />
+      <div className='anchoMaximo'>
+        <section id="Hero" className={styles.hero}>
+          <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" />
+          <h3 className={styles.subtitle}>Más <span>{content}</span></h3>
+          <h2 className={styles.date}>28 de abril de 2023</h2>
+          <EntradasButton />
+        </section>
+      </div>
 
-        {/* <GridPonentes /> */}
-        <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "10vw" }} />
+      {/* <GridPonentes /> */}
+      <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "10vw" }} />
 
-        <Sponsors />
+      <Sponsors />
 
-        <div className='anchoMaximo'>
-          <Footer />
-        </div>
-      </main></>
+      <div className='anchoMaximo'>
+        <Footer />
+      </div>
+    </main></>
   )
 }
 

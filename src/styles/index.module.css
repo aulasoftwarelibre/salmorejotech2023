@@ -36,3 +36,14 @@
   background: var(--purple);
   color: white;
 }
+
+@keyframes fadeOutAnimation {
+  0%{ opacity: 1; }
+  30% { opacity: 1; }
+  100% { opacity: 0; }
+
+}@keyframes zIndex {
+  0% { z-index: 1; }
+  90% { z-index: 1; }
+  100% { z-index: -1; }
+}
