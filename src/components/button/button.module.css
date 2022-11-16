@@ -1,18 +1,12 @@
-.centrar{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: calc(1*(12vw) + 5rem);
-}
-
-.boton {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   color: rgb(0, 0, 0);
-  width: calc((5rem + 12vw));
-  height: calc(0.5*(12vw) + 1rem);
+  min-width: calc((5rem + 12vw));
+  min-height: calc(0.5*(12vw) + 1rem);
+  width: min-content;
   background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
   background-size: 300%;
   border-radius: 3px;
@@ -21,12 +15,12 @@
 
 }
 
-.boton p{
+.button p{
   font-size: calc(2*(0.5rem + 1vw));
   font-weight: bold;
 }
 
-.boton:hover {
+.button:hover {
   animation: ani 8s linear infinite;
   border: none;
 }
@@ -41,7 +35,7 @@
   }
 }
 
-.boton:before {
+.button:before {
   content: '';
   position: absolute;
   top: -5px;
@@ -55,10 +49,10 @@
   transition: 1s;
 }
 
-.boton:hover::before {
+.button:hover::before {
   filter: blur(20px);
 }
 
-.boton:active {
+.button:active {
   background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
 }

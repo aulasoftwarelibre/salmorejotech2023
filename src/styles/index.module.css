@@ -37,6 +37,13 @@
   color: white;
 }
 
+.hero .centerTicketsButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(1*(4vw) + 5rem);
+}
+
 @keyframes fadeOutAnimation {
   0%{ opacity: 1; }
   30% { opacity: 1; }

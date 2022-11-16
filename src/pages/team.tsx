@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { EntradasButton } from '../components/entradasButton'
 import { Footer } from '../components/footer'
 import GridPonentes from '../components/gridPonentes'
 import { Moleculas } from '../components/moleculas'
@@ -32,18 +31,6 @@ const Home: NextPage = () => {
         <Navbar/>
         <Moleculas/>
         <div className='anchoMaximo'>
-          {/* <section id="Hero" className={styles.hero}>
-            <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" />
-            <h3 className={styles.subtitle}>Más </h3>
-            <h2 className={styles.date}>28 de abril de 2023</h2>
-            <EntradasButton/>
-          </section>
-          
-          <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "10vw" }} />
-          <GridPonentes/>
-          <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "30vw" }} />
-          
-          <Footer/> */}
         </div>
       </main>
     </div>

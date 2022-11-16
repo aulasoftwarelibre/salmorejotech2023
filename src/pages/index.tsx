@@ -2,7 +2,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
-import { EntradasButton } from '../components/entradasButton'
+import Button from '../components/button'
 import { Footer } from '../components/footer'
 import GridPonentes from '../components/gridPonentes'
 import Loading from '../components/loading'
@@ -46,7 +46,9 @@ const Home: NextPage = () => {
           <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" />
           <h3 className={styles.subtitle}>Más <span>{content}</span></h3>
           <h2 className={styles.date}>28 de abril de 2023</h2>
-          <EntradasButton />
+          <div className={styles.centerTicketsButton}>
+            <Button label="ENTRADAS" />
+          </div>
         </section>
       </div>
 
