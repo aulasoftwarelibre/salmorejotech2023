@@ -28,8 +28,8 @@ const Home: NextPage = () => {
         <link rel="canonical" href="https://salmorejo.tech" />
       </Head>
 
-      <Navbar/>
       <main>
+        <Navbar/>
         <Moleculas/>
         <div className='anchoMaximo'>
           {/* <section id="Hero" className={styles.hero}>
