@@ -1,7 +1,6 @@
 .main {
   /* From https://css.glass */
-	position: sticky;
-	top: 0;
+  position: fixed;
   z-index: 1;
   width: 100vw;
   display: flex;
