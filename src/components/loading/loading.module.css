@@ -18,8 +18,8 @@
   100% { opacity: 0; }
 
 }@keyframes zIndex {
-  0% { z-index: 1; }
-  90% { z-index: 1; }
+  0% { z-index: 2; }
+  90% { z-index: 2; }
   100% { z-index: -1; }
 }
 
