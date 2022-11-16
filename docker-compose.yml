@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  dev:
+    container_name: salmorejo2023-dev
+    build:
+      context: .
+      target: salmorejo2023-dev
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/src/app
+  storybook:
+    container_name: salmorejo2023-storybook
+    build:
+      context: .
+      target: salmorejo2023-storybook
+    ports:
+      - 6006:6006
+    volumes:
+      - .:/usr/src/app
