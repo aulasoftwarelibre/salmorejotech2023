@@ -17,7 +17,8 @@
   30% { opacity: 1; }
   100% { opacity: 0; }
 
-}@keyframes zIndex {
+}
+@keyframes zIndex {
   0% { z-index: 2; }
   90% { z-index: 2; }
   100% { z-index: -1; }
@@ -28,14 +29,13 @@
   margin-bottom: 6rem;
 }
 
-.logo {
+.logo, .tomate {
   max-width: 1500px;
   width: 80vw;
 }
 
 .tomate {
   position: absolute;
-  width: 80vw;
   /* Animation to spin and move the sphere */
   animation: spin 0.6s linear , moveLeftToRight 0.6s linear ;
   animation-fill-mode: forwards;
@@ -52,8 +52,17 @@
 /* it cannot reach 100 because otherwise in chrome it displaces */
 /* don't touch */
 @keyframes moveLeftToRight {
-  0%   { left: -20vh; }
-  99%   {left: 9.5%;}
+  0%   { left: -20vw; }
+  99%   {left: 9.5vw;}
+}
+
+/* at this width the logo and tomate reaches his maximun size
+that's why we have to correct the animation*/
+@media (min-width: 1875px) {
+  @keyframes moveLeftToRight {
+    0%   { left: -20vw; }
+    98%   {left: calc(0vw + (100vw - 1500px) / 2);}
+  }
 }
 
 .tapa{
