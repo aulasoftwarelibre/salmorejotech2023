@@ -1,35 +1,106 @@
 import styles from "./talksLine.module.css";
 import Image from 'next/image';
 
+type Talk = {
+  id: string;
+  title: string;
+  info: string;
+  startsAt: string;
+  endsAt: string;
+  labels: Array<string>;
+  track: number;
+  speaker: SpeakerInfo;
+};
 
-export const TalksLine = (props: { id: string, title: string, info: string, date: string, labels: Array<string>, track: number, imageUrl: string, name: string}) => {
-  let hours:string[]=props.date.split(" ");
+type SpeakerInfo = {
+  imageUrl: string;
+  name: string;
+};
 
-  return (
+type TalksLineProps = {
+  talk1: Talk;
+  talk2?: Talk;
+};
+
+export const TalksLine = ({ talk1, talk2 }: TalksLineProps) => {
+  if (talk2) {
+    return <>
     <div className={styles.container}>
-
+    <div className={styles.container}>
       <div className={styles.date}>
-        {hours.map((hour,index)=>{
-          return <h4 key={index}>{hour}</h4>
-        })}
+        <h4>{talk1.startsAt}</h4>
+        <h4>{talk1.endsAt}</h4>
       </div>
       
       <div className={styles.talkInfo}>
         <div>
-          <h3>{props.title}</h3>
-          <h4>{props.name}</h4>
+          <h3>{talk1.title}</h3>
+          <h4>{talk1.speaker.name}</h4>
           <div className={styles.labels}>
-            {props.labels.map((hour,index)=>{
-              return <div key={index}>{hour}</div>
+            {talk1.labels.map((label,index)=>{
+              return <div key={index}>{label}</div>
             })}
           </div>
         </div>
         
         <div>
-        <Image src="https://pbs.twimg.com/profile_images/1352946531628969984/NNfdBgII_400x400.jpg" width={150} height={150} alt={"Speaker image"} />
+        <Image src={talk1.speaker.imageUrl} width={80} height={80} alt={"Speaker image"} />
         </div>
       </div>
 
     </div>
-  );
-};
+
+    <div className={styles.container}>
+      <div className={styles.date}>
+        <h4>{talk1.startsAt}</h4>
+        <h4>{talk1.endsAt}</h4>
+      </div>
+      
+      <div className={styles.talkInfo}>
+        <div>
+          <h3>{talk1.title}</h3>
+          <h4>{talk1.speaker.name}</h4>
+          <div className={styles.labels}>
+            {talk1.labels.map((label,index)=>{
+              return <div key={index}>{label}</div>
+            })}
+          </div>
+        </div>
+        
+        <div>
+        <Image src={talk1.speaker.imageUrl} width={80} height={80} alt={"Speaker image"} />
+        </div>
+      </div>
+
+    </div>
+
+</div>
+    </>
+  }
+  return <>
+    <div className={styles.container}>
+
+      <div className={styles.date}>
+        <h4>{talk1.startsAt}</h4>
+        <h4>{talk1.endsAt}</h4>
+      </div>
+      
+      <div className={styles.talkInfo}>
+        <div>
+          <h3>{talk1.title}</h3>
+          <h4>{talk1.speaker.name}</h4>
+          <div className={styles.labels}>
+            {talk1.labels.map((label,index)=>{
+              return <div key={index}>{label}</div>
+            })}
+          </div>
+        </div>
+        
+        <div>
+        <Image src={talk1.speaker.imageUrl} width={80} height={80} alt={"Speaker image"} />
+        </div>
+      </div>
+
+    </div>
+    </>
+}

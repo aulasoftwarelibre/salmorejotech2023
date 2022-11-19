@@ -15,11 +15,20 @@ export default {
         type: "text",
       },
     },
-    date: {
-      name: "date",
+    startsAt: {
+      name: "startsAt",
       type: { name: "string", required: true },
-      defaultValue: "00:00 00:00",
-      description: "date displayed on breakLine",
+      defaultValue: "00:00",
+      description: "date of start displayed on breakLine",
+      control: {
+        type: "text",
+      },
+    },
+    endsAt: {
+      name: "endsAt",
+      type: { name: "string", required: true },
+      defaultValue: "00:00",
+      description: "date of end displayed on breakLine",
       control: {
         type: "text",
       },
