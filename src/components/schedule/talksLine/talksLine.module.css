@@ -8,16 +8,41 @@
   box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
   border-radius: 5px;
+  gap: 2rem;
 }
-.title{
-  
+
+.talkInfo{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.talkInfo h3{
   font-size: calc(2*(0.3rem + 1vw));
 }
 
+.talkInfo h4{
+  font-size: calc(2*(0.1rem + 1vw));
+}
+
 .date{
-    
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
     font-size: calc(1.5*(0.3rem + 1vw));
+}
+
+.labels{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.labels div{
+  font-size: 0.8rem;
+  background-color: rgb(131, 131, 255);
+  padding: 0.2rem;
+  border-radius: 5px;
 }
