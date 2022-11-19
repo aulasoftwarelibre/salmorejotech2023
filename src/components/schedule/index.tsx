@@ -1,13 +1,24 @@
 import React, { useEffect, useState } from "react";
 import styles from './schedule.module.css'
 import Image from 'next/image';
-import { Talk } from "../../interfaces/Talk.interface";
 
+type Speaker = {
+  id: string,
+  name: string,
+  bio: string,
+  urlPhoto: string,
+  contacts: Array<{ type: string, link: string }>,
+  published: boolean,
+}
 
-export const TalksLine = (props:{talk:Talk }) => {
-
+export default function SpeakerCard(props: { id: string, name: string, bio: string, urlPhoto: string, contacts: Array<{type: string, link: string}>, published: boolean }) {
   return (
-    <div>
-    </div>
-  );
-};
+    <article className={styles.speakerCard}>
+      <div style={{display: "flex",marginBottom:10, justifyContent: "center"}}>
+        <Image className={styles.speakerImage} src={props.urlPhoto} alt="Imagen del ponente" width={200} height={200}/>
+      </div>
+      <h3>{props.name}</h3>
+      <p>{props.bio}</p>
+    </article>
+  )
+}
