@@ -3,7 +3,7 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { BreakLine } from "../../components/schedule/breakLine";
 
 export default {
-  title: "Components/BreakLine",
+  title: "Components/Schedule",
   component: BreakLine,
   argTypes: {
     title: {
@@ -27,6 +27,6 @@ export default {
   },
 } as ComponentMeta<typeof BreakLine>;
 
-export const Button_Primary: ComponentStory<typeof BreakLine> = (args) => (
+export const BreakLine_Primary: ComponentStory<typeof BreakLine> = (args) => (
   <BreakLine {...args} />
 );

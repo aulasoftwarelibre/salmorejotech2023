@@ -1,43 +1,23 @@
-.main {
-  /* From https://css.glass */
-  position: sticky;
-  top: 0;
-  margin-bottom: -76px;
-  z-index: 2;
-  width: 100vw;
+.container{
   display: flex;
-  justify-content: center;
-  background: rgba(255, 148, 148, 0);
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  background: rgba(255, 148, 148, 0.192);
   box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+.title{
+  
+  font-size: calc(2*(0.3rem + 1vw));
 }
 
-.nav {
-  width: 100vw;
-  margin: 1rem;
-  display: flex;
-  color: white;
-  justify-content: space-between;
-  transition: var(--transition);
-}
-
-.nav div{
-  align-content: center;
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
-.nav a:hover{
-  cursor: pointer;
-  transform: scale(1.02);
-}
-
-.emphasis h1{
-  color: black;
-  padding: 0.5rem;
-  background: linear-gradient(90deg,#ffbb00,#ffee00);
-  border-radius: 3px;
-  box-shadow: var(--shadow);
-
+.date{
+    
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    font-size: calc(1.5*(0.3rem + 1vw));
 }

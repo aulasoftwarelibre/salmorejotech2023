@@ -8,7 +8,6 @@
   box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
   border-radius: 5px;
-  margin:1%;
 }
 .title{
   width: 90%;
