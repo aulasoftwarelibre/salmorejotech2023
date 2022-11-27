@@ -1,14 +1,24 @@
+body {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.breakLine{
+  display: flex;
+  gap: 1rem;
+}
+
 .container{
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex: 1;
+  flex-flow: row;
   padding: 1rem;
-  padding-left: 1.5rem;
   background: rgba(255, 148, 148, 0.192);
   box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
   border-radius: 5px;
+  gap: 2rem;
 }
+
 .title{
   width: 90%;
   text-align: center;
@@ -16,9 +26,9 @@
 }
 
 .date{
-    width: 10%;
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: column;
-    font-size: calc(1.5*(0.3rem + 1vw));
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }

@@ -1,49 +1,16 @@
-.container{
+body {
+  font-size: calc(0.8rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.talkLine{
   display: flex;
-  flex-direction: row;
-  flex: 1;
-  align-items: center;
-  padding: 1rem;
-  padding-left: 1.5rem;
-  background: rgba(255, 148, 148, 0.192);
-  box-shadow: var(--lightShadow);
-  backdrop-filter: blur(10px);
-  border-radius: 5px;
-  gap: 2rem;
-}
-
-.talkInfo{
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.talkInfo h3{
-  font-size: calc(2*(0.3rem + 1vw));
-}
-
-.talkInfo h4{
-  font-size: calc(2*(0.1rem + 1vw));
-}
-
-.date{
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: column;
-    font-size: calc(1.5*(0.3rem + 1vw));
-}
-
-.labels{
-  display: flex;
-  flex-direction: row;
   gap: 0.5rem;
 }
 
-.labels div{
-  font-size: 0.8rem;
-  background-color: rgb(131, 131, 255);
-  padding: 0.2rem;
-  border-radius: 5px;
+.date{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
