@@ -9,7 +9,7 @@ body {
 
 .date{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;

@@ -74,7 +74,7 @@ const Talk1: Talk = {
   info: 'no se que se pone aqui',
   startsAt: '13:00',
   endsAt: '13:45',
-  labels: ['front', 'ux'],
+  labels: ['front', 'devops'],
   track: 0,
   speaker: SpeakerInfo1
 };
