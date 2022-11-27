@@ -1,5 +1,5 @@
 import styles from "./talksLine.module.css";
-import Image from 'next/image';
+import Image from "next/image";
 import { Talk } from "../talk";
 
 type Talk = {
@@ -24,30 +24,22 @@ type TalksLineProps = {
 };
 
 export const TalksLine = ({ talk1, talk2 }: TalksLineProps) => {
-  if (talk2) {
-    return <>
-    <div className={styles.talkLine}>
-      
-    <div className={styles.date}>
-      <h4>{talk1.startsAt}</h4>
-      <h4>{talk1.endsAt}</h4>
-    </div>
+  return (
+    <>
+      <div className={styles.talkLine}>
+        <div className={styles.date}>
+          <h4>{talk1.startsAt}</h4>
+          <h4>{talk1.endsAt}</h4>
+        </div>
 
-    <Talk {...talk1}/>
+        <Talk {...talk1} />
 
-    <Talk {...talk2}/>
-
-    </div>
-    </>
-  }
-  return <>
-    <div className={styles.talkLine}>
-      
-      <div className={styles.date}>
-        <h4>{talk1.startsAt}</h4>
-        <h4>{talk1.endsAt}</h4>
+        {talk2 && (
+          <Talk {...talk2} />
+        )}
+        
       </div>
-      <Talk {...talk1}/>
-    </div>
     </>
-}
+  );
+
+};

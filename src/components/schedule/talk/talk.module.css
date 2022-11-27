@@ -53,6 +53,7 @@ img{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  padding-top: 0.5rem;
 }
 
 .labels{

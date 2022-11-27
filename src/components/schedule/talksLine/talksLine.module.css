@@ -1,5 +1,6 @@
 body {
   font-size: calc(0.8rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  color: white;
 }
 
 .talkLine{
@@ -9,8 +10,8 @@ body {
 
 .date{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
 }
