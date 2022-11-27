@@ -1,8 +1,5 @@
-body {
+.container {
   font-size: calc(0.8rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
-
-.container{
   width: 100%;
   padding: 1rem;
   background: rgba(255, 148, 148, 0.192);
@@ -35,16 +32,16 @@ body {
 
 }
 
-h3{
+.container h3{
   margin-bottom: 0.5rem;
   text-align: center;
 }
 
-h4{
+.container h4{
   text-align: center;
 }
 
-img{
+.container img{
   width: calc(50px + (50 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
@@ -79,10 +76,10 @@ img{
 }
 
 @media screen and (min-width:768px) {
-  h3{
+  .container h3{
     text-align: left;
   }
-  h4{
+  .container h4{
     text-align: left;
   }
   .container{

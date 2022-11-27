@@ -8,6 +8,7 @@ import { Navbar } from '../components/navbar'
 import { useContentWritter } from '../hooks/useContentWritter'
 import styles from '../styles/team.module.css'
 
+
 const Home: NextPage = () => {
 
   return (

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { TalkInterface } from "../../../interfaces/schedule.interfaces";
 import styles from "./talk.module.css";
 

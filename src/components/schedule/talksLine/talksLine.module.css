@@ -1,9 +1,6 @@
-body {
+.talkLine{
   font-size: calc(0.8rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   color: white;
-}
-
-.talkLine{
   display: flex;
   gap: 0.5rem;
 }
