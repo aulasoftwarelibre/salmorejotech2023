@@ -1,22 +1,8 @@
+import { TalkInterface } from "../../../interfaces/schedule.interfaces";
 import styles from "./talk.module.css";
 
-type Talk = {
-  id: string;
-  title: string;
-  info: string;
-  startsAt: string;
-  endsAt: string;
-  labels: Array<string>;
-  track: number;
-  speaker: SpeakerInfo;
-};
 
-type SpeakerInfo = {
-  imageUrl: string;
-  name: string;
-};
-
-export const Talk = (talk: Talk) => {
+export const Talk = (talk: TalkInterface) => {
   return (
     <>
       <div className={styles.container}>
@@ -30,7 +16,6 @@ export const Talk = (talk: Talk) => {
             </div>
             <h4>{talk.speaker.name}</h4>
           </div>
-
           <img
             className={styles.img}
             src={talk.speaker.imageUrl}

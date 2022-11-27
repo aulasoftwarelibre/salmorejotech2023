@@ -1,12 +1,7 @@
 import styles from "./breakLine.module.css";
+import { BreakLinePropsInterface } from '../../../interfaces/schedule.interfaces';
 
-type BreakLineProps = {
-  title: string,
-  startsAt: string,
-  endsAt: string
-};
-
-export const BreakLine = ({title, startsAt, endsAt}: BreakLineProps) => {
+export const BreakLine = ({title, startsAt, endsAt}: BreakLinePropsInterface) => {
 
   return (
     <>

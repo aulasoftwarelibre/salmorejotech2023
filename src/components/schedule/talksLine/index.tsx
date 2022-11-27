@@ -1,29 +1,9 @@
 import styles from "./talksLine.module.css";
-import Image from "next/image";
+import {TalksLinePropsInterface } from '../../../interfaces/schedule.interfaces';
 import { Talk } from "../talk";
 
-type Talk = {
-  id: string;
-  title: string;
-  info: string;
-  startsAt: string;
-  endsAt: string;
-  labels: Array<string>;
-  track: number;
-  speaker: SpeakerInfo;
-};
 
-type SpeakerInfo = {
-  imageUrl: string;
-  name: string;
-};
-
-type TalksLineProps = {
-  talk1: Talk;
-  talk2?: Talk;
-};
-
-export const TalksLine = ({ talk1, talk2 }: TalksLineProps) => {
+export const TalksLine = ({ talk1, talk2 }: TalksLinePropsInterface) => {
   return (
     <>
       <div className={styles.talkLine}>

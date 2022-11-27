@@ -1,6 +1,7 @@
 import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { TalksLine } from "../../components/schedule/talksLine";
+import { SpeakerInfoInterface, TalkInterface, TalksLinePropsInterface } from '../../interfaces/schedule.interfaces';
 
 export default {
   title: "Components/Schedule",
@@ -36,39 +37,18 @@ export default {
   },
 } as ComponentMeta<typeof TalksLine>;
 
-type Talk = {
-  id: string;
-  title: string;
-  info: string;
-  startsAt: string;
-  endsAt: string;
-  labels: Array<string>;
-  track: number;
-  speaker: SpeakerInfo;
-};
 
-type SpeakerInfo = {
-  imageUrl: string;
-  name: string;
-};
-
-type TalksLineProps = {
-  talk1: Talk;
-  talk2?: Talk;
-};
-
-
-const SpeakerInfo1: SpeakerInfo = {
+const SpeakerInfo1: SpeakerInfoInterface = {
   imageUrl: 'https://pbs.twimg.com/profile_images/1352946531628969984/NNfdBgII_400x400.jpg',
   name: 'Juanjo'
 };
 
-const SpeakerInfo2: SpeakerInfo = {
+const SpeakerInfo2: SpeakerInfoInterface = {
   imageUrl: 'https://pbs.twimg.com/profile_images/1428402345910706181/6v9LHnxJ_400x400.jpg',
   name: 'Tomas'
 };
 
-const Talk1: Talk = {
+const Talk1: TalkInterface = {
   id: '6e5436',
   title: ' Charla de prueba sobre front',
   info: 'no se que se pone aqui',
@@ -76,10 +56,11 @@ const Talk1: Talk = {
   endsAt: '13:45',
   labels: ['front', 'devops'],
   track: 0,
+  isBreak: false,
   speaker: SpeakerInfo1
 };
 
-const Talk2: Talk = {
+const Talk2: TalkInterface = {
   id: '6e5436',
   title: ' Charla de prueba sobre back',
   info: 'no se que se pone aqui',
@@ -87,10 +68,11 @@ const Talk2: Talk = {
   endsAt: '00:00',
   labels: ['front', 'ux'],
   track: 0,
+  isBreak: false,
   speaker: SpeakerInfo2
 };
 
-const Talks: TalksLineProps = {
+const Talks: TalksLinePropsInterface = {
   talk1: Talk1,
   talk2: Talk2
 };
