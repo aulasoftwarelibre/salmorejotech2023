@@ -3,7 +3,7 @@ import {TalksLinePropsInterface } from '../../../interfaces/schedule.interfaces'
 import { Talk } from "../talk";
 
 
-export const TalksLine = ({ talk1, talk2 }: TalksLinePropsInterface) => {
+export const TalksLine = ({ talk1, talk2 }: TalksLinePropsInterface) => {  
   return (
     <>
       <div className={styles.talkLine}>

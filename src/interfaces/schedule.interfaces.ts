@@ -8,6 +8,7 @@ export interface TalkInterface {
   isBreak: boolean;
   track: number;
   speaker: SpeakerInfoInterface;
+  randomMask: string;
 }
 
 export interface SpeakerInfoInterface {

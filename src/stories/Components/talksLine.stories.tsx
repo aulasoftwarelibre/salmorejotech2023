@@ -57,7 +57,8 @@ const Talk1: TalkInterface = {
   labels: ['front', 'devops'],
   track: 0,
   isBreak: false,
-  speaker: SpeakerInfo1
+  speaker: SpeakerInfo1,
+  randomMask: "mask" + Math.floor((Math.random() * (4 - 1 + 1)) + 1)
 };
 
 const Talk2: TalkInterface = {
@@ -69,7 +70,8 @@ const Talk2: TalkInterface = {
   labels: ['front', 'ux'],
   track: 0,
   isBreak: false,
-  speaker: SpeakerInfo2
+  speaker: SpeakerInfo2,
+  randomMask: "mask" + Math.floor((Math.random() * (4 - 1 + 1)) + 1)
 };
 
 const Talks: TalksLinePropsInterface = {

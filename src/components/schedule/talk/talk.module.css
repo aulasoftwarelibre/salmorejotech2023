@@ -17,9 +17,21 @@
   mask-size: cover;
 }
 
-.img {
-  -webkit-mask-image: url(../../../../public/images/mascara-ponente.svg);
-  mask-image: url(../../../../public/images/mascara-ponente.svg);  
+.mask1 {
+  -webkit-mask-image: url(../../../../public/mascarasPonentes/mascaraPonente1.svg);
+  mask-image: url(../../../../public/mascarasPonentes/mascaraPonente1.svg);  
+}
+.mask2 {
+  -webkit-mask-image: url(../../../../public/mascarasPonentes/mascaraPonente2.svg);
+  mask-image: url(../../../../public/mascarasPonentes/mascaraPonente2.svg);  
+}
+.mask3 {
+  -webkit-mask-image: url(../../../../public/mascarasPonentes/mascaraPonente3.svg);
+  mask-image: url(../../../../public/mascarasPonentes/mascaraPonente3.svg);  
+}
+.mask4 {
+  -webkit-mask-image: url(../../../../public/mascarasPonentes/mascaraPonente4.svg);
+  mask-image: url(../../../../public/mascarasPonentes/mascaraPonente4.svg);  
 }
 
 
