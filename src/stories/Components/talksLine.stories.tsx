@@ -40,12 +40,12 @@ export default {
 
 const SpeakerInfo1: SpeakerInfoInterface = {
   imageUrl: 'https://pbs.twimg.com/profile_images/1352946531628969984/NNfdBgII_400x400.jpg',
-  name: 'Juanjo'
+  name: 'Juanjo Trenado'
 };
 
 const SpeakerInfo2: SpeakerInfoInterface = {
   imageUrl: 'https://pbs.twimg.com/profile_images/1428402345910706181/6v9LHnxJ_400x400.jpg',
-  name: 'Tomas'
+  name: 'Tomas Hidalgo'
 };
 
 const Talk1: TalkInterface = {

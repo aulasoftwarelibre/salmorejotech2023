@@ -14,10 +14,17 @@ body {
   justify-content: center;
 }
 
-.containerImage{
-  display: block;
-  width: 30%;
+.container img {
+  object-fit: cover;
+  -webkit-mask-size: cover;
+  mask-size: cover;
 }
+
+.img {
+  -webkit-mask-image: url(../../../../public/images/mascara-ponente.svg);
+  mask-image: url(../../../../public/images/mascara-ponente.svg);  
+}
+
 
 .horizontal{
   display: flex;
@@ -60,6 +67,8 @@ img{
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
+  color: black;
+  font-weight: bold;
 }
 
 .labels div{
