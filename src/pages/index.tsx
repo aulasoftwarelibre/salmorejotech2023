@@ -8,7 +8,7 @@ import GridPonentes from '../components/gridPonentes'
 import Loading from '../components/loading'
 import { Moleculas } from '../components/moleculas'
 import { Navbar } from '../components/navbar'
-import Sponsors from '../components/sponsors'
+import { SponsorsGrid } from '../components/sponsors/grid'
 import { useContentWritter } from '../hooks/useContentWritter'
 import styles from '../styles/index.module.css'
 
@@ -55,7 +55,8 @@ const Home: NextPage = () => {
       {/* <GridPonentes /> */}
       <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "10vw" }} />
 
-      <Sponsors />
+      {/* Sponsors Section */}
+      <SponsorsGrid />
 
       <div className='anchoMaximo'>
         <Footer />

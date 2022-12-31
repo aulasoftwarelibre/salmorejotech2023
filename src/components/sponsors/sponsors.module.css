@@ -1,35 +1,29 @@
 .background {
   background-color: white;
-  /* esto esta puesto para que no se quede una rajita en medio */
-  margin: -1px;
   padding: 2rem;
 }
 
-.container{
+.container {
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  text-align:center;
-  gap: 1rem;
+  text-align: center;
+  gap: 5rem;
   flex-grow: 1;
   max-width: 1500px;
 }
 
-.speakerCard{
-  background: rgba(255, 181, 124, 0.281);
-  box-shadow: var(--lightShadow);
-  backdrop-filter: blur(10px);
-  border-radius: 5px;
-  padding: 1rem;
-}
-
-.speakerImage{
-  border-radius: 3px;
+.sponsor {
+  width: 10rem;
+  height: 10rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .divider1 {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .divider1 svg {
@@ -39,7 +33,7 @@
   height: 100px;
 }
 .divider2 {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .divider2 svg {
