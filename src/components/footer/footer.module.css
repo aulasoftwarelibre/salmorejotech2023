@@ -49,7 +49,7 @@
 .icons a:hover,
 .contact:hover {
   cursor: pointer;
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 .CopyLeft {

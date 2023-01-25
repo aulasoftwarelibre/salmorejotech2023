@@ -24,7 +24,6 @@ export const Footer = () => {
             <a href="https://t.me/AulaSoftwareLibreUCO"><BsTelegram /></a>
             <a href="https://www.facebook.com/AulaSoftwareLibre"><BsFacebook /></a>
             <a href="https://www.uco.es/aulasoftwarelibre/"><BiWorld /></a>
-
           </div>
         </section>
         <section className={styles.Contact_us} id="Contact us">

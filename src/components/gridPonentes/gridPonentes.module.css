@@ -9,64 +9,40 @@
   max-width: 1500px;
 }
 
-
 .speakerImage{
-  border-radius: 20px;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
 }
 
-
-/*Card */
 .card {
-  width: 280px;
-  height: 280px;
-  background: #f5f5f5;
-  position: relative;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(35,35,35,0.3);
-  transition: box-shadow .3s ease-in-out;
-  border-radius: 20px;
-  background:  linear-gradient(110deg, #F41F4F, #FF8000);
+  background: rgba(255, 148, 148, 0);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
  }
  
  .cardInfo {
-  position: absolute;
-  bottom: 7px;
   width: 100%;
-  padding: 1rem;
   text-align: center;
  }
  
- /*Image*/
- .cardImg {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  transition: transform .3s ease-in-out;
-  z-index: 2;
- }
- 
- /*Buttons*/
  .socialMedia {
-  position: absolute;
-  bottom: 0;
+  padding: 0rem 1rem;
+  font-size: 1.3rem;
+  align-items: center;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 1rem;
-  transform: translateY(-200%);
-  z-index: 3;
-  list-style: none;
+  justify-content: space-around;
  }
- 
- .socialMedia li {
-  background: black;
-  padding: 10px 12px;
-  border-radius: 50%;
+ .socialMedia a:hover{
   cursor: pointer;
-  opacity: 0;
-  transition: all .3s ease-in;
- }
- 
- /*Text*/
+  transform: scale(1.05);
+}
+
  .title {
   font-size: 1.5em;
   font-weight: 500;
@@ -76,41 +52,3 @@
   letter-spacing: 1px;
   font-size: 0.9em;
  }
- 
- 
- /* Hover */
- .card:hover {
-  box-shadow: 1px 2px 10px rgba(35,35,35,0.5);
- }
- 
- .card:hover .cardImg {
-  transform: translateY(-30%);
- }
- 
- .card:hover .socialMedia li {
-  transform: translateY(-5%);
-  opacity: 1;
- }
- 
- .card:hover .socialMedia li:nth-child(1) {
-  transition-delay: 0s;
- }
- 
- .card:hover .socialMedia li:nth-child(2) {
-  transition-delay: .1s;
- }
- 
- .card:hover .socialMedia li:nth-child(3) {
-  transition-delay: .2s;
- }    
-
-
-.svg{
-  --size: 25px;
-  width: var(--size);
-  height: var(--size);
-  border-radius: 100%;
-  color: black;
-  fill: white;
-}
-
