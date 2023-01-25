@@ -21,6 +21,10 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.sponsor:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
 
 .divider1 {
   fill: #ffffff;
