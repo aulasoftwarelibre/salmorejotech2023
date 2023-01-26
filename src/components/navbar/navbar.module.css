@@ -17,15 +17,23 @@
   margin: 1rem;
   display: flex;
   color: white;
-  justify-content: space-between;
   transition: var(--transition);
+  justify-content: space-between;
 }
 
-.nav div{
-  align-content: center;
-  display: flex;
+.left, .links{
   gap: 2rem;
   align-items: center;
+}
+
+.right{
+  display: flex;
+  gap: 1rem;
+
+}
+
+.links{
+  display: none;
 }
 
 .nav a:hover{
@@ -33,11 +41,108 @@
   transform: scale(1.02);
 }
 
-.emphasis h1{
+.emphasis{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.emphasis h2{
+  font-size: 1.1rem;
+  font-weight: 600;
   color: black;
   padding: 0.5rem;
   background: linear-gradient(90deg,#ffbb00,#ffee00);
   border-radius: 3px;
   box-shadow: var(--shadow);
+}
 
+.hamburger{
+  align-self: center;
+  display: flex;
+  font-size: 1.8rem;
+}
+
+
+@media (min-width: 200px) and (max-width: 823px) {
+  .emphasis {
+    gap: 0.5rem;
+  }
+  .right{
+    gap: 0.5rem;
+  }
+  .fullScreen{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 100;
+  }
+  
+}
+@media (min-width: 824px) and (max-width: 943px) {
+  .emphasis h2{
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .hamburger{
+    display: none;
+  }
+  .nav div{
+    display: flex;
+    font-size: 0.8rem;
+  }
+  .links h2{
+    font-weight: 500;
+  }
+  .emphasis {
+    gap: 0.5rem;
+  }
+  .right{
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 944px) and (max-width: 1039px) {
+  .hamburger{
+    display: none;
+  }
+  .nav div{
+    display: flex;
+    font-size: 0.8rem;
+  }
+  .links h2{
+    font-weight: 500;
+  }
+  .emphasis h2{
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .emphasis {
+    gap: 2rem;
+  }
+  .icon img{
+    width: 7.1rem;
+  }
+}
+
+@media (min-width: 1040px) {
+  .hamburger{
+    display: none;
+  }
+  .nav div{
+    display: flex;
+  }
+  
+  .emphasis h2{
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .emphasis {
+    gap: 2rem;
+  }
+  .icon img{
+    width: 7.1rem;
+  }
 }

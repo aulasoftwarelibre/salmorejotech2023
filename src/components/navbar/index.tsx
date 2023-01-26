@@ -3,24 +3,54 @@ import Link from "next/link";
 import styles from './navbar.module.css';
 import Image from 'next/image';
 import React from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
+function toggleStyle() {
+  const newContent = `
+  <div className={styles.fullScreen}>
+    <div className={styles.icon}>
+        <Link href="/"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></Link>
+    </div>
+    <div className={styles.links}>
+      <Link href="/"><h2>Información</h2></Link>
+      <Link href="/"><h2>Localización</h2></Link>
+      <Link href="/"><h2>Ponentes</h2></Link>
+      <Link href="/"><h2>Sponsors</h2></Link>
+    </div>
+    <div className={styles.emphasis}>
+      <Link href="/team"><h2>Equipo</h2></Link>
+      <Link href="/"><h2>Entradas</h2></Link>
+    </div>
+    <GiHamburgerMenu className={styles.hamburger} onClick={toggleStyle}/>
+  </div>`;
+
+  document.getElementById("fullScreen").innerHTML = newContent;
+}
 
 export const Navbar = () => {
   return (
     <header className={styles.main}>
       <nav className={styles.nav}>
-        <div>
-          <Link href="/"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></Link>
-          <Link href="/"><h1>Información</h1></Link>
-          <Link href="/"><h1>Localización</h1></Link>
-          <Link href="/"><h1>Ponentes</h1></Link>
-          <Link href="/"><h1>Sponsors</h1></Link>
+        <div className={styles.left}>
+          <div className={styles.icon}>
+              <Link href="/"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></Link>
+          </div>
+          <div className={styles.links}>
+            <Link href="/"><h2>Información</h2></Link>
+            <Link href="/"><h2>Localización</h2></Link>
+            <Link href="/"><h2>Ponentes</h2></Link>
+            <Link href="/"><h2>Sponsors</h2></Link>
+          </div>
         </div>
-        <div className={styles.emphasis}>
-          <Link href="/team"><h1>Equipo</h1></Link>
-          <Link href="/"><h1>Entradas</h1></Link>
+        <div className={styles.right}>
+          <div className={styles.emphasis}>
+            <Link href="/team"><h2>Equipo</h2></Link>
+            <Link href="/"><h2>Entradas</h2></Link>
+          </div>
+          <GiHamburgerMenu className={styles.hamburger} onClick={toggleStyle}/>
         </div>
       </nav>
+      <div id="fullScreen"></div>
     </header>
   )
 }
