@@ -23,6 +23,39 @@ import WhiteSection from '../components/whiteSection'
 
 const Home: NextPage = () => {
 
+  const navbarContents = [
+    {
+      title: "Información",
+      href: "#info",
+      emphasised: false,
+    },
+    {
+      title: "Localización",
+      href: "#where",
+      emphasised: false,
+    },
+    {
+      title: "Ponentes",
+      href: "#speakers",
+      emphasised: false,
+    },
+    {
+      title: "Sponsors",
+      href: "#sponsors",
+      emphasised: false,
+    },
+    {
+      title: "Entradas",
+      href: "/",
+      emphasised: true,
+    },
+    {
+      title: "Equipo",
+      href: "/team",
+      emphasised: true,
+    },
+  ]
+
   const possibleContents = [
       'Cordobés...',
       'Tecnológico...',
@@ -47,7 +80,7 @@ const Home: NextPage = () => {
       <link rel="canonical" href="https://salmorejo.tech" />
     </Head>
     <main>
-      <Navbar />
+      <Navbar contents={navbarContents}/>
       <Loading /> 
       <Moleculas />
       <div className='anchoMaximo'>
