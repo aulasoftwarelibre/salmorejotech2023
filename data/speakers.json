@@ -5,7 +5,8 @@
     "urlPhoto": "/speakers/secondary-placeholder.png",
     "contacts": [
       { "type": "TWITTER", "link": "https://twitter.com" },
-      { "type": "WEB", "link": "https://google.es" }
+      { "type": "WEB", "link": "https://google.es" },
+      { "type": "GITHUB", "link": "https://github.com" }
     ]
   },
   {
@@ -14,6 +15,7 @@
     "urlPhoto": "/speakers/primary-placeholder.png",
     "contacts": [
       { "type": "TWITTER", "link": "https://twitter.com" },
+      { "type": "LINKEDIN", "link": "https://linkedin.com" },
       { "type": "WEB", "link": "https://google.es" }
     ]
   }
