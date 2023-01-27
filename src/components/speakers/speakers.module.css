@@ -1,4 +1,4 @@
-.container{
+.container {
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
@@ -9,7 +9,7 @@
   max-width: 1500px;
 }
 
-.speakerImage{
+.speakerImage {
   border-radius: 5px 5px 0 0;
   width: 100%;
 }
@@ -19,36 +19,38 @@
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  max-width: 320px;
   border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(35,35,35,0.3);
+  box-shadow: 0px 2px 5px rgba(35, 35, 35, 0.3);
   background: rgba(255, 148, 148, 0);
+  color: white;
   box-shadow: var(--shadow);
   backdrop-filter: blur(10px);
- }
- 
- .cardInfo {
+}
+
+.cardInfo {
   width: 100%;
   text-align: center;
- }
- 
- .socialMedia {
+}
+
+.socialMedia {
   padding: 0 1rem;
   font-size: 1.3rem;
   align-items: center;
   display: flex;
   justify-content: space-around;
- }
- .socialMedia a:hover{
+}
+.socialMedia a:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
 
- .title {
+.title {
   font-size: 1.5em;
   font-weight: 500;
- }
- 
- .subtitle {
+}
+
+.subtitle {
   letter-spacing: 1px;
   font-size: 0.9em;
- }
+}

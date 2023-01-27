@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import styles from './speakers.module.css'
-import Image from 'next/image';
 import { BsTwitter, BsGithub, BsLinkedin } from 'react-icons/bs';
 
 export interface SpeakerProps {
@@ -13,7 +13,7 @@ export interface SpeakerProps {
 export const SpeakerCard = ({name, bio, urlPhoto, contacts}:  SpeakerProps) => {
   return (
     <div className={styles.card}>
-      <Image className={styles.speakerImage} src={urlPhoto} alt="Imagen del ponente" width={280} height={280} />
+      <img className={styles.speakerImage} src={urlPhoto} alt="Imagen del ponente" />
       <div className={styles.cardInfo}>
         <p className={styles.title}>{name}</p>
         <p className={styles.subtitle}>{bio}</p>
