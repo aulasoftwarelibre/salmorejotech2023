@@ -53,8 +53,7 @@ const Navbar = () => {
 
   if (isLowWidth) {
     return (
-    <>
-    <header className={styles.main}>
+    <div className={styles.main}>
       <nav className={styles.nav}>
         <div className={styles.left}>
           <div className={styles.icon}>
@@ -72,14 +71,12 @@ const Navbar = () => {
           <GiHamburgerMenu className={styles.hamburger} onClick={toggleShown}/>
         </div>
       </nav>
-    </header>
-    </>
+    </div>
     )
   }
 
   return (
-    <>
-    <header className={styles.main}>
+    <div className={styles.main}>
       <nav className={styles.nav}>
         <div className={styles.left}>
           <div className={styles.icon}>
@@ -94,8 +91,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </header>
-    </>
+    </div>
   )
 }
 
