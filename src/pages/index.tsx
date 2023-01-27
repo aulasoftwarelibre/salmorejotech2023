@@ -4,7 +4,7 @@ import Head from 'next/head'
 import React from 'react'
 import Button from '../components/button'
 import { Footer } from '../components/footer'
-import GridPonentes from '../components/gridPonentes'
+import SpeakerGrid from '../components/speakerGrid'
 import Loading from '../components/loading'
 import { Moleculas } from '../components/moleculas'
 import { Navbar } from '../components/navbar'
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
         </section>
       </div>
 
-      <GridPonentes />
+      <SpeakerGrid />
       <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "10vw" }} />
 
       <Sponsors />

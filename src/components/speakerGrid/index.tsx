@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from './gridPonentes.module.css'
 import axios from 'axios';
 import Image from 'next/image';
-import { BsTwitter, BsInstagram, BsGithub, BsYoutube, BsTelegram, BsFacebook, BsLinkedin } from 'react-icons/bs';
+import { BsTwitter, BsGithub, BsLinkedin } from 'react-icons/bs';
 import { API_ROUTE } from "../../lib/data";
 
 type Speaker = {
@@ -11,10 +11,9 @@ type Speaker = {
   bio: string,
   urlPhoto: string,
   contacts: Array<{ type: string, link: string }>,
-  published: boolean,
 }
 
-function SpeakerCard(props: { id: string, name: string, bio: string, urlPhoto: string, contacts: Array<{ type: string, link: string }>, published: boolean }) {
+function SpeakerCard(props: { id: string, name: string, bio: string, urlPhoto: string, contacts: Array<{ type: string, link: string }> }) {
   return (
     <div className={styles.card}>
       <Image className={styles.speakerImage} src={props.urlPhoto} alt="Imagen del ponente" width={280} height={280} />
@@ -75,7 +74,7 @@ function SpeakerCard(props: { id: string, name: string, bio: string, urlPhoto: s
 // }
 
 // por si hay que hacer pruebas sin tener la api encendida
-export default function GridPonentes() {
+export default function SpeakerGrid() {
   const [speakers, setSpeakers] = useState<Array<Speaker>>(new Array());
   return (
     <>
@@ -87,7 +86,6 @@ export default function GridPonentes() {
           bio={"El de las vistas"}
           urlPhoto={"https://salmorejo.tech/2022/images/speakers/eduSatoe.jpg"}
           contacts={[]}
-          published={true}
         />
         <SpeakerCard
           key={4534634}
@@ -96,7 +94,6 @@ export default function GridPonentes() {
           bio={"El de neón"}
           urlPhoto={"https://salmorejo.tech/2022/images/speakers/paulaGarcia.jpg"}
           contacts={[]}
-          published={false}
         />
         <SpeakerCard
           key={4534634}
@@ -105,7 +102,6 @@ export default function GridPonentes() {
           bio={"El xulacoh"}
           urlPhoto={"https://salmorejo.tech/2022/images/speakers/javiVelasco.jpg"}
           contacts={[]}
-          published={false}
         />
         <SpeakerCard
           key={4534634}
@@ -114,7 +110,6 @@ export default function GridPonentes() {
           bio={"El monumento ;)"}
           urlPhoto={"https://salmorejo.tech/2022/images/speakers/davidBonilla.jpg"}
           contacts={[]}
-          published={true}
         />
       </div>
     </>

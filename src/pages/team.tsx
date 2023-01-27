@@ -2,7 +2,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Footer } from '../components/footer'
-import GridPonentes from '../components/gridPonentes'
+import GridPonentes from '../components/speakerGrid'
 import { Moleculas } from '../components/moleculas'
 import { Navbar } from '../components/navbar'
 import { useContentWritter } from '../hooks/useContentWritter'
