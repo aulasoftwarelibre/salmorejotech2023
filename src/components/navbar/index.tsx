@@ -1,45 +1,69 @@
-/* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
+import Link from 'next/link';
+import { useWindowSize } from '../../hooks/useWindowSize';
+import { useScrollHandler } from '../../hooks/useScrollHandler';
 import styles from './navbar.module.css';
-import Image from 'next/image';
-import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { useEffect, useState } from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
-function toggleStyle() {
-  const newContent = `
-  <div className={styles.fullScreen}>
-    <div className={styles.icon}>
-        <Link href="/"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></Link>
-    </div>
-    <div className={styles.links}>
-      <Link href="/"><h2>Información</h2></Link>
-      <Link href="/"><h2>Localización</h2></Link>
-      <Link href="/"><h2>Ponentes</h2></Link>
-      <Link href="/"><h2>Sponsors</h2></Link>
-    </div>
-    <div className={styles.emphasis}>
-      <Link href="/team"><h2>Equipo</h2></Link>
-      <Link href="/"><h2>Entradas</h2></Link>
-    </div>
-    <GiHamburgerMenu className={styles.hamburger} onClick={toggleStyle}/>
-  </div>`;
+const Navbar = () => {
+  const contents = [
+    {
+      title: "Información",
+      href: "/Información",
+    },
+    {
+      title: "Localización",
+      href: "/Localización",
+    },
+    {
+      title: "Ponentes",
+      href: "/Ponentes",
+    },
+    {
+      title: "Sponsors",
+      href: "/Sponsors",
+    }
+  ]
 
-  document.getElementById("fullScreen").innerHTML = newContent;
-}
+  const scrolled = useScrollHandler();
 
-export const Navbar = () => {
-  return (
+  const [isLowWidth, setLowWitdhCheck] = useState<boolean>(false);
+  const {width} = useWindowSize();
+  
+  useEffect(() => {
+    setLowWitdhCheck(width < 823);
+  }, [width])
+
+  const [showNavbar, setShowNavbar] = useState<boolean>(false);
+  const toggleShown = () => {
+    setShowNavbar(!showNavbar);
+  }
+
+  const formated_sections = <>
+    {contents.map(content => (
+      <Link key={`nav-${content.title}`} href={content.href}>
+            <h2>{content.title}</h2>
+      </Link>
+    ))}
+  </>
+
+  const compactNavbar: JSX.Element = showNavbar ? (
+    <div className={styles.compact_background} onClick={toggleShown}>
+     {formated_sections} 
+    </div>
+  ): null;
+
+  if (isLowWidth) {
+    return (
+    <>
     <header className={styles.main}>
       <nav className={styles.nav}>
         <div className={styles.left}>
           <div className={styles.icon}>
               <Link href="/"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></Link>
           </div>
-          <div className={styles.links}>
-            <Link href="/"><h2>Información</h2></Link>
-            <Link href="/"><h2>Localización</h2></Link>
-            <Link href="/"><h2>Ponentes</h2></Link>
-            <Link href="/"><h2>Sponsors</h2></Link>
+          <div id="compact-navbar" className={styles.base_compact}>
+            {compactNavbar}
           </div>
         </div>
         <div className={styles.right}>
@@ -47,10 +71,34 @@ export const Navbar = () => {
             <Link href="/team"><h2>Equipo</h2></Link>
             <Link href="/"><h2>Entradas</h2></Link>
           </div>
-          <GiHamburgerMenu className={styles.hamburger} onClick={toggleStyle}/>
+          <GiHamburgerMenu className={styles.hamburger} onClick={toggleShown}/>
         </div>
       </nav>
-      <div id="fullScreen"></div>
     </header>
+    </>
+    )
+  }
+
+  return (
+    <>
+    <header className={styles.main}>
+      <nav className={styles.nav}>
+        <div className={styles.left}>
+          <div className={styles.icon}>
+              <Link href="/"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></Link>
+          </div>
+            {formated_sections}
+        </div>
+        <div className={styles.right}>
+          <div className={styles.emphasis}>
+            <Link href="/team"><h2>Equipo</h2></Link>
+            <Link href="/"><h2>Entradas</h2></Link>
+          </div>
+        </div>
+      </nav>
+    </header>
+    </>
   )
 }
+
+export default Navbar;
