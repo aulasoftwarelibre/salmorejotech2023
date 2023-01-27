@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import { useWindowSize } from '../../hooks/useWindowSize';
-import { useScrollHandler } from '../../hooks/useScrollHandler';
 import styles from './navbar.module.css';
 import { useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -9,23 +9,21 @@ const Navbar = () => {
   const contents = [
     {
       title: "Información",
-      href: "/Información",
+      href: "#info",
     },
     {
       title: "Localización",
-      href: "/Localización",
+      href: "#where",
     },
     {
       title: "Ponentes",
-      href: "/Ponentes",
+      href: "#speakers",
     },
     {
       title: "Sponsors",
-      href: "/Sponsors",
+      href: "#sponsors",
     }
   ]
-
-  const scrolled = useScrollHandler();
 
   const [isLowWidth, setLowWitdhCheck] = useState<boolean>(false);
   const {width} = useWindowSize();
