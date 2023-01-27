@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { Footer } from '../components/footer'
 import GridPonentes from '../components/gridPonentes'
 import { Moleculas } from '../components/moleculas'
-import { Navbar } from '../components/navbar'
+import Navbar from '../components/navbar'
 import { useContentWritter } from '../hooks/useContentWritter'
 import styles from '../styles/team.module.css'
 
