@@ -4,7 +4,7 @@ html {
   --blue: #7FABD7;
   --red: #F41F4F;
   --shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
-  --lightShadow: 0px 0px 25px rgba(0, 0, 0, 0.07);
+  --lightShadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
   --transition: transform .03s ease-out;
   --aulaPurple: #60102F;
   --aulaRed: #221D51;
