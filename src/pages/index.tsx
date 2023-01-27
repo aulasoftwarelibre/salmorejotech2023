@@ -55,8 +55,7 @@ const Home: NextPage = () => {
       {/* <GridPonentes /> */}
       <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "10vw" }} />
 
-      {/* Sponsors Section */}
-      <SponsorsGrid />
+      {/* <SponsorsGrid sponsors={sponsors}/> */}
 
       <div className='anchoMaximo'>
         <Footer />
