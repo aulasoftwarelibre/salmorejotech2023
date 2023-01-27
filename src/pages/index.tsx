@@ -51,9 +51,9 @@ const Home: NextPage = () => {
           </div>
         </section>
       </div>
-
+      <section id="spacer" style={{ display: "block", height: "10vw" }} />
       {/** <SpeakersGrid /> */}
-      <section id="Solo estoy para separar footer de hero" style={{ display: "block", height: "10vw" }} />
+      <section id="spacer" style={{ display: "block", height: "10vw" }} />
 
       {/* <SponsorsGrid sponsors={sponsors}/> */}
 
