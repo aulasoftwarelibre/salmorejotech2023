@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from './gridPonentes.module.css'
-import axios from 'axios';
 import Image from 'next/image';
 import { BsTwitter, BsGithub, BsLinkedin } from 'react-icons/bs';
-import { API_ROUTE } from "../../lib/data";
 
 type Speaker = {
   id: string,
@@ -31,49 +29,6 @@ function SpeakerCard(props: { id: string, name: string, bio: string, urlPhoto: s
 }
 
 
-
-// export default function GridPonentes() {
-
-//   const [speakers, setSpeakers] = useState<Array<Speaker>>(new Array());
-
-//   // useEffect va a "ejecutar" la funcion que le digamos cada vez que usemos este componente"
-//   useEffect(() => {
-//     axios
-//       .get(API_ROUTE)
-//       .then(response => {
-//         //console.log(response)
-//         if (response.status === 404) {
-//           return;
-//         }
-//         const { data } = response;
-//         const { content } = data;  // {data {msg, content}}
-//         setSpeakers(content);
-//         //console.log(speakers);
-//       })
-//       .catch(e => {})
-//   }, [])
-
-//   return (
-//     <>
-// <div className={styles.container}></div>
-//       {speakers.map(
-//         (speaker) => {
-//           return <SpeakerCard
-//             key={speaker.id}
-//             id={speaker.id}
-//             name={speaker.name}
-//             bio={speaker.bio}
-//             urlPhoto={speaker.urlPhoto}
-//             contacts={speaker.contacts}
-//             published={speaker.published}
-//           />
-//         })}
-// </div>
-//     </>
-//   )
-// }
-
-// por si hay que hacer pruebas sin tener la api encendida
 export default function SpeakerGrid() {
   const [speakers, setSpeakers] = useState<Array<Speaker>>(new Array());
   return (
