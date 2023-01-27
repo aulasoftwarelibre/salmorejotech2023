@@ -1,0 +1,25 @@
+.whitesection {
+  background: #fff;
+}
+
+.sectionTopDecorator {
+  fill: #ffffff;
+}
+
+.sectionTopDecorator svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+.sectionBottomDecorator {
+  fill: #ffffff;
+}
+
+.sectionBottomDecorator svg {
+  position: relative;
+  display: block;
+  width: calc(141% + 1.3px);
+  height: 93px;
+  transform: rotate(180deg);
+}
