@@ -4,7 +4,8 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: [
-      "pbs.twimg.com"
+      "pbs.twimg.com",
+      "salmorejo.tech"
     ]
   }
 }
