@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
 
-
-
-
 export const useContentWritter = ({contents}: {contents: string[]}) => {
 
   enum TASK {
