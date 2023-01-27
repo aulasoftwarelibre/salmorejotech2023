@@ -18,11 +18,12 @@
 .sponsor {
   width: 10rem;
   height: 10rem;
+  display: block;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
-.sponsor:hover{
+.sponsor:hover {
   cursor: pointer;
   transform: scale(1.02);
 }
