@@ -1,5 +1,5 @@
 import { SpeakerCard, SpeakerProps } from ".";
-import styles from './speaker.module.css';
+import styles from './speakers.module.css';
 
 interface SpeakersGridProps {
   speakers: SpeakerProps[]
