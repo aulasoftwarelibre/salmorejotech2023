@@ -27,25 +27,3 @@
   cursor: pointer;
   transform: scale(1.02);
 }
-
-.divider1 {
-  fill: #ffffff;
-}
-
-.divider1 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 100px;
-}
-.divider2 {
-  fill: #ffffff;
-}
-
-.divider2 svg {
-  position: relative;
-  display: block;
-  width: calc(141% + 1.3px);
-  height: 93px;
-  transform: rotate(180deg);
-}

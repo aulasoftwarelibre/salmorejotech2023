@@ -52,6 +52,22 @@
   margin-top: calc(1 * (4vw) + 5rem);
 }
 
+.section {
+  margin: 10vw 0;
+}
+
+.section .sectionTitle {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 1.5rem;
+}
+
+.section .sectionTitle.black {
+  color: #000 !important;
+}
+
 @keyframes fadeOutAnimation {
   0% {
     opacity: 1;

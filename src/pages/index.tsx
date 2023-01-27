@@ -2,15 +2,24 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
+
 import Button from '../components/button'
 import { Footer } from '../components/footer'
-import SpeakersGrid from '../components/speakers/grid'
 import Loading from '../components/loading'
 import { Moleculas } from '../components/moleculas'
-import { SponsorsGrid } from '../components/sponsors/grid'
 import Navbar from '../components/navbar'
+
 import { useContentWritter } from '../hooks/useContentWritter'
+
+import SpeakersGrid from '../components/speakers/grid'
+import speakers from '../../data/speakers.json'
+
+import { SponsorsGrid } from '../components/sponsors/grid'
+import sponsors from '../../data/sponsors.json'
+import { SponsorProps } from '../components/sponsors'
+
 import styles from '../styles/index.module.css'
+import WhiteSection from '../components/whiteSection'
 
 const Home: NextPage = () => {
 
@@ -51,11 +60,16 @@ const Home: NextPage = () => {
           </div>
         </section>
       </div>
-      <section id="spacer" style={{ display: "block", height: "10vw" }} />
-      {/** <SpeakersGrid /> */}
-      <section id="spacer" style={{ display: "block", height: "10vw" }} />
 
-      {/* <SponsorsGrid sponsors={sponsors}/> */}
+      <section id="speakers" className={styles.section}>
+        <h1 className={styles.sectionTitle}>Speakers</h1>
+        <SpeakersGrid speakers={speakers}/>
+      </section>
+      
+      <WhiteSection id="sponsors" className={styles.section}>
+        <h1 className={`${styles.sectionTitle} ${styles.black}`}>Sponsors</h1>
+        <SponsorsGrid sponsors={sponsors as SponsorProps[]}/>
+      </WhiteSection>
 
       <div className='anchoMaximo'>
         <Footer />
