@@ -1,0 +1,20 @@
+[
+  {
+    "name": "John Doe",
+    "bio": "Frontend Lead for Doe Company",
+    "urlPhoto": "/speakers/secondary-placeholder.png",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com" },
+      { "type": "WEB", "link": "https://google.es" }
+    ]
+  },
+  {
+    "name": "Jane Doe",
+    "bio": "Backend Lead for Doe Company",
+    "urlPhoto": "/speakers/primary-placeholder.png",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com" },
+      { "type": "WEB", "link": "https://google.es" }
+    ]
+  }
+]
