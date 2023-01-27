@@ -27,7 +27,13 @@ export const SpeakerCard = ({name, bio, urlPhoto, contacts}:  SpeakerProps) => {
   const renderContactLink = (contact: Contact) => {
     if(!LinkTypeAsIcon[contact.type]) return;
     return (
-      <a href={contact.link} aria-label={`${name}'s link for ${contact.type}`}>{LinkTypeAsIcon[contact.type]}</a>
+      <a 
+        className={styles[contact.type.toLowerCase()]} 
+        href={contact.link} 
+        aria-label={`${name}'s link for ${contact.type}`}
+      >
+        {LinkTypeAsIcon[contact.type]}
+      </a>
     )
   }
 
@@ -35,8 +41,8 @@ export const SpeakerCard = ({name, bio, urlPhoto, contacts}:  SpeakerProps) => {
     <div className={styles.card}>
       <img className={styles.speakerImage} src={urlPhoto} alt="Imagen del ponente" />
       <div className={styles.cardInfo}>
-        <p className={styles.title}>{name}</p>
-        <p className={styles.subtitle}>{bio}</p>
+        <p className={styles.name}>{name}</p>
+        <p className={styles.bio}>{bio}</p>
       </div>
       <div className={styles.socialMedia}>
         {contacts.map(contact => renderContactLink(contact))}
