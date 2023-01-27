@@ -33,4 +33,4 @@ export default {
   },
 } as ComponentMeta<typeof SpeakerCard>;
 
-export const Button_Primary: ComponentStory<typeof SpeakerCard> = (args) => <SpeakerCard {...args} />;
+export const SpeakerCardExample: ComponentStory<typeof SpeakerCard> = (args) => <SpeakerCard {...args} />;
