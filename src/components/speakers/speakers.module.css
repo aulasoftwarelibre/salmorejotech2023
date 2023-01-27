@@ -14,6 +14,10 @@
   width: 100%;
 }
 
+.speakerImage::selection {
+  background-color: transparent;
+}
+
 .card {
   padding-bottom: 0.8rem;
   display: flex;
@@ -67,4 +71,9 @@
 .bio {
   letter-spacing: 1px;
   font-size: 0.9em;
+}
+
+.name::selection,
+.bio::selection {
+  background: var(--purple);
 }
