@@ -8,11 +8,12 @@ type ButtonProps = {
 
 const Button = ({label}: ButtonProps) => {
   return (
-    <button
-      type="button"
-      className={styles.button}>
+    <>
+    <img className={styles.tiket} src='/images/tiket.svg' alt="Tiket" />
+    <div className={styles.button}>
       <p>{label}</p>
-    </button>
+    </div>
+    </>
   )
 }
 
