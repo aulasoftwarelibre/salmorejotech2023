@@ -47,7 +47,7 @@ const Navbar = () => {
     ))}
   </>
 
-  const compactNavbar: JSX.Element = showNavbar ? (
+  const compactNavbar: JSX.Element | null = showNavbar ? (
     <div className={styles.compact_background} onClick={toggleShown}>
      {formated_sections} 
     </div>
