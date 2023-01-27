@@ -5,25 +5,20 @@ import styles from './navbar.module.css';
 import { useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-const Navbar = () => {
-  const contents = [
-    {
-      title: "Información",
-      href: "#info",
-    },
-    {
-      title: "Localización",
-      href: "#where",
-    },
-    {
-      title: "Ponentes",
-      href: "#speakers",
-    },
-    {
-      title: "Sponsors",
-      href: "#sponsors",
-    }
-  ]
+
+interface Link {
+  title: string,
+  href: string,
+  emphasised: boolean,
+}
+
+interface NavbarProps {
+  contents: Link[],
+} 
+
+const Navbar = ({contents}: NavbarProps) => {
+  const nonEmphasisedContents = contents.filter(content => !content.emphasised);
+  const emphasisedContents = contents.filter(content => content.emphasised);
 
   const [isLowWidth, setLowWitdhCheck] = useState<boolean>(false);
   const {width} = useWindowSize();
@@ -37,17 +32,27 @@ const Navbar = () => {
     setShowNavbar(!showNavbar);
   }
 
-  const formated_sections = <>
-    {contents.map(content => (
+  const formatedNonEmphasisedLinks = <>
+    {nonEmphasisedContents.map(content => (
       <Link key={`nav-${content.title}`} href={content.href}>
             <h2>{content.title}</h2>
       </Link>
     ))}
   </>
 
+  const formatedEmphasisedLinks = (
+    <div className={styles.emphasis}>
+      {emphasisedContents.map(content => (
+        <Link key={`nav-${content.title}`} href={content.href}>
+          <h2>{content.title}</h2>
+        </Link>
+      ))}
+    </div>
+  )
+
   const compactNavbar: JSX.Element | null = showNavbar ? (
     <div className={styles.compact_background} onClick={toggleShown}>
-     {formated_sections} 
+     {formatedNonEmphasisedLinks} 
     </div>
   ): null;
 
@@ -64,10 +69,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className={styles.right}>
-          <div className={styles.emphasis}>
-            <Link href="/team"><h2>Equipo</h2></Link>
-            <Link href="/"><h2>Entradas</h2></Link>
-          </div>
+          {formatedEmphasisedLinks}
           <GiHamburgerMenu className={styles.hamburger} onClick={toggleShown}/>
         </div>
       </nav>
@@ -82,13 +84,10 @@ const Navbar = () => {
           <div className={styles.icon}>
               <Link href="/"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></Link>
           </div>
-            {formated_sections}
+            {formatedNonEmphasisedLinks}
         </div>
         <div className={styles.right}>
-          <div className={styles.emphasis}>
-            <Link href="/team"><h2>Equipo</h2></Link>
-            <Link href="/"><h2>Entradas</h2></Link>
-          </div>
+          {formatedEmphasisedLinks}
         </div>
       </nav>
     </div>
