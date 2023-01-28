@@ -7,8 +7,35 @@ import Navbar from '../components/navbar'
 import { useContentWritter } from '../hooks/useContentWritter'
 import styles from '../styles/team.module.css'
 
+const Team: NextPage = () => {
 
-const Home: NextPage = () => {
+  const navbarContents = [
+    {
+      title: "Equipo",
+      href: "#team",
+      emphasised: false,
+    },
+    {
+      title: "Aula Software Libre",
+      href: "#asl",
+      emphasised: false,
+    },
+    {
+      title: "Contacto",
+      href: "#contact",
+      emphasised: false,
+    },
+    {
+      title: "Entradas",
+      href: "/",
+      emphasised: true,
+    },
+    {
+      title: "Landing",
+      href: "/",
+      emphasised: true,
+    },
+  ]
 
   return (
     <div className={styles.container}>
@@ -28,7 +55,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <Navbar/>
+        <Navbar contents={navbarContents} variant='secondary'/>
         <Moleculas/>
         <div className='anchoMaximo'>
         </div>
@@ -37,4 +64,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Team

@@ -11,6 +11,10 @@
   backdrop-filter: blur(10px);
 }
 
+.main.purple {
+  background: linear-gradient(-50deg, var(--aulaPurple), var(--aulaRed));
+}
+
 .icon img {
   width: 5.5rem;
   vertical-align: middle;
