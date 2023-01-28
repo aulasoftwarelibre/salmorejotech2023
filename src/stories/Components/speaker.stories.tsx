@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { SpeakerCard } from '../../components/speakers';
+import { Contact, SpeakerCard } from '../../components/speakers';
 export default {
   title: 'Components/Speaker',
   component: SpeakerCard,
@@ -30,7 +30,29 @@ export default {
         options: ['/speakers/primary-placeholder.png', '/speakers/secondary-placeholder.png']
       }
     },
+    includeContacts: {
+      name: 'contacts',
+      type: { required: true },
+      defaultValue: ['TWITTER'],
+      description: 'Imagen del ponente',
+      control: {
+        type: 'multi-select',
+        options: ['TWITTER', 'GITHUB', 'WEB', 'LINKEDIN']
+      }
+    },
   },
 } as ComponentMeta<typeof SpeakerCard>;
 
-export const SpeakerCardExample: ComponentStory<typeof SpeakerCard> = (args) => <SpeakerCard {...args} />;
+export const SpeakerCardExample: ComponentStory<typeof SpeakerCard> = (args) => {
+  const possibleLinks: Contact[] = [
+    {type: 'TWITTER', link: 'https://twitter.com'} as Contact,
+    {type: 'GITHUB', link: 'https://github.com'} as Contact,
+    {type: 'WEB', link: 'https://google.com'} as Contact,
+    {type: 'LINKEDIN', link: 'https://linkedin.com'} as Contact
+  ].filter(link => (args as unknown as {includeContacts: string[]}).includeContacts.includes(link.type));
+
+  const {contacts, ...rest} = args;
+
+  return <SpeakerCard contacts={possibleLinks} {...rest} />
+
+};

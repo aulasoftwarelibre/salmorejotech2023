@@ -1,4 +1,5 @@
 import { SpeakerCard, SpeakerProps } from ".";
+import { AlphabeticalSort } from "../../lib/alphabeticalSort";
 import styles from './speakers.module.css';
 
 interface SpeakersGridProps {
@@ -7,9 +8,11 @@ interface SpeakersGridProps {
 
 const SpeakersGrid = ({speakers}: SpeakersGridProps) => {
 
+  const orderedSpeakers = speakers.sort((a, b) => AlphabeticalSort(a.name, b.name))
+
   return (
     <div className={styles.container}>
-      {speakers.map(speaker => {
+      {orderedSpeakers.map(speaker => {
         return (
           <SpeakerCard 
             key={`speaker - ${speaker.name}`} 

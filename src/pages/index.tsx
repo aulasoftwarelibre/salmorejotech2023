@@ -20,6 +20,7 @@ import { SponsorProps } from '../components/sponsors'
 
 import styles from '../styles/index.module.css'
 import WhiteSection from '../components/whiteSection'
+import { SpeakerProps } from '../components/speakers'
 
 const Home: NextPage = () => {
 
@@ -63,7 +64,7 @@ const Home: NextPage = () => {
 
       <section id="speakers" className={styles.section}>
         <h1 className={styles.sectionTitle}>Speakers</h1>
-        <SpeakersGrid speakers={speakers}/>
+        <SpeakersGrid speakers={speakers as SpeakerProps[]}/>
       </section>
       
       <WhiteSection id="sponsors" className={styles.section}>
