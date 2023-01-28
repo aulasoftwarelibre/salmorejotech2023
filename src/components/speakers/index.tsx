@@ -28,6 +28,7 @@ export const SpeakerCard = ({name, bio, urlPhoto, contacts}:  SpeakerProps) => {
     if(!LinkTypeAsIcon[contact.type]) return;
     return (
       <a 
+        key={`${name}-${contact.type}`}
         className={styles[contact.type.toLowerCase()]} 
         href={contact.link} 
         aria-label={`${name}'s link for ${contact.type}`}
