@@ -14,11 +14,14 @@ interface Link {
 
 interface NavbarProps {
   contents: Link[],
+  variant?: 'primary' | 'secondary',
 } 
 
-const Navbar = ({contents}: NavbarProps) => {
+const Navbar = ({contents, variant='primary'}: NavbarProps) => {
   const nonEmphasisedContents = contents.filter(content => !content.emphasised);
   const emphasisedContents = contents.filter(content => content.emphasised);
+
+  const mainClasses = `${styles.main} ${variant === 'secondary' ? styles.purple : ''}`
 
   const [isLowWidth, setLowWitdhCheck] = useState<boolean>(false);
   const {width} = useWindowSize();
@@ -58,7 +61,7 @@ const Navbar = ({contents}: NavbarProps) => {
 
   if (isLowWidth) {
     return (
-    <div className={styles.main}>
+    <div className={mainClasses}>
       <nav className={styles.nav}>
         <div className={styles.left}>
           <div className={styles.icon}>
@@ -78,7 +81,7 @@ const Navbar = ({contents}: NavbarProps) => {
   }
 
   return (
-    <div className={styles.main}>
+    <div className={mainClasses}>
       <nav className={styles.nav}>
         <div className={styles.left}>
           <div className={styles.icon}>

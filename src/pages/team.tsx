@@ -55,7 +55,7 @@ const Team: NextPage = () => {
       </Head>
 
       <main>
-        <Navbar contents={navbarContents}/>
+        <Navbar contents={navbarContents} variant='secondary'/>
         <Moleculas/>
         <div className='anchoMaximo'>
         </div>
