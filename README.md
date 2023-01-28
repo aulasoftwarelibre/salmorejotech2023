@@ -1,18 +1,10 @@
-<section style='background: linear-gradient(110deg, #f41f4f, #be5346);
-  width: 100%;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  border-radius: 50px;
-  justify-items: center;
-  align-items: center;
-  margin:2.5vh 0;'>
-  <img src="./public/sprites/isologo-blanco.svg" style='width:50%'/>
-</section>
+<div align="center">
+  <img src="./public/sprites/isologo-blanco.svg" style="width:50%"/>
+</div>
 
-<section align="center" style="margin:2.5vh 0;">
+<div align="center" style="margin:2.5vh 0;">
     <img width="200" src="https://www.uco.es/aulasoftwarelibre/wp-content/uploads/2018/09/logo-cuadrado-transparente-1.png" alt="Aula Software Libre de la UCO">
-</section>
+</div>
 
 <div align="center">
   <a href="https://github.com/aulasoftwarelibre">
@@ -25,17 +17,10 @@
   </a>
 </div>
 
-<nav>
-  <h2>Contenidos</h2>
-  <ul>
-    <li>
-      <a href="#local-deploy" style="color:white">Levantar la aplicación en local</a>
-    </li>
-    <li>
-      <a href="#modify-info" style="color:white">Añadir / modificar información</a>
-    </li>
-  </ul>
-</nav>
+## Contenidos
+
+- [Levantar la aplicación en local](#local-deploy)
+- [Añadir / modificar información](#modify-info)
 
 <section id="local-deploy">
 
@@ -48,6 +33,8 @@ Para levantar el entorno de desarrollo en local:
 - `docker compose up --build -d` Levanta ambos como imagenes de docker, con fastreload.
 
 </section>
+
+<section id="modify-info">
 
 ## Añadir / modificar información
 
@@ -85,3 +72,5 @@ Para los patrocinadores, de forma similar a los ponentes, debemos almacenar la i
   "href": "/"
 }
 ```
+
+</section>
