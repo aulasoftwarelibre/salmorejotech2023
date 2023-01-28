@@ -60,6 +60,12 @@ Para los ponentes, se debe de almacenar la imagen en la carpeta `public/speakers
 
 Los tipos de contacto aceptados son `"TWITTER"`, `"WEB"`, `"GITHUB"` y `"LINKEDIN"`.
 
+### Equipo
+
+Para los miembros del equipo se utiliza el mismo componente que para los ponentes, cambiando la carpeta de imagenes a `public/team` y los datos a `data/team.json`
+
+Todo lo demás funciona exactamente igual
+
 ### Patrocinadores
 
 Para los patrocinadores, de forma similar a los ponentes, debemos almacenar la imagen en la carpeta `public/sponsors` y añadir la información del sponsor a `data/sponsors.json` con el siguiente formato:
