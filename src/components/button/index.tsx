@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React, { Fragment } from 'react';
 import styles from './button.module.css';
 
 type ButtonProps = {
@@ -8,12 +8,12 @@ type ButtonProps = {
 
 const Button = ({label}: ButtonProps) => {
   return (
-    <>
+    <Fragment>
     <img className={styles.tiket} src='/images/tiket.svg' alt="Tiket" />
     <div className={styles.button}>
       <p>{label}</p>
     </div>
-    </>
+    </Fragment>
   )
 }
 

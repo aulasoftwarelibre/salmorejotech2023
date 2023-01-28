@@ -1,4 +1,4 @@
-.tiket{
+.tiket {
   width: 18rem;
   filter: drop-shadow(var(--lightShadow));
 }
@@ -12,13 +12,12 @@
   width: 12rem;
   height: 6.3rem;
   z-index: 1;
-  background: linear-gradient(90deg,#03a9f4,#f441a5,#ff3bef,#03a9f4);
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ff3bef, #03a9f4);
   background-size: 300%;
-  box-shadow: inset 8px 8px 15px #fdc002,
-  inset -8px -8px 15px #fdc002;
+  box-shadow: inset 8px 8px 15px #fdc002, inset -8px -8px 15px #fdc002;
 }
 
-.button p{
+.button p {
   font-size: 2rem;
   font-weight: bold;
 }
@@ -29,14 +28,14 @@
 }
 
 .button:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -0px;
   left: -0px;
   right: -0px;
   bottom: -0px;
   z-index: -1;
-  background: linear-gradient(90deg,#fdc002,#fdca00, #fdc002);
+  background: linear-gradient(90deg, #fdc002, #fdca00, #fdc002);
   transition: 1s;
 }
 
@@ -45,7 +44,7 @@
 }
 
 .button:active {
-  background: linear-gradient(32deg,#03a9f4,#f441a5,#ff3bce,#03a9f4);
+  background: linear-gradient(32deg, #03a9f4, #f441a5, #ff3bce, #03a9f4);
 }
 
 @keyframes ani {
@@ -59,16 +58,16 @@
 }
 
 @media (min-width: 1324px) {
-  .tiket{
+  .tiket {
     width: 22rem;
   }
-  
+
   .button {
     width: 14.5rem;
     height: 7.3rem;
   }
-  
-  .button p{
+
+  .button p {
     font-size: 2.5rem;
   }
 }
