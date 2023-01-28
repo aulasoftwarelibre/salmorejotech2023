@@ -1,4 +1,9 @@
-.footer, .row_wrapper, .SM, .Contact_us, .icons, .CopyLeft {
+.footer,
+.row_wrapper,
+.SM,
+.Contact_us,
+.icons,
+.CopyLeft {
   display: flex;
   flex: 1;
   justify-content: center;
@@ -19,7 +24,8 @@
   gap: 1rem;
 }
 
-.SM, .Contact_us {
+.SM,
+.Contact_us {
   flex-direction: column;
   align-items: center;
 }
@@ -29,12 +35,15 @@
   max-width: 300px;
 }
 
-.icons a {
-  font-size: 1.8rem;
-  margin: .4rem;
-  transition: var(--transition);
+.logo::selection {
+  background: transparent;
 }
 
+.icons a {
+  font-size: 1.8rem;
+  margin: 0.4rem;
+  transition: var(--transition);
+}
 
 .Contact_us h1 {
   font-size: clamp(0.5rem, calc(2rem + 0.9vw), 1.88rem);
@@ -49,11 +58,18 @@
 .icons a:hover,
 .contact:hover {
   cursor: pointer;
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 .CopyLeft {
   flex-direction: row;
   margin: 2rem;
   font-size: 1.4rem;
+}
+
+.Contact_us h1::selection,
+.contact::selection,
+.CopyLeft p::selection {
+  background: var(--purple);
+  color: white;
 }

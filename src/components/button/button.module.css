@@ -1,28 +1,50 @@
+.tiket {
+  width: 18rem;
+  filter: drop-shadow(var(--lightShadow));
+}
+
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   color: rgb(0, 0, 0);
-  min-width: calc((5rem + 12vw));
-  min-height: calc(0.5*(12vw) + 1rem);
-  width: min-content;
-  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
-  background-size: 300%;
-  border-radius: 3px;
+  width: 12rem;
+  height: 6.3rem;
   z-index: 1;
-  box-shadow: var(--shadow);
-
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ff3bef, #03a9f4);
+  background-size: 300%;
+  box-shadow: inset 8px 8px 15px #fdc002, inset -8px -8px 15px #fdc002;
 }
 
-.button p{
-  font-size: calc(2*(0.5rem + 1vw));
+.button p {
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .button:hover {
   animation: ani 8s linear infinite;
   border: none;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: -0px;
+  left: -0px;
+  right: -0px;
+  bottom: -0px;
+  z-index: -1;
+  background: linear-gradient(90deg, #fdc002, #fdca00, #fdc002);
+  transition: 1s;
+}
+
+.button:hover::before {
+  filter: blur(50px);
+}
+
+.button:active {
+  background: linear-gradient(32deg, #03a9f4, #f441a5, #ff3bce, #03a9f4);
 }
 
 @keyframes ani {
@@ -35,24 +57,17 @@
   }
 }
 
-.button:before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  z-index: -1;
-  background: linear-gradient(90deg,#ffbb00,#ffee00,#ffeb3b,#03a9f4);
-  background-size: 400%;
-  border-radius: 5px;
-  transition: 1s;
-}
+@media (min-width: 1324px) {
+  .tiket {
+    width: 22rem;
+  }
 
-.button:hover::before {
-  filter: blur(20px);
-}
+  .button {
+    width: 14.5rem;
+    height: 7.3rem;
+  }
 
-.button:active {
-  background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  .button p {
+    font-size: 2.5rem;
+  }
 }

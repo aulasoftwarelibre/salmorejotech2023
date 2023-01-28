@@ -19,38 +19,79 @@
   max-width: 1500px;
   width: 80vw;
 }
+.hero .logo::selection {
+  background: transparent;
+}
 
 .hero .subtitle {
-  font-size: calc(2*(0.5rem + 1vw));
+  font-size: calc(2 * (0.5rem + 1vw));
 }
 
 .hero .date {
-  font-size: calc(2*(0.5rem + 1vw));
+  font-size: calc(2 * (0.5rem + 1vw));
   text-transform: uppercase;
 }
 
-.hero span,
-.hero span::selection,
+.hero h2::selection,
 .hero .subtitle::selection,
 .hero .date::selection {
   background: var(--purple);
   color: white;
 }
 
-.hero .centerTicketsButton{
+.hero span,
+.hero span::selection {
+  background: var(--gradient);
+  color: white;
+}
+
+.hero .centerTicketsButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: calc(1*(4vw) + 5rem);
+  margin-top: calc(1 * (4vw) + 5rem);
+}
+
+.section {
+  padding: 10vw 0;
+}
+
+.section .sectionTitle {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 1.5rem;
+}
+
+.section .sectionTitle::selection {
+  background: var(--purple);
+  color: white;
+}
+
+.section .sectionTitle.black {
+  color: #000 !important;
 }
 
 @keyframes fadeOutAnimation {
-  0%{ opacity: 1; }
-  30% { opacity: 1; }
-  100% { opacity: 0; }
-
-}@keyframes zIndex {
-  0% { z-index: 1; }
-  90% { z-index: 1; }
-  100% { z-index: -1; }
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes zIndex {
+  0% {
+    z-index: 1;
+  }
+  90% {
+    z-index: 1;
+  }
+  100% {
+    z-index: -1;
+  }
 }

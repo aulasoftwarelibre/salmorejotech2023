@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import React from "react";
+import React, { Fragment } from "react";
 import styles from './moleculas.module.css';
 
 export const Moleculas = () => {
   return (
-  <>
+  <Fragment>
     <div className={`${styles.moleculas} ${styles.parallax} ${styles.bg1}`}></div>
     <div className={`${styles.moleculas} ${styles.parallax} ${styles.bg2}`}></div>
     <div className={`${styles.moleculas} ${styles.parallax} ${styles.bg3}`}></div>
@@ -20,6 +20,6 @@ export const Moleculas = () => {
     {/* <div className={`${styles.moleculas} ${styles.parallax} ${styles.bg05}`}></div> */}
     {/* <div className={`${styles.moleculas} ${styles.parallax} ${styles.bg06}`}></div> */}
     <div className={`${styles.moleculas} ${styles.parallax} ${styles.bg07}`}></div>
-  </>
+  </Fragment>
   )
 }

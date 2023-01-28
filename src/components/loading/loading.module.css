@@ -1,43 +1,57 @@
 .fondo {
-  position:absolute;
+  position: absolute;
   height: 100%;
   width: 100%;
   animation: zIndex ease 1.8s, fadeOutAnimation ease-out 1.8s;
   /* opacity: 0.5; */
   background-color: black;
   animation-fill-mode: forwards;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 @keyframes fadeOutAnimation {
-  0%{ opacity: 1; }
-  30% { opacity: 1; }
-  100% { opacity: 0; }
-
-}@keyframes zIndex {
-  0% { z-index: 2; }
-  90% { z-index: 2; }
-  100% { z-index: -1; }
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes zIndex {
+  0% {
+    z-index: 2;
+  }
+  90% {
+    z-index: 2;
+  }
+  100% {
+    z-index: -1;
+  }
 }
 
-.logo, .tomate, .tapa{
+.logo,
+.tomate,
+.tapa {
   margin-top: 12rem;
   margin-bottom: 6rem;
 }
 
-.logo {
+.logo,
+.tomate {
   max-width: 1500px;
   width: 80vw;
 }
 
 .tomate {
   position: absolute;
-  width: 80vw;
   /* Animation to spin and move the sphere */
-  animation: spin 0.6s linear , moveLeftToRight 0.6s linear ;
+  animation: spin 0.6s linear, moveLeftToRight 0.6s linear;
   animation-fill-mode: forwards;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -45,30 +59,59 @@
 
 /* Spinning the sphere using key frames */
 @keyframes spin {
-  from { transform: rotate(90deg); transform-origin: 59% 50%;}
-  to  { transform: rotate(720deg); transform-origin: 59% 50%;}
+  from {
+    transform: rotate(90deg);
+    transform-origin: 59% 50%;
+  }
+  to {
+    transform: rotate(720deg);
+    transform-origin: 59% 50%;
+  }
 }
 
 /* it cannot reach 100 because otherwise in chrome it displaces */
 /* don't touch */
 @keyframes moveLeftToRight {
-  0%   { left: -20vh; }
-  99%   {left: 9.5%;}
+  0% {
+    left: -20vw;
+  }
+  99% {
+    left: 9.5vw;
+  }
 }
 
-.tapa{
+/* at this width the logo and tomate reaches his maximun size
+that's why we have to correct the animation*/
+@media (min-width: 1875px) {
+  @keyframes moveLeftToRight {
+    0% {
+      left: -20vw;
+    }
+    98% {
+      left: calc(0vw + (100vw - 1500px) / 2);
+    }
+  }
+}
+
+.tapa {
   position: absolute;
   align-self: end;
   height: 20vw;
   background-color: black;
 
-  animation: moveLeftToRightTapa 0.85s ease-in ;
+  animation: moveLeftToRightTapa 0.85s ease-in;
   animation-fill-mode: forwards;
   transition: all 1s ease;
 }
 
 @keyframes moveLeftToRightTapa {
-  0%   { width: 90vw; }
-  30%  { width: 68vw; }
-  100% { width: 10vw; }
+  0% {
+    width: 90vw;
+  }
+  30% {
+    width: 68vw;
+  }
+  100% {
+    width: 10vw;
+  }
 }

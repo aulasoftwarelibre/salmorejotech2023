@@ -1,51 +1,29 @@
 .background {
   background-color: white;
-  /* esto esta puesto para que no se quede una rajita en medio */
   margin: -1px;
   padding: 2rem;
 }
 
-.container{
+.container {
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  text-align:center;
-  gap: 1rem;
+  text-align: center;
+  gap: 5rem;
   flex-grow: 1;
   max-width: 1500px;
 }
 
-.speakerCard{
-  background: rgba(255, 181, 124, 0.281);
-  box-shadow: var(--lightShadow);
-  backdrop-filter: blur(10px);
-  border-radius: 5px;
-  padding: 1rem;
-}
-
-.speakerImage{
-  border-radius: 3px;
-}
-
-.divider1 {
-  fill: #FFFFFF;
-}
-
-.divider1 svg {
-  position: relative;
+.sponsor {
+  width: 10rem;
+  height: 10rem;
   display: block;
-  width: calc(100% + 1.3px);
-  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.divider2 {
-  fill: #FFFFFF;
-}
-
-.divider2 svg {
-  position: relative;
-  display: block;
-  width: calc(141% + 1.3px);
-  height: 93px;
-  transform: rotate(180deg);
+.sponsor:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
