@@ -56,85 +56,34 @@ const Carousel = () => {
   useEffect(() => {
     setInterval(() => {
       next();
-    }, 8000);
+    }, 10000);
   }, []);
 
   
 
   return (
-    <Main>
-      <Slideshow ref={slideshow}>
-        <Slide>
+    <div className={styles.main}>
+      <div className={styles.slideshow} ref={slideshow}>
+        <div className={styles.slide}>
           <a><img src='images/s1.jpg' alt='salon'/></a>
-        </Slide>
-        <Slide>
+        </div>
+        <div className={styles.slide}>
           <a><img src='images/s2.jpg' alt='salon'/></a>
-        </Slide>
-        <Slide>
+        </div>
+        <div className={styles.slide}>
           <a><img src='images/s3.jpg' alt='salon'/></a>
-        </Slide>
-      </Slideshow>
-      <Controllers>
-        <Boton onClick={prev}><GrPrevious size={40} className={styles.boton}/></Boton>
-        <Boton onClick={next}><GrNext size={40}/></Boton>
-      </Controllers>
-    </Main>
+        </div>
+      </div>
+      <div className={styles.controllers}>
+        <div className={styles.area}onClick={prev}>
+          <GrPrevious className={styles.boton}/>
+        </div>
+        <div className={styles.area}onClick={prev}>
+          <GrNext className={styles.boton}/>
+        </div>
+      </div>
+    </div>
   )
 }
 
 export default Carousel;
-
-const Main = styled.div`
-  padding: 0;
-  margin: 1rem auto;
-  box-sizing: border-box;
-  max-width: 1000px;
-  overflow: hidden;
-  position: relative;
-`;
-
-const Slideshow = styled.div`
-  display: flex;
-  flex-wrap: nowrap;
-`;
-
-const Slide = styled.div`
-  min-width: 100%;
-  overflow: hidden;
-  transition: 0.3s ease all;
-  max-height: 500px;
-  psition: relative;
-  height: 100%;
-  
-  img{
-    width: 100%;
-    object-fit: cover;
-    vertical-align: middle;
-  }
-`;
-
-const Controllers = styled.div`
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  display: flex;
-  justify-content: space-between;
-  `;
-  
-const Boton = styled.button`
-  pointer-events: all;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  width: 50px;
-  height: 100%;
-  text-align: center;
-  transition: 0.3s ease all;
-  filter: drop-shadow(0px 0px 10px #ffffff);
-  &:hover{
-    background: rgba(255,255,255,0.3);
-  }
-`;
