@@ -6,6 +6,7 @@ import { RiCopyleftLine } from 'react-icons/ri';
 import { GrMail } from 'react-icons/gr';
 import React from 'react';
 import Carousel from '../carousel';
+import Link from 'next/link';
 
 export const InfoTikets = () => {
   return (
@@ -13,20 +14,15 @@ export const InfoTikets = () => {
       <h2 className={styles.title}>Esta vez el salmorejo en Cruces de Mayo</h2>
       <h1 className={styles.subTitle}>¿Hay algo más Cordobés?</h1>
       <div className={styles.row_wrapper}>
-        <div className={styles.SM}>
-          <p>Vuelve el evento teconológico con sabor cordobés. 
-            El 28 de Abril coincidiendo con las cruces de mayo.
-            Disfruta de los mejores profesionales del sector tecnológico
-            durante esta fiesta cordobesa que inunda la ciudad<br></br></p>
-            
-            <p className={styles.centered}><br></br>
-            +400 asistentes<br></br>
-            13 ponencias<br></br>
-            🥐 Desayuno, 🥘 Almuerzo y 🍻 Networking <br></br>
-            GRATIS<br></br>
-            <br></br></p>
-
-            <p>Un evento para la comunidad por los miemros del aula de software libre (link a la sección de equipo)</p>
+        <div className={styles.text}>
+          <p>Vuelve el <strong>evento teconológico con sabor cordobés. El 28 de Abril</strong> coincidiendo con las <strong>cruces de mayo</strong>. Disfruta de los mejores profesionales del sector durante esta fiesta cordobesa que inunda la ciudad.</p>
+          <ul className={styles.centered}>
+            <li>+400 asistentes</li>
+            <li>13 ponencias</li>
+            <li>🥐 Desayuno, 🥘 Almuerzo y 🍻 Networking</li>
+            <li className={styles.emphasis}>GRATIS</li>
+          </ul>
+          <p className={styles.aula}>Un evento para la comunidad por los <strong><Link href="/team">miembros del aula de software libre</Link></strong></p>
         </div>
         <div className={styles.carousel}>
           <Carousel
