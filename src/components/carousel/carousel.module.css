@@ -1,4 +1,4 @@
-.main{
+.main {
   padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
@@ -8,12 +8,12 @@
   border-radius: 5px;
 }
 
-.slideshow{
+.slideshow {
   display: flex;
   flex-wrap: nowrap;
 }
 
-.slide{
+.slide {
   min-width: 100%;
   overflow: hidden;
   transition: 0.3s ease all;
@@ -21,13 +21,13 @@
   position: relative;
 }
 
-.slide img{
+.slide img {
   width: 100%;
   object-fit: cover;
   vertical-align: middle;
 }
 
-.controllers{
+.controllers {
   position: absolute;
   top: 0;
   width: 100%;
@@ -37,11 +37,12 @@
   justify-content: space-between;
 }
 
-.controllers div{
+.controllers div {
   width: 30%;
 }
 
-.areaNext, .areaPrev{
+.areaNext,
+.areaPrev {
   pointer-events: all;
   background: none;
   border: none;
@@ -54,19 +55,20 @@
   filter: drop-shadow(0px 0px 10px #ffffff);
 }
 
-.boton{
+.boton {
   display: none;
   width: 15%;
   height: 100%;
 }
-.areaNext:hover>.boton , .areaPrev:hover>.boton{
+.areaNext:hover > .boton,
+.areaPrev:hover > .boton {
   display: inline;
 }
 
-.areaPrev:hover{
+.areaPrev:hover {
   background: linear-gradient(90deg, var(--orange), #ffffff00);
 }
 
-.areaNext:hover{
-  background: linear-gradient(-90deg,var(--orange), #ffffff00);
+.areaNext:hover {
+  background: linear-gradient(-90deg, var(--orange), #ffffff00);
 }
