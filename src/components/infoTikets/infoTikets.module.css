@@ -1,7 +1,7 @@
 .row_wrapper {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   gap: 1rem;
   flex-flow: row wrap;
@@ -31,29 +31,39 @@
   min-width: 421px;
   font-size: calc(0.9rem + 6 * ((100vw - 421px) / 750));
 }
-.text :not(:last-child){
+.text p{
   margin-bottom: 1rem;
 }
 
 .aula{
+  margin-bottom: 0;
   font-size: calc(0.8rem + 6 * ((100vw - 421px) / 750));
   font-weight: 300;
 }
 
 .centered{
+  margin-bottom: 1rem;
   text-align: center;
   list-style: none;
   font-size: calc(1rem + 6 * ((100vw - 421px) / 750));
   font-weight: 600;
   color: black;
+  border-radius: 3px;
+  background: linear-gradient(110deg, #ffffff27, #ffffff15);
+  box-shadow: var(--lightShadow);
+  backdrop-filter: blur(10px);
+}
+
+.centered li{
+  padding: 0.5rem 0 0.5rem 0;
 }
 
 .emphasis{
-  margin: 1rem 0 1rem 0; 
+  margin-top: 0.5rem;
   font-weight: 600;
   padding: 0.5rem;
-  background: linear-gradient(90deg, #ffbb00, #ffee00);
-  border-radius: 3px;
+  background: linear-gradient(90deg, #ffbb00, #ffee00) !important;
+  border-radius: 0 0 3px 3px;
 }
 
 .carousel {

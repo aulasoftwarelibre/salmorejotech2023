@@ -96,11 +96,14 @@ const Home: NextPage = () => {
         </section>
       </div>
       <section id="InfoTikets" className={styles.section}>
+        <h1 className={styles.sectionTitle}>Esta vez el salmorejo en Cruces de Mayo</h1>
+        <h1 className={styles.sectionSubTitle}>¿Hay algo más Cordobés?</h1>
+      
         <InfoTikets/>
       </section>
 
       <section id="speakers" className={styles.section}>
-        <h1 className={styles.sectionTitle}>Speakers</h1>
+        <h1 className={styles.sectionTitle}>Nuestros ponentes</h1>
         <SpeakersGrid speakers={speakers as SpeakerProps[]}/>
       </section>
       

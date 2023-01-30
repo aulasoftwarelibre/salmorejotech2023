@@ -11,8 +11,6 @@ import Link from 'next/link';
 export const InfoTikets = () => {
   return (
       <>
-      <h2 className={styles.title}>Esta vez el salmorejo en Cruces de Mayo</h2>
-      <h1 className={styles.subTitle}>¿Hay algo más Cordobés?</h1>
       <div className={styles.row_wrapper}>
         <div className={styles.text}>
           <p>Vuelve el <strong>evento teconológico con sabor cordobés. El 28 de Abril</strong> coincidiendo con las <strong>cruces de mayo</strong>. Disfruta de los mejores profesionales del sector durante esta fiesta cordobesa que inunda la ciudad.</p>
