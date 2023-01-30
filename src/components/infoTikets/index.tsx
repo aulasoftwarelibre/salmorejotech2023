@@ -22,14 +22,20 @@ export const InfoTikets = () => {
             <p className={styles.centered}><br></br>
             +400 asistentes<br></br>
             13 ponencias<br></br>
-            🥐 Desayuno, 🥘 Almuerzo y 🍻 Networkin <br></br>
+            🥐 Desayuno, 🥘 Almuerzo y 🍻 Networking <br></br>
             GRATIS<br></br>
             <br></br></p>
 
             <p>Un evento para la comunidad por los miemros del aula de software libre (link a la sección de equipo)</p>
         </div>
         <div className={styles.carousel}>
-          <Carousel />
+          <Carousel
+            images={[
+              {src: '/images/s1.jpg', alt: 'some-alt'},
+              {src: '/images/s2.jpg', alt: 'some-alt'},
+              {src: '/images/s3.jpg', alt: 'some-alt'}
+            ]}
+          />
         </div>
     </div>
     </>
