@@ -1,37 +1,37 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useRef, useEffect } from 'react';
 import styles from './carousel.module.css';
-import styled from 'styled-components';
 import { GrPrevious, GrNext } from 'react-icons/gr';
 
+export interface CarouselProps extends React.HTMLAttributes<HTMLDivElement> {
+  images: {src: string, alt: string}[];
+}
 
-
-
-const Carousel = () => {
+const Carousel = ({images, className, ...rest} : CarouselProps) => {
   const slideshow = useRef<HTMLDivElement>(null);
 
-const nextSlide = () => {
-  if (slideshow.current && slideshow.current.children.length > 0) {
-    const first = slideshow.current.children[0] as HTMLElement;
-    slideshow.current.style.transition = "0.5s ease-in-out all";
+  const transition = () => {
+    // Reiniciamos la posicion del Slideshow.
+    if (slideshow.current && slideshow.current.children.length > 0) {
+      const first = slideshow.current.children[0] as HTMLElement;
+      slideshow.current.style.transition = 'none';
+      slideshow.current.style.transform = `translateX(0)`;
 
-    // Movemos
-    const slideSize = first.offsetWidth;
-    slideshow.current.style.transform = `translateX(-${slideSize}px)`;
+      // Tomamos el primer elemento y lo mandamos al final.
+      slideshow.current.appendChild(first);
 
-      const transition = () => {
-				// Reiniciamos la posicion del Slideshow.
-        if (slideshow.current && slideshow.current.children.length > 0) {
-          const first = slideshow.current.children[0] as HTMLElement;
-          slideshow.current.style.transition = 'none';
-          slideshow.current.style.transform = `translateX(0)`;
+      slideshow.current.removeEventListener('transitionend', transition);
+    }
+  }
 
-          // Tomamos el primer elemento y lo mandamos al final.
-          slideshow.current.appendChild(first);
+  const nextSlide = () => {
+    if (slideshow.current && slideshow.current.children.length > 0) {
+      const first = slideshow.current.children[0] as HTMLElement;
+      slideshow.current.style.transition = "0.5s ease-in-out all";
 
-          slideshow.current.removeEventListener('transitionend', transition);
-        }
-			}
+      // Movemos
+      const slideSize = first.offsetWidth;
+      slideshow.current.style.transform = `translateX(-${slideSize}px)`;
 
 			// Eventlistener para cuando termina la animacion.
 			slideshow.current.addEventListener('transitionend', transition);
@@ -63,22 +63,22 @@ const nextSlide = () => {
     setInterval(() => {
       nextSlide();
     }, 5000);
+    return () => {
+      document.removeEventListener("transitionend", transition)
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   
 
   return (
-    <div className={styles.main}>
+    <div className={`${styles.main} ${className}`} {...rest}>
       <div className={styles.slideshow} ref={slideshow}>
-        <div className={styles.slide}>
-          <a><img src='images/s1.jpg' alt='salon'/></a>
-        </div>
-        <div className={styles.slide}>
-          <a><img src='images/s2.jpg' alt='salon'/></a>
-        </div>
-        <div className={styles.slide}>
-          <a><img src='images/s3.jpg' alt='salon'/></a>
-        </div>
+        {images.map(image => (
+          <div key={`image-${image.alt}`} className={styles.slide}>
+            <img src={image.src} alt={image.alt}/>
+          </div>
+        ))}
       </div>
       <div className={styles.controllers}>
         <div className={styles.areaPrev}onClick={prev}>

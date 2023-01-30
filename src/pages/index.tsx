@@ -95,7 +95,6 @@ const Home: NextPage = () => {
           </div>
         </section>
       </div>
-
       <section id="InfoTikets" className={styles.section}>
         <InfoTikets/>
       </section>
