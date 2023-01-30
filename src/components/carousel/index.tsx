@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useRef, useEffect } from 'react';
 import styles from './carousel.module.css';
-import styled from 'styled-components';
 import { GrPrevious, GrNext } from 'react-icons/gr';
 
 
