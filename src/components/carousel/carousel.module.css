@@ -17,8 +17,9 @@
   overflow: hidden;
   transition: 0.3s ease all;
   max-height: 500px;
-  psition: relative;
+  position: relative;
 }
+
 .slide img{
   width: 100%;
   object-fit: cover;
@@ -39,7 +40,7 @@
   width: 30%;
 }
 
-.area{
+.areaNext, .areaPrev{
   pointer-events: all;
   background: none;
   border: none;
@@ -51,14 +52,20 @@
   transition: 0.3s ease all;
   filter: drop-shadow(0px 0px 10px #ffffff);
 }
+
 .boton{
   display: none;
-  width: 10%;
+  width: 15%;
   height: 100%;
 }
-.area:hover>.boton {
+.areaNext:hover>.boton , .areaPrev:hover>.boton{
   display: inline;
 }
-.area:hover{
-  background: linear-gradient(90deg,#ffffff7c, #ffffff00);
+
+.areaPrev:hover{
+  background: linear-gradient(90deg, #fd8931da, #ffffff00);
+}
+
+.areaNext:hover{
+  background: linear-gradient(-90deg,#fd8931da, #ffffff00);
 }

@@ -8,45 +8,55 @@ import { GrPrevious, GrNext } from 'react-icons/gr';
 
 
 const Carousel = () => {
-  const slideshow = useRef(null);
+  const slideshow = useRef<HTMLDivElement>(null);
 
-  const next = () => {
-      const first = slideshow.current.children[0];
-      slideshow.current.style.transition= '0.5s ease-in-out all';
-      
-			// Movemos
-      const slideSize = slideshow.current.children[0].offsetWidth;
-			slideshow.current.style.transform = `translateX(-${slideSize}px)`;
+const next = () => {
+  if (slideshow.current && slideshow.current.offsetWidth && slideshow.current.children.length > 0) {
+    const first = slideshow.current.children[0] as HTMLElement;
+    slideshow.current.style.transition = "0.5s ease-in-out all";
+
+    // Movemos
+    const slideSize = first.offsetWidth;
+    slideshow.current.style.transform = `translateX(-${slideSize}px)`;
 
       const transition = () => {
 				// Reiniciamos la posicion del Slideshow.
-				slideshow.current.style.transition = 'none';
-				slideshow.current.style.transform = `translateX(0)`;
+        if (slideshow.current && slideshow.current.offsetWidth && slideshow.current.children.length > 0) {
+          const first = slideshow.current.children[0] as HTMLElement;
+          slideshow.current.style.transition = 'none';
+          slideshow.current.style.transform = `translateX(0)`;
 
-				// Tomamos el primer elemento y lo mandamos al final.
-				slideshow.current.appendChild(first);
+          // Tomamos el primer elemento y lo mandamos al final.
+          slideshow.current.appendChild(first);
 
-				slideshow.current.removeEventListener('transitionend', transition);
+          slideshow.current.removeEventListener('transitionend', transition);
+        }
 			}
 
 			// Eventlistener para cuando termina la animacion.
 			slideshow.current.addEventListener('transitionend', transition);
+    }
   }
   
   const prev = () => {
-			// Obtenemos el ultimo elemento del slideshow.
+    if (slideshow.current && slideshow.current.offsetWidth && slideshow.current.children.length > 0) {
+      // Obtenemos el ultimo elemento del slideshow.
 			const elements = slideshow.current.children.length - 1;
-			const lastElement = slideshow.current.children[elements];
+			const lastElement = slideshow.current.children[elements] as HTMLElement;
 			slideshow.current.insertBefore(lastElement, slideshow.current.firstChild);
 			
 			slideshow.current.style.transition = 'none';
-			const slideSize = slideshow.current.children[0].offsetWidth;
+			const slideSize = lastElement.offsetWidth;
 			slideshow.current.style.transform = `translateX(-${slideSize}px)`;
 		
 			setTimeout(() => {
-				slideshow.current.style.transition = `0.5s ease-out all`;
-				slideshow.current.style.transform = `translateX(0)`;
+        if (slideshow.current && slideshow.current.offsetWidth && slideshow.current.children.length > 0) {
+          const first = slideshow.current.children[0] as HTMLElement;
+          slideshow.current.style.transition = `0.5s ease-out all`;
+          slideshow.current.style.transform = `translateX(0)`;
+        }
 			}, 30);
+		}
   }
 
   useEffect(() => {
@@ -71,10 +81,10 @@ const Carousel = () => {
         </div>
       </div>
       <div className={styles.controllers}>
-        <div className={styles.area}onClick={prev}>
+        <div className={styles.areaPrev}onClick={prev}>
           <GrPrevious className={styles.boton}/>
         </div>
-        <div className={styles.area}onClick={next}>
+        <div className={styles.areaNext}onClick={next}>
           <GrNext className={styles.boton}/>
         </div>
       </div>
