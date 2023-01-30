@@ -21,7 +21,7 @@ import { SponsorProps } from '../components/sponsors'
 import styles from '../styles/index.module.css'
 import WhiteSection from '../components/whiteSection'
 import { SpeakerProps } from '../components/speakers'
-import Carousel from '../components/carousel'
+import { InfoTikets } from '../components/infoTikets'
 
 const Home: NextPage = () => {
 
@@ -96,8 +96,8 @@ const Home: NextPage = () => {
         </section>
       </div>
 
-      <section id="speakers" className={styles.section}>
-        <Carousel/>
+      <section id="InfoTikets" className={styles.section}>
+        <InfoTikets/>
       </section>
 
       <section id="speakers" className={styles.section}>
