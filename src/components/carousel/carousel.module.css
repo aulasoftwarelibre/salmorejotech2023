@@ -5,6 +5,7 @@
   max-width: 1000px;
   overflow: hidden;
   position: relative;
+  border-radius: 5px;
 }
 
 .slideshow{
@@ -63,9 +64,9 @@
 }
 
 .areaPrev:hover{
-  background: linear-gradient(90deg, #fd8931da, #ffffff00);
+  background: linear-gradient(90deg, var(--orange), #ffffff00);
 }
 
 .areaNext:hover{
-  background: linear-gradient(-90deg,#fd8931da, #ffffff00);
+  background: linear-gradient(-90deg,var(--orange), #ffffff00);
 }

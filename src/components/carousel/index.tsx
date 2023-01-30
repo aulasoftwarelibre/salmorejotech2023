@@ -10,8 +10,8 @@ import { GrPrevious, GrNext } from 'react-icons/gr';
 const Carousel = () => {
   const slideshow = useRef<HTMLDivElement>(null);
 
-const next = () => {
-  if (slideshow.current && slideshow.current.offsetWidth && slideshow.current.children.length > 0) {
+const nextSlide = () => {
+  if (slideshow.current && slideshow.current.children.length > 0) {
     const first = slideshow.current.children[0] as HTMLElement;
     slideshow.current.style.transition = "0.5s ease-in-out all";
 
@@ -21,7 +21,7 @@ const next = () => {
 
       const transition = () => {
 				// Reiniciamos la posicion del Slideshow.
-        if (slideshow.current && slideshow.current.offsetWidth && slideshow.current.children.length > 0) {
+        if (slideshow.current && slideshow.current.children.length > 0) {
           const first = slideshow.current.children[0] as HTMLElement;
           slideshow.current.style.transition = 'none';
           slideshow.current.style.transform = `translateX(0)`;
@@ -39,7 +39,7 @@ const next = () => {
   }
   
   const prev = () => {
-    if (slideshow.current && slideshow.current.offsetWidth && slideshow.current.children.length > 0) {
+    if (slideshow.current && slideshow.current.children.length > 0) {
       // Obtenemos el ultimo elemento del slideshow.
 			const elements = slideshow.current.children.length - 1;
 			const lastElement = slideshow.current.children[elements] as HTMLElement;
@@ -50,7 +50,7 @@ const next = () => {
 			slideshow.current.style.transform = `translateX(-${slideSize}px)`;
 		
 			setTimeout(() => {
-        if (slideshow.current && slideshow.current.offsetWidth && slideshow.current.children.length > 0) {
+        if (slideshow.current && slideshow.current.children.length > 0) {
           const first = slideshow.current.children[0] as HTMLElement;
           slideshow.current.style.transition = `0.5s ease-out all`;
           slideshow.current.style.transform = `translateX(0)`;
@@ -61,8 +61,8 @@ const next = () => {
 
   useEffect(() => {
     setInterval(() => {
-      next();
-    }, 10000);
+      nextSlide();
+    }, 5000);
   }, []);
 
   
@@ -84,7 +84,7 @@ const next = () => {
         <div className={styles.areaPrev}onClick={prev}>
           <GrPrevious className={styles.boton}/>
         </div>
-        <div className={styles.areaNext}onClick={next}>
+        <div className={styles.areaNext}onClick={nextSlide}>
           <GrNext className={styles.boton}/>
         </div>
       </div>
