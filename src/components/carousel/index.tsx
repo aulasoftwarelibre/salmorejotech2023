@@ -3,10 +3,11 @@ import React, { useRef, useEffect } from 'react';
 import styles from './carousel.module.css';
 import { GrPrevious, GrNext } from 'react-icons/gr';
 
-/** img img img */
+export interface CarouselProps extends React.HTMLAttributes<HTMLDivElement> {
+  images: {src: string, alt: string}[];
+}
 
-
-const Carousel = () => {
+const Carousel = ({images, className, ...rest} : CarouselProps) => {
   const slideshow = useRef<HTMLDivElement>(null);
 
   const transition = () => {
@@ -65,22 +66,19 @@ const Carousel = () => {
     return () => {
       document.removeEventListener("transitionend", transition)
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   
 
   return (
-    <div className={styles.main}>
+    <div className={`${styles.main} ${className}`} {...rest}>
       <div className={styles.slideshow} ref={slideshow}>
-        <div className={styles.slide}>
-          <a><img src='images/s1.jpg' alt='salon'/></a>
-        </div>
-        <div className={styles.slide}>
-          <a><img src='images/s2.jpg' alt='salon'/></a>
-        </div>
-        <div className={styles.slide}>
-          <a><img src='images/s3.jpg' alt='salon'/></a>
-        </div>
+        {images.map(image => (
+          <div key={`image-${image.alt}`} className={styles.slide}>
+            <img src={image.src} alt={image.alt}/>
+          </div>
+        ))}
       </div>
       <div className={styles.controllers}>
         <div className={styles.areaPrev}onClick={prev}>
