@@ -1,7 +1,7 @@
 .row_wrapper {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   gap: 1rem;
   flex-flow: row wrap;
@@ -9,27 +9,11 @@
   justify-content: center;
 }
 
-.title, .subTitle{
-  color: white;
-  margin: 0 1rem 0 1rem; 
-  text-align: center;
-}
-
-.title{
-  font-size: calc(2 * (0.5rem + 1vw));
-}
-
-
-.subTitle{
-  font-size: calc(1.4 * (0.5rem + 1vw));
-  margin-bottom: 1rem;
-}
-
 .text{
   align-self: center;
   flex: 1;
   min-width: 421px;
-  font-size: calc(0.9rem + 6 * ((100vw - 421px) / 750));
+  font-size: calc(1rem + 6 * ((100vw - 421px) / 750));
 }
 .text p{
   margin-bottom: 1rem;
@@ -37,7 +21,7 @@
 
 .aula{
   margin-bottom: 0;
-  font-size: calc(0.8rem + 6 * ((100vw - 421px) / 750));
+  font-size: calc(0.9rem + 6 * ((100vw - 421px) / 750));
   font-weight: 300;
 }
 
@@ -45,7 +29,7 @@
   margin-bottom: 1rem;
   text-align: center;
   list-style: none;
-  font-size: calc(1rem + 6 * ((100vw - 421px) / 750));
+  font-size: calc(1.1rem + 6 * ((100vw - 421px) / 750));
   font-weight: 600;
   color: black;
   border-radius: 3px;
