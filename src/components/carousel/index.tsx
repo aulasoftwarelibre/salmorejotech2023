@@ -11,7 +11,6 @@ const Carousel = () => {
   const slideshow = useRef(null);
 
   const next = () => {
-    if(slideshow.current.children.length > 0){
       const first = slideshow.current.children[0];
       slideshow.current.style.transition= '0.5s ease-in-out all';
       
@@ -32,11 +31,9 @@ const Carousel = () => {
 
 			// Eventlistener para cuando termina la animacion.
 			slideshow.current.addEventListener('transitionend', transition);
-    }
   }
   
   const prev = () => {
-    if(slideshow.current.children.length > 0){
 			// Obtenemos el ultimo elemento del slideshow.
 			const elements = slideshow.current.children.length - 1;
 			const lastElement = slideshow.current.children[elements];
@@ -50,7 +47,6 @@ const Carousel = () => {
 				slideshow.current.style.transition = `0.5s ease-out all`;
 				slideshow.current.style.transform = `translateX(0)`;
 			}, 30);
-		}
   }
 
   useEffect(() => {
@@ -78,7 +74,7 @@ const Carousel = () => {
         <div className={styles.area}onClick={prev}>
           <GrPrevious className={styles.boton}/>
         </div>
-        <div className={styles.area}onClick={prev}>
+        <div className={styles.area}onClick={next}>
           <GrNext className={styles.boton}/>
         </div>
       </div>
