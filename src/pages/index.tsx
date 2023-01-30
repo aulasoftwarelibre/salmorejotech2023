@@ -97,13 +97,6 @@ const Home: NextPage = () => {
       </div>
       <section id="InfoTikets" className={styles.section}>
         <InfoTikets/>
-        <Carousel
-          images={[
-            {src: '/images/s1.jpg', alt: 'some-alt'},
-            {src: '/images/s2.jpg', alt: 'some-alt'},
-            {src: '/images/s3.jpg', alt: 'some-alt'}
-          ]}
-        />
       </section>
 
       <section id="speakers" className={styles.section}>
