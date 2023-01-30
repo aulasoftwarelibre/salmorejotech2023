@@ -3,34 +3,34 @@ import React, { useRef, useEffect } from 'react';
 import styles from './carousel.module.css';
 import { GrPrevious, GrNext } from 'react-icons/gr';
 
-
+/** img img img */
 
 
 const Carousel = () => {
   const slideshow = useRef<HTMLDivElement>(null);
 
-const nextSlide = () => {
-  if (slideshow.current && slideshow.current.children.length > 0) {
-    const first = slideshow.current.children[0] as HTMLElement;
-    slideshow.current.style.transition = "0.5s ease-in-out all";
+  const transition = () => {
+    // Reiniciamos la posicion del Slideshow.
+    if (slideshow.current && slideshow.current.children.length > 0) {
+      const first = slideshow.current.children[0] as HTMLElement;
+      slideshow.current.style.transition = 'none';
+      slideshow.current.style.transform = `translateX(0)`;
 
-    // Movemos
-    const slideSize = first.offsetWidth;
-    slideshow.current.style.transform = `translateX(-${slideSize}px)`;
+      // Tomamos el primer elemento y lo mandamos al final.
+      slideshow.current.appendChild(first);
 
-      const transition = () => {
-				// Reiniciamos la posicion del Slideshow.
-        if (slideshow.current && slideshow.current.children.length > 0) {
-          const first = slideshow.current.children[0] as HTMLElement;
-          slideshow.current.style.transition = 'none';
-          slideshow.current.style.transform = `translateX(0)`;
+      slideshow.current.removeEventListener('transitionend', transition);
+    }
+  }
 
-          // Tomamos el primer elemento y lo mandamos al final.
-          slideshow.current.appendChild(first);
+  const nextSlide = () => {
+    if (slideshow.current && slideshow.current.children.length > 0) {
+      const first = slideshow.current.children[0] as HTMLElement;
+      slideshow.current.style.transition = "0.5s ease-in-out all";
 
-          slideshow.current.removeEventListener('transitionend', transition);
-        }
-			}
+      // Movemos
+      const slideSize = first.offsetWidth;
+      slideshow.current.style.transform = `translateX(-${slideSize}px)`;
 
 			// Eventlistener para cuando termina la animacion.
 			slideshow.current.addEventListener('transitionend', transition);
@@ -62,6 +62,9 @@ const nextSlide = () => {
     setInterval(() => {
       nextSlide();
     }, 5000);
+    return () => {
+      document.removeEventListener("transitionend", transition)
+    }
   }, []);
 
   
