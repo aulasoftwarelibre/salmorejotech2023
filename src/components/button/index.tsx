@@ -7,13 +7,11 @@ type ButtonProps = {
 }
 
 const Button = ({label}: ButtonProps) => {
-  return (
-    <Fragment>
+  return (<>
     <img className={styles.tiket} src='/images/tiket.svg' alt="Tiket" />
     <div className={styles.button}>
       <p>{label}</p>
-    </div>
-    </Fragment>
+    </div></>
   )
 }
 

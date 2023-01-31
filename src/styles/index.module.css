@@ -16,9 +16,16 @@
 }
 
 .hero .logo {
-  max-width: 1500px;
-  width: 80vw;
+  width: 95vw;
 }
+
+@media (min-width: 800px) {
+  .hero .logo {
+    max-width: 1800px;
+    width: 75vw;
+  }
+}
+
 .hero .logo::selection {
   background: transparent;
 }
