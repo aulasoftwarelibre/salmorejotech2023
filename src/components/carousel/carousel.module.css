@@ -27,6 +27,10 @@
   vertical-align: middle;
 }
 
+.slide img::selection {
+  background-color: transparent;
+}
+
 .controllers {
   position: absolute;
   top: 0;

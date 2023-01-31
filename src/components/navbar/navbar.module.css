@@ -20,6 +20,10 @@
   vertical-align: middle;
 }
 
+.icon img::selection {
+  background-color: transparent;
+}
+
 .nav {
   width: 100vw;
   margin: 0.5rem;
@@ -47,6 +51,11 @@
 .nav a:hover {
   cursor: pointer;
   transform: scale(1.02);
+}
+
+.link::selection {
+  color: white;
+  background-color: var(--purple);
 }
 
 .emphasis {
