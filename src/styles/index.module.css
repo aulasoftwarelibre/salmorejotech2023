@@ -16,7 +16,7 @@
 }
 
 .hero .logo {
-  width: 95vw;
+  width: 100vw;
 }
 
 @media (min-width: 800px) {
@@ -56,11 +56,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: calc(1 * (4vw) + 5rem);
+  margin-top: calc(1 * (4vw) + 1rem);
 }
 
 .section {
-  margin: 7rem 0;
+  margin: 10vw 0;
 }
 
 .section .sectionTitle {
