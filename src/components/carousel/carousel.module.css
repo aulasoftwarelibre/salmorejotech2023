@@ -38,11 +38,10 @@
 }
 
 .controllers div {
-  width: 30%;
+  width: 20%;
 }
 
-.areaNext,
-.areaPrev {
+.area {
   pointer-events: all;
   background: none;
   border: none;
@@ -52,23 +51,17 @@
   height: 100%;
   text-align: center;
   transition: 0.3s ease all;
-  filter: drop-shadow(0px 0px 10px #ffffff);
 }
 
 .boton {
   display: none;
-  width: 15%;
+  width: 30%;
   height: 100%;
 }
-.areaNext:hover > .boton,
-.areaPrev:hover > .boton {
+.area:hover > .boton {
   display: inline;
 }
 
-.areaPrev:hover {
-  background: linear-gradient(90deg, var(--orange), #ffffff00);
-}
-
-.areaNext:hover {
-  background: linear-gradient(-90deg, var(--orange), #ffffff00);
+.area:hover {
+  background-color: rgba(255, 255, 255, 0.473);
 }

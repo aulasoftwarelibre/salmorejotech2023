@@ -81,10 +81,10 @@ const Carousel = ({images, className, ...rest} : CarouselProps) => {
         ))}
       </div>
       <div className={styles.controllers}>
-        <div className={styles.areaPrev}onClick={prev}>
+        <div className={styles.area}onClick={prev}>
           <GrPrevious className={styles.boton}/>
         </div>
-        <div className={styles.areaNext}onClick={nextSlide}>
+        <div className={styles.area}onClick={nextSlide}>
           <GrNext className={styles.boton}/>
         </div>
       </div>
