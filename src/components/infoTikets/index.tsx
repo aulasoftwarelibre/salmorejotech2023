@@ -25,17 +25,17 @@ export const InfoTikets = () => {
         <div className={styles.carousel}>
           <Carousel
             images={[
-              {src: '/photos/i1.jpg', alt: 'some-alt'},
-              {src: '/photos/i2.jpg', alt: 'some-alt'},
-              {src: '/photos/i3.jpg', alt: 'some-alt'},
-              {src: '/photos/i4.jpg', alt: 'some-alt'},
-              {src: '/photos/i5.jpg', alt: 'some-alt'},
-              {src: '/photos/i6.jpg', alt: 'some-alt'},
-              {src: '/photos/i7.jpg', alt: 'some-alt'},
-              {src: '/photos/i8.jpg', alt: 'some-alt'},
-              {src: '/photos/i9.jpg', alt: 'some-alt'},
-              {src: '/photos/i10.jpg', alt: 'some-alt'},
-              {src: '/photos/i11.jpg', alt: 'some-alt'}
+              {src: '/photos/i1.jpg', alt: 'equipo aula de software libre'},
+              {src: '/photos/i2.jpg', alt: 'ponencia salmorejoTech'},
+              {src: '/photos/i3.jpg', alt: 'recepción'},
+              {src: '/photos/i4.jpg', alt: 'ponencia juan tomas'},
+              {src: '/photos/i5.jpg', alt: 'ponencia carmen ansio'},
+              {src: '/photos/i6.jpg', alt: 'carpa networking'},
+              {src: '/photos/i7.jpg', alt: 'equipo aula de software libre y adrian bolonio'},
+              {src: '/photos/i8.jpg', alt: 'carpa networking'},
+              {src: '/photos/i9.jpg', alt: 'ponencia javi velasco'},
+              {src: '/photos/i10.jpg', alt: 'público salmorejoTech'},
+              {src: '/photos/i11.jpg', alt: 'carpa networking'},
             ]}
           />
         </div>
