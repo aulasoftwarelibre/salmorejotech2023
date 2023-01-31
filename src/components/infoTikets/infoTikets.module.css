@@ -1,4 +1,4 @@
-.row_wrapper {
+.info {
   max-width: 1500px;
   margin: 0 auto;
   padding: 1rem;
@@ -23,6 +23,10 @@
   margin-bottom: 0;
   font-size: calc(0.9rem + 6 * ((100vw - 421px) / 750));
   font-weight: 300;
+}
+
+.aula a{
+  font-weight: 500;
 }
 
 .centered{
@@ -89,7 +93,7 @@
 }
 
 .title {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   width: 100%;
   color: #fff;
   text-align: center;
@@ -97,7 +101,15 @@
   margin-bottom: 1rem;
 }
 
-.wrapper {
+.subTitle{
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: calc(1.4 * (0.5rem + 1vw));
+  margin-bottom: 1.5rem;
+}
+
+.location {
   max-width: 1500px;
   margin: 0 auto;
   padding: 1rem;

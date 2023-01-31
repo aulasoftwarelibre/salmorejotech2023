@@ -1,0 +1,37 @@
+.responsiveMap{
+  border-radius: 3px 3px 0 0;
+  overflow:hidden;
+  padding-bottom:40%;
+  position:relative;
+  height:0;
+}
+
+.responsiveMap iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.location {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: white;
+  justify-content: center;
+}
+
+.link{
+  display: block;
+  width: 100%;
+  font-size: calc(0.9rem + 6 * ((100vw - 421px) / 750));
+  border-radius: 0 0 3px 3px;
+  background: linear-gradient(110deg, #ffffff27, #ffffff15);
+  box-shadow: var(--lightShadow);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 0.5rem;
+  color: black;
+  justify-content: center;
+}
