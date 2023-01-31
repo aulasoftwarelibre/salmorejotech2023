@@ -6,6 +6,18 @@
   height:0;
 }
 
+@media (max-width: 1200px) {
+  .responsiveMap{
+    padding-bottom:60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .responsiveMap{
+    padding-bottom:80%;
+  }
+}
+
 .responsiveMap iframe{
   left:0;
   top:0;
