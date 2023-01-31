@@ -12,6 +12,7 @@
   height:100%;
   width:100%;
   position:absolute;
+  box-shadow: var(--lightShadow);
 }
 
 .location {
@@ -20,6 +21,7 @@
   padding: 1rem;
   color: white;
   justify-content: center;
+
 }
 
 .link{

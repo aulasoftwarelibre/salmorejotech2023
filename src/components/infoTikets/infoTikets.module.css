@@ -59,6 +59,8 @@
   max-width: 800px;
   min-width: 412px;
   align-self: center;
+  box-shadow: var(--lightShadow);
+
 }
 
 .text a:hover {
