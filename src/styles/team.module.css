@@ -6,3 +6,51 @@
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: linear-gradient(-50deg, var(--aulaPurple), var(--aulaRed));
 }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 10rem 2rem;
+  height: 100vh;
+}
+
+.logo {
+  max-width: 1500px;
+  width: 80vw;
+}
+.logo::selection {
+  background: transparent;
+}
+
+.heroSubtitle {
+  font-size: calc(2 * (0.5rem + 1vw));
+  color: white;
+}
+
+.section {
+  padding: 10vw 0;
+}
+
+.section .sectionTitle {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 1.5rem;
+}
+
+.section .sectionTitle.black {
+  color: #000 !important;
+}
+
+.sectionTitle::selection,
+.heroSubtitle::selection {
+  background-color: var(--orange);
+  color: var(--aulaPurple);
+}
+
+.sectionTitle.black::selection {
+  color: white;
+}
