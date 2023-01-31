@@ -70,4 +70,37 @@
     min-width: 290px;
   }
 }
-  
+
+.responsiveMap{
+  border-radius: 5px;
+  overflow:hidden;
+  padding-bottom:40%;
+  position:relative;
+  height:0;
+  margin-bottom: 1rem;
+}
+
+.responsiveMap iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.title {
+  margin-top: 2.5rem;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: calc(2 * (0.5rem + 1vw));
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: white;
+  justify-content: center;
+}
