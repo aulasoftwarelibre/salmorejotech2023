@@ -1,34 +1,20 @@
-.footer,
-.row_wrapper,
-.SM,
-.Contact_us,
-.icons,
-.CopyLeft {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  justify-items: center;
-}
-
-.footer {
-  margin-top: 2rem;
-  flex-direction: column;
-  color: white;
-  text-align: center;
-}
-
 .row_wrapper {
+  text-align: center;
+  color: white;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-around;
 }
 
 .SM,
 .Contact_us {
-  flex-direction: column;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+
 
 .logo {
   width: 80vw;
@@ -39,30 +25,41 @@
   background: transparent;
 }
 
-.icons a {
+
+.icons{
+  display: flex;
+  margin-top: 0.5rem;
+  gap: 1rem;
+  justify-content: center;
+  justify-items: center;
   font-size: 1.8rem;
-  margin: 0.4rem;
   transition: var(--transition);
 }
 
+
 .Contact_us h1 {
-  font-size: clamp(0.5rem, calc(2rem + 0.9vw), 1.88rem);
+  font-size: clamp(0.5rem, calc(2rem + 0.9vw), 2.2rem);
   margin: 1rem;
 }
 
 .contact {
-  font-size: clamp(0.5rem, calc(1rem + 0.9vw), 1.88rem);
+  font-size: clamp(0.5rem, calc(1rem + 0.9vw), 1.8rem);
   transition: var(--transition);
 }
 
-.icons a:hover,
+.icons a:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
 .contact:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .CopyLeft {
-  flex-direction: row;
+  color: white;
+  text-align: center;
   margin: 2rem;
   font-size: 1.4rem;
 }
