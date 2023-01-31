@@ -25,9 +25,17 @@ export const InfoTikets = () => {
         <div className={styles.carousel}>
           <Carousel
             images={[
-              {src: '/images/s1.jpg', alt: 'some-alt'},
-              {src: '/images/s2.jpg', alt: 'some-alt'},
-              {src: '/images/s3.jpg', alt: 'some-alt'}
+              {src: '/photos/i1.jpg', alt: 'some-alt'},
+              {src: '/photos/i2.jpg', alt: 'some-alt'},
+              {src: '/photos/i3.jpg', alt: 'some-alt'},
+              {src: '/photos/i4.jpg', alt: 'some-alt'},
+              {src: '/photos/i5.jpg', alt: 'some-alt'},
+              {src: '/photos/i6.jpg', alt: 'some-alt'},
+              {src: '/photos/i7.jpg', alt: 'some-alt'},
+              {src: '/photos/i8.jpg', alt: 'some-alt'},
+              {src: '/photos/i9.jpg', alt: 'some-alt'},
+              {src: '/photos/i10.jpg', alt: 'some-alt'},
+              {src: '/photos/i11.jpg', alt: 'some-alt'}
             ]}
           />
         </div>
