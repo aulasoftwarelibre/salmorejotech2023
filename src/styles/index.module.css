@@ -53,15 +53,23 @@
 }
 
 .section {
-  padding: 10vw 0;
+  margin: 7rem 0;
 }
 
 .section .sectionTitle {
   width: 100%;
   color: #fff;
   text-align: center;
-  font-size: 3.5rem;
-  padding: 1.5rem;
+  font-size: calc(2 * (0.5rem + 1vw));
+  margin-bottom: 1rem;
+}
+
+.sectionSubTitle{
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: calc(1.4 * (0.5rem + 1vw));
+  margin-bottom: 1rem;
 }
 
 .section .sectionTitle::selection {

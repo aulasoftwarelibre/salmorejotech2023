@@ -21,6 +21,8 @@ import { SponsorProps } from '../components/sponsors'
 import styles from '../styles/index.module.css'
 import WhiteSection from '../components/whiteSection'
 import { SpeakerProps } from '../components/speakers'
+import { InfoTikets } from '../components/infoTikets'
+import { Location } from '../components/location'
 
 const Home: NextPage = () => {
 
@@ -94,9 +96,20 @@ const Home: NextPage = () => {
           </div>
         </section>
       </div>
+      <section id="InfoTikets" className={styles.section}>
+        <h1 className={styles.sectionTitle}>Cruces de Mayo y Salmorejo</h1>
+        <h1 className={styles.sectionSubTitle}>¿Hay algo más Cordobés?</h1>
+        <InfoTikets/>
+      </section>
+
+      <section id="InfoTikets" className={styles.section}>
+        <h1 className={styles.sectionTitle}>¡La mejor ubicación!</h1>
+        <h1 className={styles.sectionSubTitle}>Rectorado de la Universidad de Córdoba</h1>
+        <Location/>
+      </section>
 
       <section id="speakers" className={styles.section}>
-        <h1 className={styles.sectionTitle}>Speakers</h1>
+        <h1 className={styles.sectionTitle}>Nuestros ponentes</h1>
         <SpeakersGrid speakers={speakers as SpeakerProps[]}/>
       </section>
       
