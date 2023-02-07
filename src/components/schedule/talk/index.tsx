@@ -9,12 +9,12 @@ export const Talk = (talk: TalkInterface) => {
         <h3>{talk.title}</h3>
         <div className={styles.horizontal}>
           <div className={styles.vertical}>
+            <h4>{talk.speaker.name}</h4>
             <div className={styles.labels}>
               {talk.labels.map((label, index) => {
                 return <div className={styles[label]} key={index}>{label} </div>;
               })}
             </div>
-            <h4>{talk.speaker.name}</h4>
           </div>
           <img
             className={styles[talk.randomMask]}

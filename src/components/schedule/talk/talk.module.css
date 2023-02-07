@@ -39,7 +39,7 @@
   display: flex;
   flex-flow: row wrap;
   gap: 0.5rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
 }
@@ -99,9 +99,6 @@
   }
   .containerImage{
     width: 20%;
-  }
-  .horizontal{
-    justify-content: flex-start;
   }
 }
 
