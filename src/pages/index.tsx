@@ -96,13 +96,13 @@ const Home: NextPage = () => {
           </div>
         </section>
       </div>
-      <section id="InfoTikets" className={styles.section}>
+      <section id="info" className={styles.section}>
         <h1 className={styles.sectionTitle}>Cruces de Mayo y Salmorejo</h1>
         <h2 className={styles.sectionSubTitle}>¿Hay algo más Cordobés?</h2>
         <InfoTikets/>
       </section>
 
-      <section id="InfoTikets" className={styles.section}>
+      <section id="where" className={styles.section}>
         <h1 className={styles.sectionTitle}>¡La mejor ubicación!</h1>
         <h2 className={styles.sectionSubTitle}>Rectorado de la Universidad de Córdoba</h2>
         <Location/>

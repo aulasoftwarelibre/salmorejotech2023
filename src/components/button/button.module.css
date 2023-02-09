@@ -1,5 +1,5 @@
 .tiket {
-  width: 18rem;
+  width: 15rem;
   filter: drop-shadow(var(--lightShadow));
 }
 
@@ -13,8 +13,8 @@
   align-items: center;
   position: absolute;
   color: rgb(0, 0, 0);
-  width: 12rem;
-  height: 6.3rem;
+  width: 10rem;
+  height: 5.3rem;
   z-index: 1;
   background: linear-gradient(90deg, #03a9f4, #f441a5, #ff3bef, #03a9f4);
   background-size: 300%;
@@ -22,7 +22,7 @@
 }
 
 .button p {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
@@ -63,6 +63,21 @@
 
   100% {
     background-position: 400%;
+  }
+}
+
+@media (min-width: 800px) {
+  .tiket {
+    width: 18rem;
+  }
+
+  .button {
+    width: 12rem;
+    height: 6.3rem;
+  }
+
+  .button p {
+    font-size: 2rem;
   }
 }
 
