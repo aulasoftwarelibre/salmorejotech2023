@@ -37,9 +37,10 @@
 }
 .bg4 {
   background-image: url("/moleculas/fondo-salmorejotech-svg(3).svg");
+  filter: brightness(95%);
   background-size: cover;
-  right: 60vw;
-  transform: translateZ(-2px) translatey(200vh) scale(1.5);
+  right: 70vw;
+  transform: translateZ(-2px) translatey(220vh) scale(1.5);
 }
 .bg5 {
   background-image: url("/moleculas/fondo-salmorejotech-svg(4).svg");
