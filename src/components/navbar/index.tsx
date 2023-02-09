@@ -38,7 +38,7 @@ const Navbar = ({contents, variant='primary'}: NavbarProps) => {
   const formatedNonEmphasisedLinks = <>
     {nonEmphasisedContents.map(content => (
       <Link key={`nav-${content.title}`} href={content.href}>
-            <h2>{content.title}</h2>
+            <h2 className={styles.link}>{content.title}</h2>
       </Link>
     ))}
   </>
@@ -47,7 +47,7 @@ const Navbar = ({contents, variant='primary'}: NavbarProps) => {
     <div className={styles.emphasis}>
       {emphasisedContents.map(content => (
         <Link key={`nav-${content.title}`} href={content.href}>
-          <h2>{content.title}</h2>
+          <h2 className={styles.link}>{content.title}</h2>
         </Link>
       ))}
     </div>

@@ -71,7 +71,7 @@
   margin-bottom: 1rem;
 }
 
-.sectionSubTitle{
+.sectionSubTitle {
   width: 100%;
   color: #fff;
   text-align: center;
@@ -79,7 +79,8 @@
   margin-bottom: 1rem;
 }
 
-.section .sectionTitle::selection {
+.section .sectionTitle::selection,
+.section .sectionSubTitle::selection {
   background: var(--purple);
   color: white;
 }

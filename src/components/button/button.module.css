@@ -3,6 +3,10 @@
   filter: drop-shadow(var(--lightShadow));
 }
 
+.tiket::selection {
+  background: transparent;
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -20,6 +24,11 @@
 .button p {
   font-size: 1.7rem;
   font-weight: bold;
+}
+
+.button p::selection {
+  color: white;
+  background-color: var(--purple);
 }
 
 .button:hover {
