@@ -16,7 +16,7 @@ export const InfoTikets = () => {
             <li>🥐 Desayuno, 🥘 Almuerzo y 🍻 Networking</li>
             <li className={styles.emphasis}>GRATIS</li>
           </ul>
-          <p className={styles.aula}>Un evento para la comunidad por los <Link href="/team">miembros del aula de software libre</Link></p>
+          <p className={styles.aula}>Un evento para la comunidad por los <a href="https://www.uco.es/aulasoftwarelibre/aula/">miembros del aula de software libre</a></p>
         </div>
         <div className={styles.carousel}>
           <Carousel

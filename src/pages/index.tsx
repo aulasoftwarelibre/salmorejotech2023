@@ -52,11 +52,6 @@ const Home: NextPage = () => {
       href: "/",
       emphasised: true,
     },
-    {
-      title: "Equipo",
-      href: "/team",
-      emphasised: true,
-    },
   ]
 
   const possibleContents = [
