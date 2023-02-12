@@ -76,6 +76,22 @@ const Home: NextPage = () => {
       <meta name="keywords"
         content="evento, ASL, salmorejo, salmorejotech, tech, salmorejotech2023, 2023, salmorejotech2022, 2022, salmorejotech2021, congreso, mesa redonda, conferencia, libre, software libre" />
       <link rel="canonical" href="https://salmorejo.tech" />
+
+      {/** Social - Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@AulaSL" />
+      <meta name="twitter:title" content="SalmorejoTech 2023" />
+      <meta name="twitter:description"
+        content="SalmorejoTech es un evento tecnológico para todos aquellos dispuestos a aprender" />
+      <meta name="twitter:image" content="/images/seo/salmorejo.jpg" />
+      {/** Social - Facebook / Open Graph */}
+      <meta name="og:type" content="website" />
+      <meta name="og:site_name" content="SalmorejoTech 2023" />
+      <meta name="og:title" content="SalmorejoTech 2023" />
+      <meta name="og:description"
+        content="SalmorejoTech es un evento tecnológico para todos aquellos dispuestos a aprender" />
+      <meta name="og:image" content="/images/seo/salmorejo.jpg" />
+      <meta name="og:url" content="https://salmorejo.tech/2023/" />
     </Head>
     <main>
       <Navbar contents={navbarContents}/>
