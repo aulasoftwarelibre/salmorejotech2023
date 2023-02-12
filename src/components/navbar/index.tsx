@@ -65,7 +65,7 @@ const Navbar = ({contents, variant='primary'}: NavbarProps) => {
       <nav className={styles.nav}>
         <div className={styles.left}>
           <div className={styles.icon}>
-              <a href="#Hero"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></a>
+              <Link href="/"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></Link>
           </div>
           <div id="compact-navbar" className={styles.base_compact}>
             {compactNavbar}
@@ -85,7 +85,7 @@ const Navbar = ({contents, variant='primary'}: NavbarProps) => {
       <nav className={styles.nav}>
         <div className={styles.left}>
           <div className={styles.icon}>
-              <a href="#Hero"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></a>
+              <Link href="/"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></Link>
           </div>
             {formatedNonEmphasisedLinks}
         </div>

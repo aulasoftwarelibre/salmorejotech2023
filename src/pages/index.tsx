@@ -49,7 +49,7 @@ const Home: NextPage = () => {
     },
     {
       title: "Entradas",
-      href: "#Hero",
+      href: "https://www.eventbrite.es/e/entradas-salmorejotech-2023-535749429967",
       emphasised: true,
     },
   ]
