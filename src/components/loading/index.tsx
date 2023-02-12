@@ -1,10 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './loading.module.css'
 
 
 export default function Loading() {
-  
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+  }, []);
   return (
     <div className={styles.fondo}>
       <div className={styles.tapa}></div>
