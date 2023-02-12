@@ -48,7 +48,8 @@
 }
 
 @media (min-width: 800px) {
-  .tomate, .logo {
+  .tomate,
+  .logo {
     width: 75vw;
   }
 }

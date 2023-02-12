@@ -37,18 +37,18 @@ const Navbar = ({contents, variant='primary'}: NavbarProps) => {
 
   const formatedNonEmphasisedLinks = <>
     {nonEmphasisedContents.map(content => (
-      <Link key={`nav-${content.title}`} href={content.href}>
+      <a key={`nav-${content.title}`} href={content.href}>
             <h2 className={styles.link}>{content.title}</h2>
-      </Link>
+      </a>
     ))}
   </>
 
   const formatedEmphasisedLinks = (
     <div className={styles.emphasis}>
       {emphasisedContents.map(content => (
-        <Link key={`nav-${content.title}`} href={content.href}>
+        <a key={`nav-${content.title}`} href={content.href}>
           <h2 className={styles.link}>{content.title}</h2>
-        </Link>
+        </a>
       ))}
     </div>
   )
@@ -65,7 +65,7 @@ const Navbar = ({contents, variant='primary'}: NavbarProps) => {
       <nav className={styles.nav}>
         <div className={styles.left}>
           <div className={styles.icon}>
-              <Link href="#Hero"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></Link>
+              <a href="#Hero"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></a>
           </div>
           <div id="compact-navbar" className={styles.base_compact}>
             {compactNavbar}
@@ -85,7 +85,7 @@ const Navbar = ({contents, variant='primary'}: NavbarProps) => {
       <nav className={styles.nav}>
         <div className={styles.left}>
           <div className={styles.icon}>
-              <Link href="#Hero"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></Link>
+              <a href="#Hero"><img src='/sprites/isotipo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" /></a>
           </div>
             {formatedNonEmphasisedLinks}
         </div>
