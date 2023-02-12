@@ -18,20 +18,20 @@ export const Footer = () => {
         </section>
         <section className={styles.Contact_us} id="Contact us">
           <h1>¡Encuentranos!</h1>
-          <a href="mailto:aulasoftwarelibre@uco.es" className={styles.contact} rel="noreferrer">
+          <a href="mailto:aulasoftwarelibre@uco.es" className={styles.contact} rel="noreferrer" target="_blank">
             <GrMail /> aulasoftwarelibre@uco.es
           </a>
-          <a href="https://g.page/aulasoftwarelibre?share" className={styles.contact} rel="noreferrer">
+          <a href="https://g.page/aulasoftwarelibre?share" className={styles.contact} rel="noreferrer" target="_blank">
             <BsPinFill/> Aulario Averroes. Campus Rabanales
           </a>
           <div className={styles.icons}>
-            <a href="https://twitter.com/AulaSL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><BsTwitter /></a>
-            <a href="https://www.instagram.com/aulasoftwarelibre/"><BsInstagram /></a>
-            <a href="https://github.com/aulasoftwarelibre"><BsGithub /></a>
-            <a href="https://www.youtube.com/channel/UCfWiR5j-cbKcGTi9faK8P6w"><BsYoutube /></a>
-            <a href="https://t.me/AulaSoftwareLibreUCO"><BsTelegram /></a>
-            <a href="https://www.facebook.com/AulaSoftwareLibre"><BsFacebook /></a>
-            <a href="https://www.uco.es/aulasoftwarelibre/"><BiWorld /></a>
+            <a rel="noreferrer" target="_blank" href="https://twitter.com/AulaSL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><BsTwitter /></a>
+            <a rel="noreferrer" target="_blank" href="https://www.instagram.com/aulasoftwarelibre/"><BsInstagram /></a>
+            <a rel="noreferrer" target="_blank" href="https://github.com/aulasoftwarelibre"><BsGithub /></a>
+            <a rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCfWiR5j-cbKcGTi9faK8P6w"><BsYoutube /></a>
+            <a rel="noreferrer" target="_blank" href="https://t.me/AulaSoftwareLibreUCO"><BsTelegram /></a>
+            <a rel="noreferrer" target="_blank" href="https://www.facebook.com/AulaSoftwareLibre"><BsFacebook /></a>
+            <a rel="noreferrer" target="_blank" href="https://www.uco.es/aulasoftwarelibre/"><BiWorld /></a>
           </div>
         </section>
       </div>

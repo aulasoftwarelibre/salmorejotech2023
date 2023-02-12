@@ -49,7 +49,7 @@ const Home: NextPage = () => {
     },
     {
       title: "Entradas",
-      href: "/",
+      href: "#Hero",
       emphasised: true,
     },
   ]
@@ -87,7 +87,7 @@ const Home: NextPage = () => {
           <h3 className={styles.subtitle}>Más <span>{content}</span></h3>
           <h2 className={styles.date}>28 de abril de 2023</h2>
           <div className={styles.centerTicketsButton}>
-            <Button label="ENTRADAS" />
+            <Button label="ENTRADAS" href="https://www.eventbrite.es/e/entradas-salmorejotech-2023-535749429967"/>
           </div>
         </section>
       </div>

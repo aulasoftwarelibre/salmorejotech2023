@@ -32,6 +32,7 @@ export const SpeakerCard = ({name, bio, urlPhoto, contacts}:  SpeakerProps) => {
         className={styles[contact.type.toLowerCase()]} 
         href={contact.link} 
         aria-label={`${name}'s link for ${contact.type}`}
+        rel="noreferrer" target="_blank"
       >
         {LinkTypeAsIcon[contact.type]}
       </a>
