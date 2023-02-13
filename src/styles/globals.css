@@ -33,6 +33,10 @@ body {
   background: linear-gradient(-50deg, var(--orange), var(--red));
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
