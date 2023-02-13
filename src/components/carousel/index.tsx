@@ -61,7 +61,7 @@ const Carousel = ({images, className, ...rest} : CarouselProps) => {
 
   useEffect(() => {
     setInterval(() => {
-      const isHover = slideshow.current?.parentElement?.querySelector(':hover') === slideshow.current;
+      const isHover = slideshow.current?.parentElement?.querySelector(':hover') !== null;
       if (!isHover) {
         nextSlide();
       }
