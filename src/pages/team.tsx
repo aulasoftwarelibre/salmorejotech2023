@@ -76,9 +76,6 @@ const Team: NextPage = () => {
             <h1 className={`${styles.sectionTitle} ${styles.black}`}>Aula de Software Libre</h1>
           </WhiteSection>
           
-          <section id="contact" className={styles.section}>
-            <h1 className={styles.sectionTitle}>Contacto</h1>
-          </section>
         <div className='anchoMaximo'>
           <Footer/>
         </div>
