@@ -4,13 +4,13 @@ import Head from 'next/head'
 import { Footer } from '../components/footer'
 import { Moleculas } from '../components/moleculas'
 import Navbar from '../components/navbar'
-import SpeakersGrid from '../components/speakers/grid'
 import WhiteSection from '../components/whiteSection'
 import styles from '../styles/team.module.css'
 
 
 import team from '../../data/team.json';
-import { SpeakerProps } from '../components/speakers'
+import TeamMembersGrid from '../components/teamMember/grid'
+import { TeamMemberProps } from '../components/teamMember'
 
 const Team: NextPage = () => {
 
@@ -69,7 +69,7 @@ const Team: NextPage = () => {
 
           <section id="team" className={styles.section}>
             <h1 className={styles.sectionTitle}>Team</h1>
-            <SpeakersGrid speakers={team as SpeakerProps[]}/>
+            <TeamMembersGrid teamMembers={team as TeamMemberProps[]}/>
           </section>
 
           <WhiteSection id="asl" className={styles.section}>

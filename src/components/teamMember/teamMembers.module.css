@@ -1,0 +1,103 @@
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+  flex-grow: 1;
+  color: white;
+  max-width: 1500px;
+}
+
+.teamMemberImage {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+.teamMemberImage::selection {
+  background-color: transparent;
+}
+
+@media (max-width: 376px) {
+  .card {
+    max-width: 280px;
+  }
+}
+
+.card {
+  padding-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 280px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(35, 35, 35, 0.3);
+  background: linear-gradient(110deg, #ffffff27, #ffffff15);
+  color: white;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+@media (min-width: 376px) {
+  .card {
+    max-width: 180px;
+  }
+}
+
+@media (min-width: 600px) {
+  .card {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 800px) {
+  .card {
+    max-width: 320px;
+  }
+}
+
+.cardInfo {
+  width: 100%;
+  text-align: center;
+}
+
+.socialMedia {
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.socialMedia a {
+  font-size: 1.75rem;
+  transition: var(--transition);
+}
+.socialMedia a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.socialMedia a.linkedin:hover {
+  color: #0a66c2;
+}
+.socialMedia a.twitter:hover {
+  color: #1d9bf0;
+}
+.socialMedia a.github:hover {
+  color: #171515;
+}
+
+.name {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.bio {
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+
+.name::selection,
+.bio::selection {
+  background: var(--purple);
+}
