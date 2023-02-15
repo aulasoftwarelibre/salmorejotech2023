@@ -26,11 +26,6 @@ const Team: NextPage = () => {
       emphasised: false,
     },
     {
-      title: "Contacto",
-      href: "#contact",
-      emphasised: false,
-    },
-    {
       title: "Entradas",
       href: "/",
       emphasised: true,
