@@ -10,6 +10,7 @@ export interface Contact {
 
 export interface TeamMemberProps {
   name: string;
+  rol: 'INFRASTRUCTURE' | 'MANAGEMENT' | 'MARKETING';
   bio: string;
   urlPhoto: string;
   contacts: Array<Contact>;

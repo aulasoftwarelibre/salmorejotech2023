@@ -1,6 +1,7 @@
 [
   {
     "name": "John Doe",
+    "rol": "INFRASTRUCTURE",
     "bio": "Frontend Lead for Doe Company",
     "urlPhoto": "/speakers/secondary-placeholder.png",
     "contacts": [
@@ -11,6 +12,29 @@
   },
   {
     "name": "Jane Doe",
+    "rol": "MANAGEMENT",
+    "bio": "Backend Lead for Doe Company",
+    "urlPhoto": "/speakers/primary-placeholder.png",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com" },
+      { "type": "LINKEDIN", "link": "https://linkedin.com" },
+      { "type": "WEB", "link": "https://google.es" }
+    ]
+  },
+  {
+    "name": "John Doe",
+    "rol": "MARKETING",
+    "bio": "Frontend Lead for Doe Company",
+    "urlPhoto": "/speakers/secondary-placeholder.png",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com" },
+      { "type": "WEB", "link": "https://google.es" },
+      { "type": "GITHUB", "link": "https://github.com" }
+    ]
+  },
+  {
+    "name": "Jane Doe",
+    "rol": "INFRASTRUCTURE",
     "bio": "Backend Lead for Doe Company",
     "urlPhoto": "/speakers/primary-placeholder.png",
     "contacts": [
