@@ -91,9 +91,8 @@
 .compact_background {
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.295);
+  background: rgba(0, 0, 0, 0.8);
   box-shadow: var(--lightShadow);
-  backdrop-filter: blur(10px);
   z-index: 20;
   gap: 2rem;
   font-size: 1.5rem;
@@ -101,6 +100,14 @@
   flex-direction: column;
   align-items: center;
   padding-top: 4rem;
+}
+
+@-moz-document url-prefix() {
+  /* Ajustes de estilo específicos para Firefox */
+  .compact_background {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media (min-width: 200px) and (max-width: 823px) {
