@@ -4,14 +4,17 @@ import styles from './button.module.css';
 
 type ButtonProps = {
   label: string,
+  href: string,
 }
 
-const Button = ({label}: ButtonProps) => {
-  return (<>
-    <img className={styles.tiket} src='/images/tiket.svg' alt="Tiket" />
-    <div className={styles.button}>
-      <p>{label}</p>
-    </div></>
+const Button = ({label, href}: ButtonProps) => {
+  return (
+    <Fragment>
+      <img className={styles.tiket} src='/images/tiket.svg' alt="Tiket" />
+      <a className={styles.button} href={href} rel="noreferrer" target="_blank">
+        <p>{label}</p>
+      </a>
+    </Fragment>
   )
 }
 

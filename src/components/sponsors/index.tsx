@@ -23,6 +23,7 @@ export const Sponsor = ({name, type, imageUrl, ...props}: SponsorProps) => {
       style={backgroundImage}
       className={classes}
       aria-label={label} 
+      rel="noreferrer" target="_blank"
       {...props}
     />
   )

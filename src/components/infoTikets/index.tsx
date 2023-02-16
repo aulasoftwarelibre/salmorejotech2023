@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './infoTikets.module.css';
-import React from 'react';
+import React, { Fragment } from 'react';
 import Carousel from '../carousel';
 import Link from 'next/link';
 
 export const InfoTikets = () => {
   return (
-      <>
+      <Fragment>
       <div className={styles.info}>
         <div className={styles.text}>
           <p>Vuelve el <strong>evento teconológico con sabor cordobés. El 28 de Abril</strong> coincidiendo con las <strong>cruces de mayo</strong>. Disfruta de los mejores profesionales del sector durante esta fiesta cordobesa que inunda la ciudad.</p>
@@ -16,7 +16,7 @@ export const InfoTikets = () => {
             <li>🥐 Desayuno, 🥘 Almuerzo y 🍻 Networking</li>
             <li className={styles.emphasis}>GRATIS</li>
           </ul>
-          <p className={styles.aula}>Un evento para la comunidad por los <Link href="/team">miembros del aula de software libre</Link></p>
+          <p className={styles.aula}>Un evento para la comunidad por los <a href="https://www.uco.es/aulasoftwarelibre/aula/" rel="noreferrer" target="_blank">miembros del aula de software libre</a></p>
         </div>
         <div className={styles.carousel}>
           <Carousel
@@ -36,6 +36,6 @@ export const InfoTikets = () => {
           />
         </div>
       </div>
-    </>
+    </Fragment>
   )
 }
