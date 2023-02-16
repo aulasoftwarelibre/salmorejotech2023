@@ -4,13 +4,13 @@ import Head from 'next/head'
 import { Footer } from '../components/footer'
 import { Moleculas } from '../components/moleculas'
 import Navbar from '../components/navbar'
-import SpeakersGrid from '../components/speakers/grid'
 import WhiteSection from '../components/whiteSection'
 import styles from '../styles/team.module.css'
 
 
 import team from '../../data/team.json';
-import { SpeakerProps } from '../components/speakers'
+import TeamMembersGrid from '../components/teamMember/grid'
+import { TeamMemberProps } from '../components/teamMember'
 
 const Team: NextPage = () => {
 
@@ -23,11 +23,6 @@ const Team: NextPage = () => {
     {
       title: "Aula Software Libre",
       href: "#asl",
-      emphasised: false,
-    },
-    {
-      title: "Contacto",
-      href: "#contact",
       emphasised: false,
     },
     {
@@ -68,17 +63,23 @@ const Team: NextPage = () => {
           </section>
 
           <section id="team" className={styles.section}>
-            <h1 className={styles.sectionTitle}>Team</h1>
-            <SpeakersGrid speakers={team as SpeakerProps[]}/>
+            <h1 className={styles.sectionTitle}>🍅 Un equipo increíble 🍅</h1>
+            <TeamMembersGrid teamMembers={team as TeamMemberProps[]}/>
           </section>
 
           <WhiteSection id="asl" className={styles.section}>
-            <h1 className={`${styles.sectionTitle} ${styles.black}`}>Aula de Software Libre</h1>
+            <h1 className={`${styles.sectionTitle} ${styles.black}`}>🐧Aula de Software Libre🐧</h1>
+            <div className={styles.wrapper}>
+              <div className={`${styles.column} ${styles.imageWrapper}`}>
+                <img src="/images/logo-aula-negro.png" alt="Logo del aula de software libre"/>
+              </div>
+              <div className={`${styles.column} ${styles.aulaInfo}`}>
+                <h2 className={styles.title}>Más que un grupo de estudiantes🚀</h2>
+                <p>El Aula de Software Libre es un espacio único y dinámico en el que se promueve el compartir conocimiento y el uso del software libre. A través de diversos eventos y actividades durante todo el año, nuestro objetivo es acercar a personas de todo tipo a las ventajas y la importancia del software libre.</p>
+              </div>
+            </div>
           </WhiteSection>
           
-          <section id="contact" className={styles.section}>
-            <h1 className={styles.sectionTitle}>Contacto</h1>
-          </section>
         <div className='anchoMaximo'>
           <Footer/>
         </div>

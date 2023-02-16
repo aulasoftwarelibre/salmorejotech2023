@@ -1,22 +1,275 @@
 [
   {
-    "name": "John Doe",
-    "bio": "Frontend Lead for Doe Company",
-    "urlPhoto": "/speakers/secondary-placeholder.png",
+    "name": "Marcos Rivera Gavilán",
+    "rol": "MANAGEMENT",
+    "bio": "Software developer studying at UCO Passionate on automation and optimization of tasks Collaborating with ASL since 2020.",
+    "urlPhoto": "/aulaTeam/MarcosRiveraGavilán.jpg",
     "contacts": [
-      { "type": "TWITTER", "link": "https://twitter.com" },
-      { "type": "WEB", "link": "https://google.es" },
-      { "type": "GITHUB", "link": "https://github.com" }
+      { "type": "TWITTER", "link": "https://twitter.com/MarcosRigal01" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/marcos-rivera-gavil%C3%A1n-806b61184/"
+      },
+      { "type": "GITHUB", "link": "https://github.com/marcosRigal/" }
     ]
   },
   {
-    "name": "Jane Doe",
-    "bio": "Backend Lead for Doe Company",
-    "urlPhoto": "/speakers/primary-placeholder.png",
+    "name": "Tomás Hidalgo Martín",
+    "rol": "INFRASTRUCTURE",
+    "bio": "Soy un joven de 21 años apasionado por la Informática y con especial interés en el desarrollo web. PD: I really love React💙.",
+    "urlPhoto": "/aulaTeam/TomasHidalgo.jpg",
     "contacts": [
-      { "type": "TWITTER", "link": "https://twitter.com" },
-      { "type": "LINKEDIN", "link": "https://linkedin.com" },
-      { "type": "WEB", "link": "https://google.es" }
+      { "type": "TWITTER", "link": "https://twitter.com/tomas_hm01" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/mwlite/in/tom%C3%A1s-hidalgo-mart%C3%ADn-083b0a1b1"
+      },
+      { "type": "GITHUB", "link": "https://github.com/tomashm01" }
+    ]
+  },
+  {
+    "name": "José Andrés Trujillo Henares",
+    "rol": "INFRASTRUCTURE",
+    "bio": "Estudiante de 2° de Ingeniería informática interesado en el desarrollo web, más específicamente en el backend.",
+    "urlPhoto": "/aulaTeam/JoséAndrésTrujilloHenares.jpeg",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/jos_an6" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/joseandrestrujillo"
+      },
+      { "type": "GITHUB", "link": "https://github.com/joseandrestrujillo" }
+    ]
+  },
+  {
+    "name": "Alba Palomino Jiménez",
+    "rol": "MANAGEMENT",
+    "bio": "Student of Computer Engineering on the Software mention.",
+    "urlPhoto": "/aulaTeam/AlbaPalomino.jpg",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/Albapj011" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/alba-palomino-jim%C3%A9nez-966ab9222/"
+      },
+      { "type": "GITHUB", "link": "https://github.com/Albapj01" }
+    ]
+  },
+  {
+    "name": "Javier de Santiago",
+    "rol": "MANAGEMENT",
+    "bio": "Junior backend dev",
+    "urlPhoto": "/aulaTeam/JavierDeSantiago.jpeg",
+    "contacts": [{ "type": "TWITTER", "link": "https://twitter.com/jdes_01" }]
+  },
+  {
+    "name": "Antonio Jiménez Jiménez",
+    "rol": "MANAGEMENT",
+    "bio": "Miembro del Aula de Software Libre y organizador del Salmorejo Tech.",
+    "urlPhoto": "/aulaTeam/AntonioJiménezJiménez.jpg",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/antoniojj1712" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/antonio-jim%C3%A9nez-jim%C3%A9nez-084645222/"
+      },
+      { "type": "GITHUB", "link": "https://github.com/jimenez1712" }
+    ]
+  },
+  {
+    "name": "Carlos Rivero Talavera",
+    "rol": "INFRASTRUCTURE",
+    "bio": "Student of Computer Engineering on the Software mention.",
+    "urlPhoto": "/aulaTeam/CarlosRivero.jpg",
+    "contacts": [
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/carlos-rivero-talavera-062645222/"
+      },
+      { "type": "GITHUB", "link": "https://github.com/AnonymusRiv" }
+    ]
+  },
+  {
+    "name": "Antonio Moruno",
+    "rol": "MANAGEMENT",
+    "bio": "No me gusta el salmorejo.",
+    "urlPhoto": "/aulaTeam/AntonioMorunoGracia.jpg",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/moruno01 " },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/antonio-moruno-gracia-8b9bb9200"
+      },
+      { "type": "GITHUB", "link": "https://github.com/moruno21" }
+    ]
+  },
+  {
+    "name": "Juanjo Trenado",
+    "rol": "INFRASTRUCTURE",
+    "bio": "Frontend Developer",
+    "urlPhoto": "/aulaTeam/JuanjoTrenado.jpeg",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/Juanjotrenadoz" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/juanjotrenado"
+      },
+      { "type": "GITHUB", "link": "https://github.com/JJtrenado" },
+      {
+        "type": "WEB",
+        "link": "https://jjtrenado.github.io/PersonalPortfolio/"
+      }
+    ]
+  },
+  {
+    "name": "Miguel Orzáez Pintor",
+    "rol": "INFRASTRUCTURE",
+    "bio": "Cada día me entero algo más de este mundillo, y sobre todo de Sistemas Informáticos. 🐋🐋",
+    "urlPhoto": "/aulaTeam/MiguelOrzaez.png",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/miguelitorzaez" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/miguel-orzaez-pintor-017303184/"
+      },
+      { "type": "GITHUB", "link": "https://github.com/orzaez" }
+    ]
+  },
+  {
+    "name": "Pablo López Gosálvez",
+    "rol": "MANAGEMENT",
+    "bio": "4th year student of Computer Engineering specialised in Software. Passionate about web and multiplatform development.",
+    "urlPhoto": "/aulaTeam/PabloLopezGosalvez.jpg",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/pabloccf1805" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/pablo-l%C3%B3pez-gos%C3%A1lvez-9bbb0b228/"
+      },
+      { "type": "GITHUB", "link": "https://github.com/pabloccf" }
+    ]
+  },
+  {
+    "name": "Moisés Moyano Cejudo",
+    "rol": "MARKETING",
+    "bio": "Estudiante de Ingeniería Informática con interés por el continuo aprendizaje.",
+    "urlPhoto": "/aulaTeam/MoisésMoyanoCejudo.jpg",
+    "contacts": [
+      {
+        "type": "LINKEDIN",
+        "link": "www.linkedin.com/in/moisés-moyano-cejudo-322a56229"
+      },
+      { "type": "GITHUB", "link": "https://github.com/mmc2001" }
+    ]
+  },
+  {
+    "name": "Jose Maria Muñoz López",
+    "rol": "MANAGEMENT",
+    "bio": "Estudiante de Ingeniería Informática. Especialidad computadores.",
+    "urlPhoto": "/aulaTeam/JoseMariaMuñoz.jpg",
+    "contacts": [
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/jos%C3%A9-mar%C3%ADa-mu%C3%B1oz-l%C3%B3pez-28babb222/"
+      }
+    ]
+  },
+  {
+    "name": "Rafael Emilio Pérez",
+    "rol": "MANAGEMENT",
+    "bio": "3rd year Computer Engineering student at UCO",
+    "urlPhoto": "/aulaTeam/RafaelPérez.jpeg",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/rafaapeerez" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/rafael-pérez-lópez-590725211/"
+      },
+      { "type": "GITHUB", "link": "https://github.com/rafapeerez" }
+    ]
+  },
+  {
+    "name": "David Pérez Dueñas",
+    "rol": "MARKETING",
+    "bio": "Trabajador y apasionado por la tecnología, me gusta aprender e investigar por mi cuenta en mis ratos libres.😉",
+    "urlPhoto": "/aulaTeam/DavidPerez.jpg",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/davidperezduea2" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/david-pérez-dueñas-0801851a4/"
+      },
+      { "type": "GITHUB", "link": "https://github.com/Davison27" }
+    ]
+  },
+  {
+    "name": "Arturo Vicente Pérez",
+    "rol": "INFRASTRUCTURE",
+    "bio": "Fanático del cacharreo, y del desarrollo de aplicaciones móviles.",
+    "urlPhoto": "/aulaTeam/ArturoVicentePerez.jpg",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/ArturoVicenteP2" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/arturo-vicente-p%C3%A9rez-3b0349195"
+      },
+      { "type": "GITHUB", "link": "https://github.com/ARVIPE" }
+    ]
+  },
+  {
+    "name": "Silvia Roldán Flores",
+    "rol": "MANAGEMENT",
+    "bio": "Estudiante de 3° de Ingeniería Informática en la mención de Software",
+    "urlPhoto": "/aulaTeam/SilviaRoldán.jpg",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/silviarf292" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/silvia-roldán-flores-5986b7211"
+      },
+      { "type": "GITHUB", "link": "https://github.com/Silvya292" }
+    ]
+  },
+  {
+    "name": "Marc Rodríguez",
+    "rol": "MANAGEMENT",
+    "bio": "Software crafter padawan",
+    "urlPhoto": "/aulaTeam/MarcRodríguez.jpg",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/marc_doblefilo" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/marc-rodr%C3%ADguez-8b1441195/"
+      },
+      { "type": "GITHUB", "link": "https://github.com/marc-doblefilo" }
+    ]
+  },
+  {
+    "name": "Jesús Escribano Serena",
+    "rol": "MANAGEMENT",
+    "bio": "Estudiante de 3º de Ingeniería Informática (Software). De vez en cuando envío correos para vender tomates 🍅",
+    "urlPhoto": "/aulaTeam/JesusEscribano.jpg",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/jesusescribanos" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/jes%C3%BAs-escribano-serena-4223b2211"
+      },
+      { "type": "GITHUB", "link": "https://github.com/jes106" }
+    ]
+  },
+  {
+    "name": "Adrián Leiva Rojano",
+    "rol": "INFRASTRUCTURE",
+    "bio": "ASL Infrastructure Delegate 🐧🍅, Software Developer Trainee at Genially.",
+    "urlPhoto": "/aulaTeam/AdriánLeiva.jpg",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/leivaa21_" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/adri%C3%A1n-leiva-rojano-02763b216/"
+      },
+      { "type": "GITHUB", "link": "https://github.com/leivaa21" }
     ]
   }
 ]
