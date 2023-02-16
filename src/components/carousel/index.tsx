@@ -61,7 +61,10 @@ const Carousel = ({images, className, ...rest} : CarouselProps) => {
 
   useEffect(() => {
     setInterval(() => {
-      nextSlide();
+      const isHover = slideshow.current?.parentElement?.querySelector(':hover') !== null;
+      if (!isHover) {
+        nextSlide();
+      }
     }, 5000);
     return () => {
       document.removeEventListener("transitionend", transition)
@@ -72,7 +75,7 @@ const Carousel = ({images, className, ...rest} : CarouselProps) => {
   
 
   return (
-    <div className={`${styles.main} ${className}`} {...rest}>
+    <div id='carousel-container' className={`${styles.main} ${className}`} {...rest}>
       <div className={styles.slideshow} ref={slideshow}>
         {images.map(image => (
           <div key={`image-${image.alt}`} className={styles.slide}>
