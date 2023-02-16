@@ -63,7 +63,7 @@ const Team: NextPage = () => {
           </section>
 
           <section id="team" className={styles.section}>
-            <h1 className={styles.sectionTitle}>Team</h1>
+            <h1 className={styles.sectionTitle}>🍅 Un equipo increíble 🍅</h1>
             <TeamMembersGrid teamMembers={team as TeamMemberProps[]}/>
           </section>
 

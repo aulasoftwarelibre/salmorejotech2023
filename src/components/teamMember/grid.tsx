@@ -16,7 +16,7 @@ const TeamMembersGrid = ({teamMembers}: TeamMemberGridProps) => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.rolTitle}>Management Team</h1>
+      <h1 className={styles.rolTitle}>Gestión 📈</h1>
       <div className={styles.grid}>
       {ManagementTeamMembers.map(teamMember => {
         return (
@@ -32,7 +32,7 @@ const TeamMembersGrid = ({teamMembers}: TeamMemberGridProps) => {
       })}
       </div>
 
-      <h1 className={styles.rolTitle}>Infrastructure Team</h1>
+      <h1 className={styles.rolTitle}>Infraestructura 🏗️</h1>
       <div className={styles.grid}>
       {InfraTeamMembers.map(teamMember => {
         return (
@@ -48,7 +48,7 @@ const TeamMembersGrid = ({teamMembers}: TeamMemberGridProps) => {
       })}
       </div>
 
-      <h1 className={styles.rolTitle}>Marketing Team</h1>
+      <h1 className={styles.rolTitle}>Marketing 📣</h1>
       <div className={styles.grid}>
 
       {MarketingTeamMembers.map(teamMember => {
