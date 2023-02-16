@@ -30,7 +30,6 @@ class MyDocument extends Document {
           <link rel="icon" href="/images/favicon.ico" />
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
           {/** Social - Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@AulaSL" />
