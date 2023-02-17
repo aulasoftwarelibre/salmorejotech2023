@@ -26,6 +26,7 @@
 .heroSubtitle {
   font-size: calc(2 * (0.5rem + 1vw));
   color: white;
+  text-align: center;
 }
 
 .section {
