@@ -42,12 +42,14 @@ export const TeamMemberCard = ({name, bio, urlPhoto, contacts}:  TeamMemberProps
   return (
     <div className={styles.card}>
       <img className={styles.teamMemberImage} src={urlPhoto} alt="Imagen del ponente" />
-      <div className={styles.cardInfo}>
-        <p className={styles.name}>{name}</p>
-        <p className={styles.bio}>{bio}</p>
-      </div>
-      <div className={styles.socialMedia}>
-        {contacts.map(contact => renderContactLink(contact))}
+      <div className={styles.spaceBetween}>
+        <div className={styles.cardInfo}>
+          <p className={styles.name}>{name}</p>
+          <p className={styles.bio}>{bio}</p>
+        </div>
+        <div className={styles.socialMedia}>
+          {contacts.map(contact => renderContactLink(contact))}
+        </div>
       </div>
     </div>
   )

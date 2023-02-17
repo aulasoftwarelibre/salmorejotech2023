@@ -52,6 +52,14 @@
   backdrop-filter: blur(10px);
 }
 
+.spaceBetween{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.8rem;
+  justify-content: space-between;
+}
+
 @media (min-width: 376px) {
   .card {
     max-width: 180px;
@@ -71,6 +79,7 @@
 }
 
 .cardInfo {
+  padding: 0.5rem;
   width: 100%;
   text-align: center;
 }
