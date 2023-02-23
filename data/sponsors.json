@@ -10,5 +10,11 @@
     "type": "PERA",
     "imageUrl": "/sponsors/audiense.svg",
     "href": "https://es.audiense.com/"
+  },
+  {
+    "name": "Atmira",
+    "type": "PERA",
+    "imageUrl": "/sponsors/atmira.svg",
+    "href": "https://atmira.com/"
   }
 ]
