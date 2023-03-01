@@ -16,5 +16,11 @@
     "type": "PERA",
     "imageUrl": "/sponsors/atmira.svg",
     "href": "https://atmira.com/"
+  },
+  {
+    "name": "RTI",
+    "type": "CHERRY",
+    "imageUrl": "/sponsors/rti.svg",
+    "href": "https://www.rti.com"
   }
 ]
