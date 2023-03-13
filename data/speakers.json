@@ -1,14 +1,15 @@
 [
   {
-    "name": "Coming Soon!",
-    "bio": "",
-    "urlPhoto": "/speakers/primary-placeholder.png",
-    "contacts": []
-  },
-  {
-    "name": "Coming Soon!",
-    "bio": "",
-    "urlPhoto": "/speakers/secondary-placeholder.png",
-    "contacts": []
+    "name": "Marta Mañani",
+    "bio": "QA Engineer en Genially",
+    "urlPhoto": "/speakers/MartaMagnani.png",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/martamacfly" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/martamagnani/"
+      },
+      { "type": "GITHUB", "link": "https://github.com/MartaManani" }
+    ]
   }
 ]
