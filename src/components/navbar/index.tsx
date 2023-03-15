@@ -5,7 +5,6 @@ import styles from './navbar.module.css';
 import { useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-
 interface Link {
   title: string,
   href: string,
