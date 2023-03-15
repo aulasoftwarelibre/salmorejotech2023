@@ -1,0 +1,96 @@
+[
+  {
+    "type": 1,
+    "talk": {
+      "title": "Some Project Management Talk",
+      "info": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+      "timestamp": {
+        "startsAt": "9:00",
+        "endsAt": "9:40"
+      },
+      "labels": ["PM"],
+      "speaker": {
+        "name": "Jane Doe",
+        "imageUrl": "/speakers/primary-placeholder.png"
+      }
+    }
+  },
+  {
+    "type": 0,
+    "break": {
+      "title": "Desayuno",
+      "timestamp": {
+        "startsAt": "9:45",
+        "endsAt": "10:30"
+      }
+    }
+  },
+  {
+    "type": 2,
+    "primaryTalk": {
+      "title": "Interesting QA Things",
+      "info": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+      "timestamp": {
+        "startsAt": "10:35",
+        "endsAt": "11:15"
+      },
+      "labels": ["QA"],
+      "speaker": {
+        "name": "John Doe",
+        "imageUrl": "/speakers/secondary-placeholder.png"
+      }
+    },
+    "secondaryTalk": {
+      "title": "Backend using pencil and notebook",
+      "info": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+      "timestamp": {
+        "startsAt": "10:35",
+        "endsAt": "11:15"
+      },
+      "labels": ["Backend"],
+      "speaker": {
+        "name": "Jona Doe",
+        "imageUrl": "/speakers/primary-placeholder.png"
+      }
+    }
+  },
+  {
+    "type": 2,
+    "primaryTalk": {
+      "title": "Amazing Flying AWS",
+      "info": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+      "timestamp": {
+        "startsAt": "11:20",
+        "endsAt": "12:00"
+      },
+      "labels": ["Infra"],
+      "speaker": {
+        "name": "Jena Doe",
+        "imageUrl": "/speakers/primary-placeholder.png"
+      }
+    },
+    "secondaryTalk": {
+      "title": "QA in Frontend",
+      "info": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+      "timestamp": {
+        "startsAt": "11:20",
+        "endsAt": "12:00"
+      },
+      "labels": ["QA", "Frontend"],
+      "speaker": {
+        "name": "James Doe",
+        "imageUrl": "/speakers/secondary-placeholder.png"
+      }
+    }
+  },
+  {
+    "type": 0,
+    "break": {
+      "title": "Networking y Salmorejo",
+      "timestamp": {
+        "startsAt": "12:00",
+        "endsAt": "14:00"
+      }
+    }
+  }
+]

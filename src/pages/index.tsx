@@ -23,6 +23,7 @@ import WhiteSection from '../components/whiteSection'
 import { SpeakerProps } from '../components/speakers'
 import { InfoTikets } from '../components/infoTikets'
 import { Location } from '../components/location'
+import { Schedule } from '../components/schedule'
 
 const Home: NextPage = () => {
 
@@ -96,6 +97,11 @@ const Home: NextPage = () => {
         <h1 className={styles.sectionTitle}>¡La mejor ubicación!</h1>
         <h2 className={styles.sectionSubTitle}>Rectorado de la Universidad de Córdoba</h2>
         <Location/>
+      </section>
+
+      <section id="schedule" className={styles.section}>
+        <h1 className={styles.sectionTitle}>Programa</h1>
+        <Schedule />
       </section>
 
       <section id="speakers" className={styles.section}>

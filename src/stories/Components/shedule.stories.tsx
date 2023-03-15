@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { Horario } from '../../components/schedule/index';
+import { Schedule } from '../../components/schedule/index';
 import { TalkInterface, TalksLinePropsInterface, SpeakerInfoInterface } from '../../interfaces/schedule.interfaces';
 
 const SpeakerInfo1: SpeakerInfoInterface = {
@@ -47,12 +47,12 @@ const talks: TalkInterface[]=[
 
 export default {
   title: "Components/schedule",
-  component: Horario,
+  component: Schedule,
   argTypes: {
     talks
   },
-} as ComponentMeta<typeof Horario>;
+} as ComponentMeta<typeof Schedule>;
 
-export const horario: ComponentStory<typeof Horario> = (talks) => (
-  <Horario {...talks} />
+export const horario: ComponentStory<typeof Schedule> = (talks) => (
+  <Schedule {...talks} />
 );
