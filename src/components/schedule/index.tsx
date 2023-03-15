@@ -2,7 +2,7 @@ import { TalkInterface } from "../../interfaces/schedule.interfaces";
 import { Talk } from "./talk";
 import { BreakLine } from './breakLine/index';
 
-export const Shedule = (talks: TalkInterface[]) => {
+export const Schedule = (talks: TalkInterface[]) => {
   talks.map((talk, index) => {
     return (
       <>
