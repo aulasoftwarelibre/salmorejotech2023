@@ -3,10 +3,10 @@ import { GetAllScheduleLines } from "../../contexts/schedule-line/application/Ge
 import { ScheduleLine } from "../../contexts/schedule-line/domain/ScheduleLine";
 import { ScheduleLineTypeEnum } from "../../contexts/schedule-line/domain/ScheduleLineType";
 import { Talk as TalkEntity } from "../../contexts/talk/domain/Talk";
-import { DualTalkLine, SingleTalkLine, BreakLine } from "./scheduleLine";
+import { DualTalkLine, SingleTalkLine, BreakLine } from "./components/ScheduleLine";
 import { Timestamp } from "../../contexts/shared/domain/Timestamp";
 
-import styles from './index.module.css';
+import styles from './styles/index.module.css';
 
 export const Schedule = () => {
   const scheduleLines = new GetAllScheduleLines().execute();
@@ -26,18 +26,24 @@ export const Schedule = () => {
     return (
       <BreakLine
         title={_break.title} 
-        timestamp={_break.timestamp} 
+        timestamp={_break.timestamp}
+        key={`Break-${_break.title}`}
       />
     )
   }
   const renderSingleTalkLine = (talk: TalkEntity) => {
     return (
-      <SingleTalkLine mask={'mask1'} {...talk.toPrimitives()} />
+        <SingleTalkLine
+          key={`Single-Talk-Line:${talk.title}`}
+          mask={'mask1'} 
+          {...talk.toPrimitives()} 
+        />
     )
   }
   const renderDualTalkLine = ({timestamp, primary, secondary}: {timestamp: Timestamp, primary: TalkEntity, secondary: TalkEntity}) => {
     return (
       <DualTalkLine
+        key={`Dual-Talk-Line:"${primary.title}" & "${secondary.title}"`}
         timestamp={timestamp}
         primaryTalk={{mask:'mask1', ...primary.toPrimitives()}} 
         secondaryTalk={{mask:'mask1', ...secondary.toPrimitives()}} 

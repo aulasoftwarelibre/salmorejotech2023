@@ -1,5 +1,5 @@
-import { TimestampAsPrimitives } from "../../contexts/shared/domain/Timestamp"
-import styles from './index.module.css';
+import { TimestampAsPrimitives } from "../../../contexts/shared/domain/Timestamp"
+import styles from '../styles/index.module.css';
 
 
 export const LineTime = (timestamp: TimestampAsPrimitives) => {

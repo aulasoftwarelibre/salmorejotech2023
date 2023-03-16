@@ -80,20 +80,20 @@
 }
 
 .speakerImage.mask1 {
-  -webkit-mask-image: url(../../../public/mascarasPonentes/mascaraPonente1.svg);
-  mask-image: url(../../../public/mascarasPonentes/mascaraPonente1.svg);
+  -webkit-mask-image: url(../../../../public/mascarasPonentes/mascaraPonente1.svg);
+  mask-image: url(../../../../public/mascarasPonentes/mascaraPonente1.svg);
 }
 .speakerImage.mask2 {
-  -webkit-mask-image: url(../../../public/mascarasPonentes/mascaraPonente2.svg);
-  mask-image: url(../../../public/mascarasPonentes/mascaraPonente2.svg);
+  -webkit-mask-image: url(../../../../public/mascarasPonentes/mascaraPonente2.svg);
+  mask-image: url(../../../../public/mascarasPonentes/mascaraPonente2.svg);
 }
 .speakerImage.mask3 {
-  -webkit-mask-image: url(../../../public/mascarasPonentes/mascaraPonente3.svg);
-  mask-image: url(../../../public/mascarasPonentes/mascaraPonente3.svg);
+  -webkit-mask-image: url(../../../../public/mascarasPonentes/mascaraPonente3.svg);
+  mask-image: url(../../../../public/mascarasPonentes/mascaraPonente3.svg);
 }
 .speakerImage.mask4 {
-  -webkit-mask-image: url(../../../public/mascarasPonentes/mascaraPonente4.svg);
-  mask-image: url(../../../public/mascarasPonentes/mascaraPonente4.svg);
+  -webkit-mask-image: url(../../../../public/mascarasPonentes/mascaraPonente4.svg);
+  mask-image: url(../../../../public/mascarasPonentes/mascaraPonente4.svg);
 }
 
 .labels {

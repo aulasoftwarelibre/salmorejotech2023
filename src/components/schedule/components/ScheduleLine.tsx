@@ -1,9 +1,9 @@
-import styles from "./index.module.css";
-import { Talk, TalkParameters } from "./talk";
+import styles from "../styles/index.module.css";
+import { Talk, TalkParameters } from "./Talk";
 import { LineTime } from "./LineTime";
-import { BreakAsPrimitives } from "../../contexts/break/domain/Break";
+import { BreakAsPrimitives } from "../../../contexts/break/domain/Break";
 import { Break } from "./Break";
-import { TimestampAsPrimitives } from "../../contexts/shared/domain/Timestamp";
+import { TimestampAsPrimitives } from "../../../contexts/shared/domain/Timestamp";
 
 export const SingleTalkLine = (talk: TalkParameters) => {
   return (
