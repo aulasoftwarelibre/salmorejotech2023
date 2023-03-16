@@ -11,7 +11,7 @@ const enum LabelColor {
 } 
 
 export const TalkLabelMap = new Map<string, LabelAsPrimitives>([
-  ['QA', {text: 'Quality Assurance', color: LabelColor.Lime}],
+  ['QA', {text: 'QA', color: LabelColor.Lime}],
   ['Backend', {text: 'Backend', color: LabelColor.Blue}],
   ['Frontend', {text: 'Frontend', color: LabelColor.Red}],
   ['PM', {text: 'Project Management', color: LabelColor.Mint}],

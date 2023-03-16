@@ -8,14 +8,17 @@
 }
 
 .date {
-  color: white;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding-top: 0.5rem;
   margin-right: 0.5rem;
+  padding: 0.5rem 0;
   text-align: center;
-  min-width: 4.3ch; /** 4.3 caracteres es más o menos lo que ocupa 00:00 */
+  min-width: 5.5ch;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: var(--lightShadow);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
 }
 
 .scheduleLine {
