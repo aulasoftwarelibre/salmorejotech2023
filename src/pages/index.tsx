@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import Button from '../components/button'
 import { Footer } from '../components/footer'
@@ -23,7 +23,7 @@ import WhiteSection from '../components/whiteSection'
 import { SpeakerProps } from '../components/speakers'
 import { InfoTikets } from '../components/infoTikets'
 import { Location } from '../components/location'
-import { Schedule } from '../components/schedule'
+// import { Schedule } from '../components/schedule'
 
 const Home: NextPage = () => {
 
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
   const content = useContentWritter({ contents: possibleContents });
 
   return (
-    <>
+    <Fragment>
     <Head>
       <title>Salmorejo Tech 2023</title>
     </Head>
@@ -99,11 +99,14 @@ const Home: NextPage = () => {
         <Location/>
       </section>
 
-      <section id="schedule" className={styles.section}>
-        <h1 className={styles.sectionTitle}>Programa</h1>
-        <Schedule />
-      </section>
-
+      {
+      /**
+        <section id="schedule" className={styles.section}>
+          <h1 className={styles.sectionTitle}>Programa</h1>
+          <Schedule />
+        </section>
+      **/
+      }
       <section id="speakers" className={styles.section}>
         <h1 className={styles.sectionTitle}>Nuestros ponentes</h1>
         <SpeakersGrid speakers={speakers as SpeakerProps[]}/>
@@ -118,7 +121,7 @@ const Home: NextPage = () => {
         <Footer />
       </div>
     </main>
-    </>
+    </Fragment>
   )
 }
 
