@@ -18,7 +18,7 @@ export const Talk = (talk: TalkParameters) => {
         <img
           className={`${styles[talk.mask]} ${styles.speakerImage}`}
           src={talk.speakerInfo.imageUrl}
-          alt={talk.speakerInfo.name}
+          alt={`Image of ${talk.speakerInfo.name}`}
         />
       </div>
     </div>

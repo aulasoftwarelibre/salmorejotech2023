@@ -5,7 +5,7 @@ import { BreakAsPrimitives } from "../../../contexts/break/domain/Break";
 import { Break } from "./Break";
 import { TimestampAsPrimitives } from "../../../contexts/shared/domain/Timestamp";
 
-export const SingleTalkLine = (talk: TalkParameters) => {
+export const SingleTalkLine = ({talk}: {talk: TalkParameters}) => {
   return (
     <div className={styles.scheduleLine}>
       {LineTime(talk.timestamp)}
@@ -24,9 +24,7 @@ export const DualTalkLine = ({ timestamp, primaryTalk, secondaryTalk }: {timesta
   );
 };
 
-
 export const BreakLine = ({title, timestamp}: BreakAsPrimitives) => {
-
   return (
     <div className={styles.scheduleLine}>
       {LineTime(timestamp)}

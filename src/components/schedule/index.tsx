@@ -10,13 +10,13 @@ import styles from './styles/index.module.css';
 
 export const Schedule = () => {
   const scheduleLines = new GetAllScheduleLines().execute();
-
+  
   const renderScheduleLine = (line: ScheduleLine) => {
     switch(line.type.value) {
       case ScheduleLineTypeEnum.Break:
         return renderBreakLine(line.break);
       case ScheduleLineTypeEnum.SingleTalk:
-        return renderSingleTalkLine(line.talk);
+        return renderSingleTalkLine({talk: line.talk});
       case ScheduleLineTypeEnum.DualTalk:
         return renderDualTalkLine({timestamp: line.timestamp, ...line.talks});
     }
@@ -25,35 +25,36 @@ export const Schedule = () => {
   const renderBreakLine = (_break: Break) => {
     return (
       <BreakLine
-        title={_break.title} 
+        title={_break.title}
         timestamp={_break.timestamp}
         key={`Break-${_break.title}`}
       />
     )
   }
-  const renderSingleTalkLine = (talk: TalkEntity) => {
+
+  const renderSingleTalkLine = ({talk}: {talk: TalkEntity}) => {
     return (
         <SingleTalkLine
           key={`Single-Talk-Line:${talk.title}`}
-          mask={'mask1'} 
-          {...talk.toPrimitives()} 
+          talk={{mask: 'mask1', ...talk.toPrimitives()}}
         />
     )
   }
+
   const renderDualTalkLine = ({timestamp, primary, secondary}: {timestamp: Timestamp, primary: TalkEntity, secondary: TalkEntity}) => {
     return (
       <DualTalkLine
         key={`Dual-Talk-Line:"${primary.title}" & "${secondary.title}"`}
         timestamp={timestamp}
-        primaryTalk={{mask:'mask1', ...primary.toPrimitives()}} 
-        secondaryTalk={{mask:'mask1', ...secondary.toPrimitives()}} 
+        primaryTalk={{mask: 'mask1', ...primary.toPrimitives()}}
+        secondaryTalk={{mask: 'mask1', ...secondary.toPrimitives()}}
       />
     )
   }
 
   return (
     <div className={styles.schedule}>
-      {scheduleLines.map(line => renderScheduleLine(line))}
+      {scheduleLines.map((line) => renderScheduleLine(line))}
     </div>
   )
 };
