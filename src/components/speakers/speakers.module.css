@@ -95,6 +95,7 @@
 .bio {
   letter-spacing: 1px;
   font-size: 0.9em;
+  padding: 0 0.5rem;
 }
 
 .name::selection,
