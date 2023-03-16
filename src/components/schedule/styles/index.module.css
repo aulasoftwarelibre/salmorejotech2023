@@ -1,6 +1,7 @@
 .schedule {
   max-width: 1600px;
   padding: 20px;
+  padding-bottom: 40px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -15,7 +16,7 @@
   padding: 0.5rem;
   text-align: center;
   min-width: 6.4ch;
-  background: linear-gradient(-50deg, hsl(26, 98%, 59%), hsl(346, 91%, 54%));
+  background: linear-gradient(-60deg, #fb7637, #f74245);
   box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
   border-radius: 5px;
@@ -32,7 +33,7 @@
   font-size: calc(0.8rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   width: 100%;
   padding: 1rem;
-  background: linear-gradient(-50deg, hsl(26, 98%, 59%), hsl(346, 91%, 54%));
+  background: linear-gradient(-60deg, #fb7637, #f74245);
   box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
   border-radius: 5px;
