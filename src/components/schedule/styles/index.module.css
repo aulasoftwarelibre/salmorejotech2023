@@ -15,7 +15,7 @@
   padding: 0.5rem 0;
   text-align: center;
   min-width: 5.5ch;
-  background: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(-50deg, hsl(26, 98%, 59%), hsl(346, 91%, 54%));
   box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
   border-radius: 5px;
@@ -23,7 +23,7 @@
 
 .scheduleLine {
   font-size: calc(0.8rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  color: black;
+  color: white;
   display: flex;
   gap: 0.5rem;
 }
@@ -32,7 +32,7 @@
   font-size: calc(0.8rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   width: 100%;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(-50deg, hsl(26, 98%, 59%), hsl(346, 91%, 54%));
   box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
   border-radius: 5px;
