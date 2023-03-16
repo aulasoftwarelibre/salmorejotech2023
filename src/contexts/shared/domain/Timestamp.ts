@@ -17,4 +17,8 @@ export class Timestamp {
       endsAt: this.endsAt,
     }
   }
+
+  public equals(timestamp: Timestamp): boolean {
+    return timestamp.startsAt === this.startsAt && timestamp.endsAt === this.endsAt
+  }
 }

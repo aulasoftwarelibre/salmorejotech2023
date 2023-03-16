@@ -1,4 +1,5 @@
 import { Break } from "../../break/domain/Break";
+import { Timestamp } from "../../shared/domain/Timestamp";
 import { Talk } from "../../talk/domain/Talk";
 import { TalkTrackEnum } from "../../talk/domain/TalkTrack";
 import { InvalidScheduleLineError } from "./errors/InvalidScheduleLineError";
@@ -17,6 +18,7 @@ export interface SingleTalkLineParams {
 }
 
 export interface DualTalkLineParams {
+  timestamp: Timestamp;
   primaryTalk: Talk;
   secondaryTalk: Talk;
 }
@@ -26,19 +28,19 @@ export interface BreakLineParams {
 }
 
 export class ScheduleLine {
-  private readonly _type: ScheduleLineType;
+  public readonly type: ScheduleLineType;
   private readonly _talks: Talk[] = new Array<Talk>();
   private readonly _break: Break | undefined;
 
   // In this constructor we trust what comes from static factory methods!
   private constructor(args: ScheduleLineParams) {
-    this._type = args.type;
+    this.type = args.type;
     this._talks = args.talk ? [args.talk] : [...args.talks || []]
     this._break = args.break;
   }
 
   public static createSingleTalkLine(args: SingleTalkLineParams): ScheduleLine {
-    if(args.talk.track !== TalkTrackEnum.Unique) {
+    if(!args.talk.track.equals(TalkTrackEnum.Unique)) {
       throw InvalidScheduleLineError.causeSingleLineMustHaveUniqueTrackTalk();
     }
     return new ScheduleLine({
@@ -49,9 +51,13 @@ export class ScheduleLine {
 
   public static createDualTalkLine(args: DualTalkLineParams): ScheduleLine {
     
-    const { primaryTalk, secondaryTalk } = args;
+    const { timestamp, primaryTalk, secondaryTalk } = args;
 
-    if(primaryTalk.track !== TalkTrackEnum.Primary || secondaryTalk.track !== TalkTrackEnum.Secondary) {
+    if(!timestamp.equals(primaryTalk.timestamp) || !timestamp.equals(secondaryTalk.timestamp)) {
+      throw InvalidScheduleLineError.causeDualLineMustHaveCommonTimestamp();
+    }
+
+    if(!primaryTalk.track.equals(TalkTrackEnum.Primary) || !secondaryTalk.track.equals(TalkTrackEnum.Secondary)) {
       throw InvalidScheduleLineError.causeDualLineMustHavePrimaryAndSecondaryTrackTalks();
     }
 
@@ -68,23 +74,19 @@ export class ScheduleLine {
     })
   }
 
-  get type(): ScheduleLineTypeEnum {
-    return this._type.value;
-  }
-
   get talk(): Talk {
-    if(this.type !== ScheduleLineTypeEnum.SingleTalk) {
+    if(!this.type.equals(ScheduleLineTypeEnum.SingleTalk)) {
       throw InvalidScheduleLineUsageError.causeOnlySingleTalkLinesHaveAccessToTalkProperty()
     }
     return this._talks[0] as Talk;
   }
 
   get talks(): {primary: Talk, secondary: Talk}{
-    if(this.type !== ScheduleLineTypeEnum.DualTalk) {
+    if(!this.type.equals(ScheduleLineTypeEnum.DualTalk)) {
       throw InvalidScheduleLineUsageError.causeOnlyDualTalkLinesHaveAccessToTalksProperty()
     }
 
-    if(this._talks[0].track === TalkTrackEnum.Primary) {
+    if(this._talks[0].track.equals(TalkTrackEnum.Primary)) {
       return { primary: this._talks[0], secondary: this._talks[1] }
     }
 
@@ -92,10 +94,21 @@ export class ScheduleLine {
   }
 
   get break(): Break {
-    if(this.type !== ScheduleLineTypeEnum.Break) {
+    if(!this.type.equals(ScheduleLineTypeEnum.Break)) {
       throw InvalidScheduleLineUsageError.causeBreakLinesHaveAccessToBreakProperty()
     }
 
     return this._break as Break;
+  }
+
+  get timestamp(): Timestamp {
+    switch(this.type.value) {
+      case ScheduleLineTypeEnum.Break:
+        return this.break.timestamp;
+      case ScheduleLineTypeEnum.DualTalk:
+        return this.talks.primary.timestamp;
+      case ScheduleLineTypeEnum.SingleTalk:
+        return this.talk.timestamp;
+    }
   }
 }

@@ -20,6 +20,9 @@ export class TalkTrack {
       default:
         throw InvalidTalkTrackError.causeTrackIsNotRegistered(val);
     }
+  }
 
+  public equals(val: TalkTrackEnum) {
+    return this.value === val;
   }
 }

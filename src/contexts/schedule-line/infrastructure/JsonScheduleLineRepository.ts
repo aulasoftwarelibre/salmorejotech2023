@@ -28,13 +28,12 @@ export class JsonScheduleLineRepository implements ScheduleLineRepository {
         return ScheduleLine.createSingleTalkLine({ talk });
       
       case ScheduleLineTypeEnum.DualTalk:
-
         const primaryTalkPrimitives = this.parseTalkDocument(document.primaryTalk);
         const primaryTalk = Talk.createPrimaryTalk(primaryTalkPrimitives);
         const secondaryTalkPrimitives = this.parseTalkDocument(document.secondaryTalk);
         const secondaryTalk = Talk.createSecondaryTalk(secondaryTalkPrimitives);
 
-        return ScheduleLine.createDualTalkLine({ primaryTalk, secondaryTalk })
+        return ScheduleLine.createDualTalkLine({ timestamp: primaryTalk.timestamp ,primaryTalk, secondaryTalk })
     }
   }
 

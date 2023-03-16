@@ -32,17 +32,17 @@ export interface CreateTalkParams {
 export class Talk {
   public readonly title: string;
   public readonly info: string;
-  private readonly _timestamp: Timestamp;
-  private readonly _labels: Array<TalkLabel>;
-  private readonly _track: TalkTrack;
+  public readonly timestamp: Timestamp;
+  public readonly labels: Array<TalkLabel>;
+  public readonly track: TalkTrack;
   public readonly speakerInfo: SpeakerInfo;
 
   private constructor(args: TalkParams) {
     this.title = args.title;
     this.info = args.info;
-    this._timestamp = new Timestamp(args.timestamp);
-    this._labels = args.labels.map(label => new TalkLabel(label));
-    this._track = TalkTrack.of(args.track);
+    this.timestamp = new Timestamp(args.timestamp);
+    this.labels = args.labels.map(label => new TalkLabel(label));
+    this.track = TalkTrack.of(args.track);
     this.speakerInfo = new SpeakerInfo(args.speakerInfo)
   }
 
@@ -58,24 +58,13 @@ export class Talk {
     return new Talk({track: TalkTrackEnum.Secondary,...args})
   }
 
-
-  get labels(): LabelAsPrimitives[] {
-    return this._labels.map(label => label.toPrimitives())
-  }
-  get track(): TalkTrackEnum {
-    return this._track.value
-  }
-  get timestamp(): TimestampAsPrimitives {
-    return this._timestamp.toPrimitives()
-  }
-
   public toPrimitives(): TalkAsPrimitives {
     return {
       title: this.title,
       info: this.info,
       timestamp: this.timestamp,
-      labels: this.labels,
-      track: this.track,
+      labels: this.labels.map(label => label.toPrimitives()),
+      track: this.track.value,
       speakerInfo: this.speakerInfo,
     }
   }

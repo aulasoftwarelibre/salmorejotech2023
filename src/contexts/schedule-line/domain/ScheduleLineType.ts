@@ -20,6 +20,9 @@ export class ScheduleLineType {
       default:
         throw InvalidScheduleLineTypeError.causeTypeIsNotRegistered(val);
     }
+  }
 
+  public equals(value: ScheduleLineTypeEnum) {
+    return this.value === value;
   }
 }

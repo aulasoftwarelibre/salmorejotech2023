@@ -5,15 +5,16 @@ export interface BreakAsPrimitives {
   timestamp: TimestampAsPrimitives;
 }
 
+export interface BreakParams {
+  title: string;
+  timestamp: Timestamp;
+}
+
 export class Break {
   public readonly title: string;
-  private readonly _timestamp: Timestamp;
-  constructor(args: BreakAsPrimitives) {
+  public readonly timestamp: Timestamp;
+  constructor(args: BreakParams) {
     this.title = args.title;
-    this._timestamp = new Timestamp(args.timestamp);
-  }
-
-  get timestamp(): TimestampAsPrimitives {
-    return this._timestamp.toPrimitives();
+    this.timestamp = args.timestamp;
   }
 }
