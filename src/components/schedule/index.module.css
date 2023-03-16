@@ -8,17 +8,19 @@
 }
 
 .date {
+  color: white;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding-top: 0.5rem;
-  text-align: right;
+  margin-right: 0.5rem;
+  text-align: center;
   min-width: 4.3ch; /** 4.3 caracteres es más o menos lo que ocupa 00:00 */
 }
 
 .scheduleLine {
   font-size: calc(0.8rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  color: white;
+  color: black;
   display: flex;
   gap: 0.5rem;
 }
@@ -27,7 +29,7 @@
   font-size: calc(0.8rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   width: 100%;
   padding: 1rem;
-  background: rgba(255, 148, 148, 0.192);
+  background: rgba(255, 255, 255, 0.5);
   box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
   border-radius: 5px;
