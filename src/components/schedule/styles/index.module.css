@@ -12,9 +12,9 @@
   justify-content: space-between;
   flex-direction: column;
   margin-right: 0.5rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   text-align: center;
-  min-width: 5.5ch;
+  min-width: 6.4ch;
   background: linear-gradient(-50deg, hsl(26, 98%, 59%), hsl(346, 91%, 54%));
   box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
