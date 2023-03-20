@@ -9,10 +9,10 @@ export const Talk = (talk: TalkParameters) => {
 
   return (
     <div className={styles.container}>
-      <h3 className={styles.talkTitle}>{talk.title}</h3>
+      <span className={styles.talkTitle}>{talk.title}</span>
       <div className={styles.horizontal}>
         <div className={styles.vertical}>
-          <h4 className={styles.speakerName}>{talk.speakerInfo.name}</h4>
+          <span className={styles.speakerName}>{talk.speakerInfo.name}</span>
           <Labels labels={talk.labels} talkTitle={talk.title}/>
         </div>
         <img
