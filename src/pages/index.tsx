@@ -80,8 +80,9 @@ const Home: NextPage = () => {
       <Moleculas />
       <div className='anchoMaximo'>
         <section id="Hero" className={styles.hero}>
-          <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" />
-          <h3 className={styles.subtitle}>Más <span>{content}</span></h3>
+          <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="logo-salmorejo-hero" alt="Logo de Salmorejo Tech" />
+          <h1 style={{visibility: 'hidden', height: 0}}>Salmorejo Tech</h1>
+          <h2 className={styles.subtitle}>Más <span>{content}</span></h2>
           <h2 className={styles.date}>28 de abril de 2023</h2>
           <div className={styles.centerTicketsButton}>
             <Button label="ENTRADAS" href="https://www.eventbrite.es/e/entradas-salmorejotech-2023-535749429967"/>
@@ -95,15 +96,16 @@ const Home: NextPage = () => {
       </section>
 
       <section id="where" className={styles.section}>
-        <h1 className={styles.sectionTitle}>¡La mejor ubicación!</h1>
-        <h2 className={styles.sectionSubTitle}>Rectorado de la Universidad de Córdoba</h2>
+        <h2 className={styles.sectionTitle}>¡La mejor ubicación!</h2>
+        <h3 className={styles.sectionSubTitle}>Rectorado de la Universidad de Córdoba</h3>
         <Location/>
       </section>
 
-      <WhiteSection id="sponsors" className={styles.section}>
-      <h1 className={`${styles.sectionTitle} ${styles.black}`}>Programa</h1>
+      <WhiteSection id="schedule" className={styles.section}>
+        <h1 className={`${styles.sectionTitle} ${styles.black}`}>Programa</h1>
         <Schedule />
-        </WhiteSection>
+      </WhiteSection>
+      
       <section id="speakers" className={styles.section}>
         <h1 className={styles.sectionTitle}>Nuestros ponentes</h1>
         <SpeakersGrid speakers={speakers as SpeakerProps[]}/>

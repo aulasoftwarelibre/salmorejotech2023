@@ -47,7 +47,7 @@ const Team: NextPage = () => {
         <Navbar contents={navbarContents} variant='secondary'/>
         <Moleculas/>
           <section id="team-hero" className={styles.hero}>
-            <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" />
+            <img className={styles.logo} src='/sprites/isologo-blanco.svg' alt="Salmorejo Tech" />
             <h1 className={styles.heroSubtitle}>Todo es más fácil cuando tienes un equipo lleno de crácks!</h1>
           </section>
 
