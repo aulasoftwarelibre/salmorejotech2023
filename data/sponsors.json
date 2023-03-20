@@ -28,5 +28,11 @@
     "type": "CHERRY",
     "imageUrl": "/sponsors/kairos.svg",
     "href": "https://www.kairosds.com/"
+  },
+  {
+    "name": "Lifull",
+    "type": "CHERRY",
+    "imageUrl": "/sponsors/lifull.svg",
+    "href": "https://www.lifullconnect.com/"
   }
 ]
