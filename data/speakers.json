@@ -11,5 +11,19 @@
       },
       { "type": "GITHUB", "link": "https://github.com/MartaManani" }
     ]
+  },
+  {
+    "name": "Gustavo Martin",
+    "bio": "Data Engineer en Adevinta",
+    "urlPhoto": "/speakers/GustavoMartin.png",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/gumartinm" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/gustavo-martin-morcuende/"
+      },
+      { "type": "GITHUB", "link": "https://github.com/gumartinm" },
+      { "type": "WEB", "link": "https://gumartinm.name/" }
+    ]
   }
 ]
