@@ -107,7 +107,7 @@
     "name": "Juanjo Trenado",
     "rol": "INFRASTRUCTURE",
     "bio": "Frontend Developer",
-    "urlPhoto": "/aulaTeam/JuanjoTrenado.jpeg",
+    "urlPhoto": "/aulaTeam/JuanjoTrenado.jpg",
     "contacts": [
       { "type": "TWITTER", "link": "https://twitter.com/Juanjotrenadoz" },
       {
@@ -178,7 +178,7 @@
     "name": "Rafael Emilio Pérez",
     "rol": "MANAGEMENT",
     "bio": "3rd year Computer Engineering student at UCO",
-    "urlPhoto": "/aulaTeam/RafaelPérez.jpeg",
+    "urlPhoto": "/aulaTeam/RafaelPérez.jpg",
     "contacts": [
       { "type": "TWITTER", "link": "https://twitter.com/rafaapeerez" },
       {
