@@ -13,7 +13,7 @@
   border-radius: 5px 5px 0 0;
   width: 100%;
   height: var(--card-max-width);
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .speakerImage::selection {
