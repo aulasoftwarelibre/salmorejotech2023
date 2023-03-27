@@ -25,5 +25,18 @@
       { "type": "GITHUB", "link": "https://github.com/gumartinm" },
       { "type": "WEB", "link": "https://gumartinm.name/" }
     ]
+  },
+  {
+    "name": "Adrián López",
+    "bio": "Backend developer en Certainly",
+    "urlPhoto": "/speakers/AdrianLopez.jpg",
+    "contacts": [
+      { "type": "TWITTER", "link": "https://twitter.com/Adrianlopezgue" },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/adrianlopezgue/"
+      },
+      { "type": "GITHUB", "link": "https://github.com/AdrianLopezGue" }
+    ]
   }
 ]
