@@ -24,7 +24,6 @@ import { SpeakerProps } from '../components/speakers'
 import { InfoTikets } from '../components/infoTikets'
 import { Location } from '../components/location'
 import { Schedule } from '../components/schedule'
-// import { Schedule } from '../components/schedule'
 
 const Home: NextPage = () => {
 
@@ -90,8 +89,8 @@ const Home: NextPage = () => {
         </section>
       </div>
       <section id="info" className={styles.section}>
-        <h1 className={styles.sectionTitle}>Cruces de Mayo y Salmorejo</h1>
-        <h2 className={styles.sectionSubTitle}>¿Hay algo más Cordobés?</h2>
+        <h2 className={styles.sectionTitle}>Cruces de Mayo y Salmorejo</h2>
+        <h3 className={styles.sectionSubTitle}>¿Hay algo más Cordobés?</h3>
         <InfoTikets/>
       </section>
 
@@ -102,17 +101,17 @@ const Home: NextPage = () => {
       </section>
 
       <WhiteSection id="schedule" className={styles.section}>
-        <h1 className={`${styles.sectionTitle} ${styles.black}`}>Programa</h1>
+        <h2 className={`${styles.sectionTitle} ${styles.black}`}>Programa</h2>
         <Schedule />
       </WhiteSection>
       
       <section id="speakers" className={styles.section}>
-        <h1 className={styles.sectionTitle}>Nuestros ponentes</h1>
+        <h2 className={styles.sectionTitle}>Nuestros ponentes</h2>
         <SpeakersGrid speakers={speakers as SpeakerProps[]}/>
       </section>
       
       <WhiteSection id="sponsors" className={styles.section}>
-        <h1 className={`${styles.sectionTitle} ${styles.black}`}>Sponsors</h1>
+        <h2 className={`${styles.sectionTitle} ${styles.black}`}>Sponsors</h2>
         <SponsorsGrid sponsors={sponsors as SponsorProps[]}/>
       </WhiteSection>
 

@@ -47,8 +47,9 @@ const Team: NextPage = () => {
         <Navbar contents={navbarContents} variant='secondary'/>
         <Moleculas/>
           <section id="team-hero" className={styles.hero}>
-            <img className={styles.logo} src='/sprites/isologo-blanco.svg' alt="Salmorejo Tech" />
-            <h1 className={styles.heroSubtitle}>Todo es más fácil cuando tienes un equipo lleno de crácks!</h1>
+            <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="logo-salmorejo-hero" alt="Logo de Salmorejo Tech" />
+            <h1 style={{visibility: 'hidden', height: 0}}>Salmorejo Tech</h1>
+            <h2 className={styles.heroSubtitle}>Todo es más fácil cuando tienes un equipo lleno de crácks!</h2>
           </section>
 
           <section id="team" className={styles.section}>
@@ -57,13 +58,13 @@ const Team: NextPage = () => {
           </section>
 
           <WhiteSection id="asl" className={styles.section}>
-            <h1 className={`${styles.sectionTitle} ${styles.black}`}>🐧Aula de Software Libre🐧</h1>
+            <h2 className={`${styles.sectionTitle} ${styles.black}`}>🐧Aula de Software Libre🐧</h2>
             <div className={styles.wrapper}>
               <div className={`${styles.column} ${styles.imageWrapper}`}>
                 <img src="/images/logo-aula-negro.png" alt="Logo del aula de software libre"/>
               </div>
               <div className={`${styles.column} ${styles.aulaInfo}`}>
-                <h2 className={styles.title}>Más que un grupo de estudiantes🚀</h2>
+                <h3 className={styles.title}>Más que un grupo de estudiantes🚀</h3>
                 <p>El Aula de Software Libre es un espacio único y dinámico en el que se promueve el compartir conocimiento y el uso del software libre. A través de diversos eventos y actividades durante todo el año, nuestro objetivo es acercar a personas de todo tipo a las ventajas y la importancia del software libre.</p>
               </div>
             </div>
