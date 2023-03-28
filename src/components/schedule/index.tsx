@@ -5,7 +5,6 @@ import { ScheduleLineTypeEnum } from "../../contexts/schedule-line/domain/Schedu
 import { Talk as TalkEntity } from "../../contexts/talk/domain/Talk";
 import { DualTalkLine, SingleTalkLine, BreakLine } from "./components/ScheduleLine";
 import { Timestamp } from "../../contexts/shared/domain/Timestamp";
-
 import styles from './styles/index.module.css';
 
 export const Schedule = () => {

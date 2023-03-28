@@ -12,24 +12,22 @@
 .speakerImage {
   border-radius: 5px 5px 0 0;
   width: 100%;
+  height: var(--card-max-width);
+  object-fit: cover;
 }
 
 .speakerImage::selection {
   background-color: transparent;
 }
 
-@media (max-width: 376px) {
-  .card {
-    max-width: 280px;
-  }
-}
-
 .card {
+  --card-max-width: 280px;
   padding-bottom: 0.8rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  max-width: 280px;
+  max-width: var(--card-max-width);
+  width: var(--card-max-width);
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(35, 35, 35, 0.3);
   background: linear-gradient(110deg, #ffffff27, #ffffff15);
@@ -40,19 +38,19 @@
 
 @media (min-width: 376px) {
   .card {
-    max-width: 180px;
+    --card-max-width: 180px;
   }
 }
 
 @media (min-width: 600px) {
   .card {
-    max-width: 280px;
+    --card-max-width: 280px;
   }
 }
 
 @media (min-width: 800px) {
   .card {
-    max-width: 320px;
+    --card-max-width: 320px;
   }
 }
 
@@ -95,6 +93,7 @@
 .bio {
   letter-spacing: 1px;
   font-size: 0.9em;
+  padding: 0 0.5rem;
 }
 
 .name::selection,
