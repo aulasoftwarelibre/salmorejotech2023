@@ -25,13 +25,13 @@ export const Footer = () => {
             <BsPinFill/> Aulario Averroes. Campus Rabanales
           </a>
           <div className={styles.icons}>
-            <a rel="noreferrer" target="_blank" href="https://twitter.com/AulaSL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><BsTwitter /></a>
-            <a rel="noreferrer" target="_blank" href="https://www.instagram.com/aulasoftwarelibre/"><BsInstagram /></a>
-            <a rel="noreferrer" target="_blank" href="https://github.com/aulasoftwarelibre"><BsGithub /></a>
-            <a rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCfWiR5j-cbKcGTi9faK8P6w"><BsYoutube /></a>
-            <a rel="noreferrer" target="_blank" href="https://t.me/AulaSoftwareLibreUCO"><BsTelegram /></a>
-            <a rel="noreferrer" target="_blank" href="https://www.facebook.com/AulaSoftwareLibre"><BsFacebook /></a>
-            <a rel="noreferrer" target="_blank" href="https://www.uco.es/aulasoftwarelibre/"><BiWorld /></a>
+            <a aria-label="Perfil del Aula de Software Libre en Twitter" rel="noreferrer" target="_blank" href="https://twitter.com/AulaSL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><BsTwitter aria-hidden/></a>
+            <a aria-label="Perfil del Aula de Software Libre en Instagram" rel="noreferrer" target="_blank" href="https://www.instagram.com/aulasoftwarelibre/"><BsInstagram aria-hidden/></a>
+            <a aria-label="Perfil del Aula de Software Libre en Github" rel="noreferrer" target="_blank" href="https://github.com/aulasoftwarelibre"><BsGithub aria-hidden/></a>
+            <a aria-label="Canal del Aula de Software Libre en Youtube" rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCfWiR5j-cbKcGTi9faK8P6w"><BsYoutube aria-hidden/></a>
+            <a aria-label="Grupo del Aula de Software Libre en Telegram" rel="noreferrer" target="_blank" href="https://t.me/AulaSoftwareLibreUCO"><BsTelegram aria-hidden/></a>
+            <a aria-label="Perfil del Aula de Software Libre en Facebook" rel="noreferrer" target="_blank" href="https://www.facebook.com/AulaSoftwareLibre"><BsFacebook aria-hidden/></a>
+            <a aria-label="Pagina web del Aula de Software Libre" rel="noreferrer" target="_blank" href="https://www.uco.es/aulasoftwarelibre/"><BiWorld aria-hidden/></a>
           </div>
         </section>
       </div>

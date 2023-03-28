@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import Button from '../components/button'
 import { Footer } from '../components/footer'
@@ -23,6 +23,7 @@ import WhiteSection from '../components/whiteSection'
 import { SpeakerProps } from '../components/speakers'
 import { InfoTikets } from '../components/infoTikets'
 import { Location } from '../components/location'
+// import { Schedule } from '../components/schedule'
 
 const Home: NextPage = () => {
 
@@ -68,7 +69,7 @@ const Home: NextPage = () => {
   const content = useContentWritter({ contents: possibleContents });
 
   return (
-    <>
+    <Fragment>
     <Head>
       <title>Salmorejo Tech 2023</title>
     </Head>
@@ -78,8 +79,9 @@ const Home: NextPage = () => {
       <Moleculas />
       <div className='anchoMaximo'>
         <section id="Hero" className={styles.hero}>
-          <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="LogoSalmorejo" alt="Salmorejo Tech" />
-          <h3 className={styles.subtitle}>Más <span>{content}</span></h3>
+          <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="logo-salmorejo-hero" alt="Logo de Salmorejo Tech" />
+          <h1 style={{visibility: 'hidden', height: 0}}>Salmorejo Tech</h1>
+          <h2 className={styles.subtitle}>Más <span>{content}</span></h2>
           <h2 className={styles.date}>28 de abril de 2023</h2>
           <div className={styles.centerTicketsButton}>
             <Button label="ENTRADAS" href="https://www.eventbrite.es/e/entradas-salmorejotech-2023-535749429967"/>
@@ -87,24 +89,31 @@ const Home: NextPage = () => {
         </section>
       </div>
       <section id="info" className={styles.section}>
-        <h1 className={styles.sectionTitle}>Cruces de Mayo y Salmorejo</h1>
-        <h2 className={styles.sectionSubTitle}>¿Hay algo más Cordobés?</h2>
+        <h2 className={styles.sectionTitle}>Cruces de Mayo y Salmorejo</h2>
+        <h3 className={styles.sectionSubTitle}>¿Hay algo más Cordobés?</h3>
         <InfoTikets/>
       </section>
 
       <section id="where" className={styles.section}>
-        <h1 className={styles.sectionTitle}>¡La mejor ubicación!</h1>
-        <h2 className={styles.sectionSubTitle}>Rectorado de la Universidad de Córdoba</h2>
+        <h2 className={styles.sectionTitle}>¡La mejor ubicación!</h2>
+        <h3 className={styles.sectionSubTitle}>Rectorado de la Universidad de Córdoba</h3>
         <Location/>
       </section>
 
+      { /**
+        <WhiteSection id="schedule" className={styles.section}>
+          <h2 className={`${styles.sectionTitle} ${styles.black}`}>Programa</h2>
+          <Schedule />
+        </WhiteSection>
+       */ }
+      
       <section id="speakers" className={styles.section}>
-        <h1 className={styles.sectionTitle}>Nuestros ponentes</h1>
+        <h2 className={styles.sectionTitle}>Nuestros ponentes</h2>
         <SpeakersGrid speakers={speakers as SpeakerProps[]}/>
       </section>
       
       <WhiteSection id="sponsors" className={styles.section}>
-        <h1 className={`${styles.sectionTitle} ${styles.black}`}>Sponsors</h1>
+        <h2 className={`${styles.sectionTitle} ${styles.black}`}>Sponsors</h2>
         <SponsorsGrid sponsors={sponsors as SponsorProps[]}/>
       </WhiteSection>
 
@@ -112,7 +121,7 @@ const Home: NextPage = () => {
         <Footer />
       </div>
     </main>
-    </>
+    </Fragment>
   )
 }
 

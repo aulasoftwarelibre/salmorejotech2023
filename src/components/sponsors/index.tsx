@@ -12,7 +12,7 @@ export interface SponsorProps extends React.AnchorHTMLAttributes<HTMLAnchorEleme
 }
 
 export const Sponsor = ({name, type, imageUrl, ...props}: SponsorProps) => {
-  const label = `${name} sponsored with ${type}`
+  const label = `Logo de ${name}, click para ir a su web!`
   const backgroundImage = {
     backgroundImage: `url(${imageUrl})`,
   }
