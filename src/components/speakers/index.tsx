@@ -31,7 +31,7 @@ export const SpeakerCard = ({name, bio, urlPhoto, contacts}:  SpeakerProps) => {
         key={`${name}-${contact.type}`}
         className={styles[contact.type.toLowerCase()]} 
         href={contact.link} 
-        aria-label={`Perfil de ${name} en ${contact.type}`}
+        aria-label={contact.type === 'WEB' ? `Pagina web de ${name}` : `Perfil de ${name} en ${contact.type}`}
       >
         {LinkTypeAsIcon[contact.type]}
       </a>

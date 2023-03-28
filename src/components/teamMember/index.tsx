@@ -17,10 +17,10 @@ export interface TeamMemberProps {
 }
 
 const LinkTypeAsIcon = {
-  'TWITTER': <BsTwitter/>,
-  'WEB': <BsGlobe/>,
-  'LINKEDIN': <BsLinkedin/>,
-  'GITHUB': <BsGithub/>,
+  'TWITTER': <BsTwitter aria-hidden/>,
+  'WEB': <BsGlobe aria-hidden/>,
+  'LINKEDIN': <BsLinkedin aria-hidden/>,
+  'GITHUB': <BsGithub aria-hidden/>,
 }
 
 export const TeamMemberCard = ({name, bio, urlPhoto, contacts}:  TeamMemberProps) => {
@@ -32,7 +32,7 @@ export const TeamMemberCard = ({name, bio, urlPhoto, contacts}:  TeamMemberProps
         key={`${name}-${contact.type}`}
         className={styles[contact.type.toLowerCase()]} 
         href={contact.link} 
-        aria-label={`${name}'s link for ${contact.type}`}
+        aria-label={contact.type === 'WEB' ? `Pagina web de ${name}` : `Perfil de ${name} en ${contact.type}`}
       >
         {LinkTypeAsIcon[contact.type]}
       </a>
@@ -41,7 +41,7 @@ export const TeamMemberCard = ({name, bio, urlPhoto, contacts}:  TeamMemberProps
 
   return (
     <div className={styles.card}>
-      <img className={styles.teamMemberImage} src={urlPhoto} alt="Imagen del ponente" />
+      <img className={styles.teamMemberImage} src={urlPhoto} alt={`Foto de ${name}`} />
       <div className={styles.spaceBetween}>
         <div className={styles.cardInfo}>
           <p className={styles.name}>{name}</p>
