@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import styles from './speakers.module.css'
-import { BsTwitter, BsGithub, BsLinkedin, BsGlobe } from 'react-icons/bs';
+import { BsTwitter, BsGithub, BsLinkedin, BsGlobe, BsYoutube } from 'react-icons/bs';
 
 export interface Contact {
-  type: 'TWITTER'|'WEB'|'LINKEDIN'|'GITHUB',
+  type: 'TWITTER'|'WEB'|'LINKEDIN'|'GITHUB'|'YOUTUBE',
   link: string,
 }
 
@@ -20,18 +20,25 @@ const LinkTypeAsIcon = {
   'WEB': <BsGlobe aria-hidden/>,
   'LINKEDIN': <BsLinkedin aria-hidden/>,
   'GITHUB': <BsGithub aria-hidden/>,
+  'YOUTUBE': <BsYoutube aria-hidden/>
 }
 
 export const SpeakerCard = ({name, bio, urlPhoto, contacts}:  SpeakerProps) => {
 
   const renderContactLink = (contact: Contact) => {
     if(!LinkTypeAsIcon[contact.type]) return;
+
+    let label = `Perfil de ${name} en ${contact.type}`
+    
+    if (contact.type === 'WEB') label = `Pagina web de ${name}`;
+    if (contact.type === 'YOUTUBE') label = `Canal de youtube de ${name}`;
+    
     return (
       <a 
         key={`${name}-${contact.type}`}
         className={styles[contact.type.toLowerCase()]} 
         href={contact.link} 
-        aria-label={contact.type === 'WEB' ? `Pagina web de ${name}` : `Perfil de ${name} en ${contact.type}`}
+        aria-label={label}
       >
         {LinkTypeAsIcon[contact.type]}
       </a>

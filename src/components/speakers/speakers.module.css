@@ -84,6 +84,9 @@
 .socialMedia a.github:hover {
   color: #171515;
 }
+.socialMedia a.youtube:hover {
+  color: #ff0000;
+}
 
 .name {
   font-size: 1.5em;
