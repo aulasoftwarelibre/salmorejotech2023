@@ -65,6 +65,10 @@
   margin-right: 0.5rem;
 }
 
+.nav a {
+  text-decoration: none;
+}
+
 .emphasis h2 {
   font-size: 1.1rem;
   font-weight: 600;

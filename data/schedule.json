@@ -8,7 +8,7 @@
         "startsAt": "9:00",
         "endsAt": "9:40"
       },
-      "labels": ["PM"],
+      "labels": ["Cyber"],
       "speaker": {
         "name": "Jane Doe",
         "imageUrl": "/speakers/primary-placeholder.png"
@@ -47,7 +47,7 @@
         "startsAt": "10:35",
         "endsAt": "11:15"
       },
-      "labels": ["Backend"],
+      "labels": ["Backend", "IA"],
       "speaker": {
         "name": "Jona Doe",
         "imageUrl": "/speakers/primary-placeholder.png"
@@ -63,7 +63,7 @@
         "startsAt": "11:20",
         "endsAt": "12:00"
       },
-      "labels": ["Infra"],
+      "labels": ["General"],
       "speaker": {
         "name": "Jena Doe",
         "imageUrl": "/speakers/primary-placeholder.png"

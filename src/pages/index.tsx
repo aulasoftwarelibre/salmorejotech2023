@@ -23,7 +23,7 @@ import WhiteSection from '../components/whiteSection'
 import { SpeakerProps } from '../components/speakers'
 import { InfoTikets } from '../components/infoTikets'
 import { Location } from '../components/location'
-// import { Schedule } from '../components/schedule'
+import { Schedule } from '../components/schedule'
 
 const Home: NextPage = () => {
 
@@ -100,12 +100,10 @@ const Home: NextPage = () => {
         <Location/>
       </section>
 
-      { /**
-        <WhiteSection id="schedule" className={styles.section}>
-          <h2 className={`${styles.sectionTitle} ${styles.black}`}>Programa</h2>
-          <Schedule />
-        </WhiteSection>
-       */ }
+      {/* <WhiteSection id="schedule" className={styles.section}>
+        <h2 className={`${styles.sectionTitle} ${styles.black}`}>Programa</h2>
+        <Schedule />
+      </WhiteSection> */}
       
       <section id="speakers" className={styles.section}>
         <h2 className={styles.sectionTitle}>Nuestros ponentes</h2>
