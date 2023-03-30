@@ -112,6 +112,7 @@
   font-size: 0.8rem;
   padding: 0.2rem;
   border-radius: 5px;
+  border: rgba(255, 255, 255, 0.400) 1px solid;
 }
 
 @media screen and (min-width: 768px) {

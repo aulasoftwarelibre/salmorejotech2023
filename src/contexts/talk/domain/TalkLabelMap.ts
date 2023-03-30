@@ -1,19 +1,21 @@
 import { LabelAsPrimitives } from "./TalkLabel";
 
 const enum LabelColor {
-  Purple = "#cc00ff",
-  Yellow = "#FAD000",
-  Lime = "#1fb800",
-  Mint = "#6ACCBC",
-  Blue = "#14AAF5",
-  Lavender = "#EB96EB"
-
+  Purple = "#b51963",
+  Yellow = "#2a5547",
+  Lime = "#00bf7d",
+  Mint = "#00b4c5",
+  Blue = "#0073e6",
+  Pink = "#f194b8",
+  Black = "#000000",
+  White = "#ffffff"
 } 
 
 export const TalkLabelMap = new Map<string, LabelAsPrimitives>([
-  ['QA', {text: 'QA', color: LabelColor.Lime}],
-  ['Backend', {text: 'Backend', color: LabelColor.Purple}],
-  ['Frontend', {text: 'Frontend', color: LabelColor.Blue}],
-  ['PM', {text: 'Project Management', color: LabelColor.Mint}],
-  ['Infra', {text: 'Infrastructure', color: LabelColor.Yellow}]
+  ['QA', {text: 'QA', textColor: LabelColor.Black, color: LabelColor.Lime}],
+  ['Backend', {text: 'Backend', textColor: LabelColor.White, color: LabelColor.Purple}],
+  ['Frontend', {text: 'Frontend', textColor: LabelColor.White, color: LabelColor.Blue}],
+  ['Cyber', {text: 'Ciberseguridad', textColor: LabelColor.Black, color: LabelColor.Mint}],
+  ['IA', {text: 'IA', textColor: LabelColor.Black, color: LabelColor.Pink}],
+  ['General', {text: 'General', textColor: LabelColor.Black, color: LabelColor.White}],
 ])
