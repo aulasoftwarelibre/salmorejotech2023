@@ -100,10 +100,10 @@ const Home: NextPage = () => {
         <Location/>
       </section>
 
-      <WhiteSection id="schedule" className={styles.section}>
+      {/* <WhiteSection id="schedule" className={styles.section}>
         <h2 className={`${styles.sectionTitle} ${styles.black}`}>Programa</h2>
         <Schedule />
-      </WhiteSection>
+      </WhiteSection> */}
       
       <section id="speakers" className={styles.section}>
         <h2 className={styles.sectionTitle}>Nuestros ponentes</h2>
