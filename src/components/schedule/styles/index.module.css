@@ -1,5 +1,5 @@
 .schedule {
-  max-width: 1600px;
+  max-width: 1500px;
   padding: 20px;
   padding-bottom: 40px;
   margin: auto;
@@ -23,17 +23,29 @@
 }
 
 .scheduleLine {
-  font-size: calc(0.8rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(0.7rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   color: white;
   display: flex;
   gap: 0.5rem;
 }
 
 .container {
-  font-size: calc(0.8rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(0.7rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   width: 100%;
   padding: 1rem;
   background: linear-gradient(-60deg, #fb7637, #f74245);
+  box-shadow: var(--lightShadow);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.breakContainer {
+  font-size: calc(0.7rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(-60deg, hwb(336 8% 45%), hwb(249 26% 50%));
   box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
   border-radius: 5px;
@@ -65,7 +77,7 @@
 }
 
 .breakTitle {
-  font-size: calc(2 * (0.3rem + 1vw));
+  font-size: calc(1.8 * (0.3rem + 1vw));
 }
 
 .talkTitle {
