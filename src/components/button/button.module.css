@@ -21,6 +21,10 @@
   box-shadow: inset 8px 8px 15px #fdc002, inset -8px -8px 15px #fdc002;
 }
 
+.button {
+  text-decoration: none;
+}
+
 .button p {
   font-size: 1.7rem;
   font-weight: bold;
