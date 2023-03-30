@@ -45,7 +45,7 @@
   font-size: calc(0.7rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   width: 100%;
   padding: 1rem;
-  background: linear-gradient(-60deg, hwb(336 8% 45%), hwb(249 26% 50%));
+  background: linear-gradient(-60deg, #8A2666, #f41f4f);
   box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
   border-radius: 5px;
