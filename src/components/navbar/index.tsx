@@ -26,7 +26,7 @@ const Navbar = ({contents, variant='primary'}: NavbarProps) => {
   const {width} = useWindowSize();
   
   useEffect(() => {
-    setLowWitdhCheck(width < 823);
+    setLowWitdhCheck(width < 1000);
   }, [width])
 
   const [showNavbar, setShowNavbar] = useState<boolean>(false);

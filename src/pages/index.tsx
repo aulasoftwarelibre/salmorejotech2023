@@ -44,7 +44,7 @@ const Home: NextPage = () => {
       emphasised: false,
     },
     {
-      title: "Sponsors",
+      title: "Patrocinadores",
       href: "#sponsors",
       emphasised: false,
     },
@@ -111,7 +111,7 @@ const Home: NextPage = () => {
       </section>
       
       <WhiteSection id="sponsors" className={styles.section}>
-        <h2 className={`${styles.sectionTitle} ${styles.black}`}>Sponsors</h2>
+        <h2 className={`${styles.sectionTitle} ${styles.black}`}>Patrocinadores</h2>
         <SponsorsGrid sponsors={sponsors as SponsorProps[]}/>
       </WhiteSection>
 
