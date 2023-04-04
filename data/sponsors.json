@@ -28,5 +28,11 @@
     "type": "CHERRY",
     "imageUrl": "/sponsors/lifull.svg",
     "href": "https://www.lifullconnect.com/"
+  },
+  {
+    "name": "Vant",
+    "type": "PERA",
+    "imageUrl": "/sponsors/vant.png",
+    "href": "https://www.vantpc.es/"
   }
 ]
