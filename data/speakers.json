@@ -52,5 +52,20 @@
       { "type": "GITHUB", "link": "https://github.com/arianeJDB" },
       { "type": "YOUTUBE", "link": "https://www.youtube.com/@Ari_reinventada" }
     ]
+  },
+  {
+    "name": "José Montero",
+    "bio": "Senior Network & Security Engineer at OmniAccess",
+    "urlPhoto": "/speakers/JoseMontero.jpg",
+    "contacts": [
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/jose-montero-martin-b2684257/?locale=en_US"
+      },
+      {
+        "type": "WEB",
+        "link": "https://www.linkedin.com/newsletters/7026632191728103425/"
+      }
+    ]
   }
 ]
