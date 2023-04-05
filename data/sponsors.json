@@ -34,5 +34,11 @@
     "type": "PERA",
     "imageUrl": "/sponsors/vant.png",
     "href": "https://www.vantpc.es/"
+  },
+  {
+    "name": "OmniAccess",
+    "type": "CHERRY",
+    "imageUrl": "/sponsors/omniAccess.png",
+    "href": "https://www.omniaccess.com/"
   }
 ]
