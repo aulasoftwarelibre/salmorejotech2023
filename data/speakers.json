@@ -67,5 +67,24 @@
         "link": "https://www.linkedin.com/newsletters/7026632191728103425/"
       }
     ]
+  },
+  {
+    "name": "Javier Sánchez",
+    "bio": "Investigador en el grupo AYRNA de la UCO e investigador asociado al Data Justice Lab de la Universidad de Cardiff.",
+    "urlPhoto": "/speakers/JavierSanchez.jpg",
+    "contacts": [
+      {
+        "type": "TWITTER",
+        "link": "https://twitter.com/javisamo"
+      },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/javier-s%C3%A1nchez-monedero-b3896693/"
+      },
+      {
+        "type": "GITHUB",
+        "link": "https://github.com/javism"
+      }
+    ]
   }
 ]
