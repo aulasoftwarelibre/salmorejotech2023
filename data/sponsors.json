@@ -40,5 +40,11 @@
     "type": "CHERRY",
     "imageUrl": "/sponsors/omniAccess.png",
     "href": "https://www.omniaccess.com/"
+  },
+  {
+    "name": "Eprinsa",
+    "type": "PERA",
+    "imageUrl": "/sponsors/eprinsa.png",
+    "href": "https://www.eprinsa.es/"
   }
 ]
