@@ -48,12 +48,14 @@ export const SpeakerCard = ({name, bio, urlPhoto, contacts}:  SpeakerProps) => {
   return (
     <div className={styles.card}>
       <img className={styles.speakerImage} src={urlPhoto} alt={`Foto de ${name}`} />
-      <div className={styles.cardInfo}>
-        <p className={styles.name}>{name}</p>
-        <p className={styles.bio}>{bio}</p>
-      </div>
-      <div className={styles.socialMedia}>
-        {contacts.map(contact => renderContactLink(contact))}
+      <div className={styles.cardBody}>
+        <div className={styles.cardInfo}>
+          <p className={styles.name}>{name}</p>
+          <p className={styles.bio}>{bio}</p>
+        </div>
+        <div className={styles.socialMedia}>
+          {contacts.map(contact => renderContactLink(contact))}
+        </div>
       </div>
     </div>
   )
