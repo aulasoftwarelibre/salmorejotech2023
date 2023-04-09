@@ -86,5 +86,11 @@
         "link": "https://github.com/javism"
       }
     ]
+  },
+  {
+    "name": "Ana Álvarez",
+    "bio": "Matemática especializada en Advanced Analytics.",
+    "urlPhoto": "/speakers/AnaAlvarez.jpg",
+    "contacts": []
   }
 ]
