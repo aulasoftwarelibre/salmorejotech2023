@@ -46,5 +46,11 @@
     "type": "PERA",
     "imageUrl": "/sponsors/catedra_eprinsa.png",
     "href": "https://www.uco.es/ucoeprinsa/"
+  },
+  {
+    "name": "Escuela Politécnica Superior de Cordoba",
+    "type": "PERA",
+    "imageUrl": "/sponsors/epsc.svg",
+    "href": "https://www.uco.es/eps/es/"
   }
 ]
