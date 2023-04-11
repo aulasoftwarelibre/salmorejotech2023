@@ -92,5 +92,24 @@
     "bio": "Matemática especializada en Advanced Analytics.",
     "urlPhoto": "/speakers/AnaAlvarez.jpg",
     "contacts": []
+  },
+  {
+    "name": "José Márquez",
+    "bio": "Ex miembro del ASL e Ingeniero de Software en RTI. Apasionado de la tecnología y de la compartición de conocimiento.",
+    "urlPhoto": "/speakers/JoseMarquez.jpg",
+    "contacts": [
+      {
+        "type": "TWITTER",
+        "link": "https://twitter.com/pmarquez99"
+      },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/pepemarquezof/"
+      },
+      {
+        "type": "GITHUB",
+        "link": "https://github.com/IronSenior"
+      }
+    ]
   }
 ]
