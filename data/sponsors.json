@@ -52,5 +52,11 @@
     "type": "PERA",
     "imageUrl": "/sponsors/epsc.svg",
     "href": "https://www.uco.es/eps/es/"
+  },
+  {
+    "name": "Sngular",
+    "type": "PERA",
+    "imageUrl": "/sponsors/SNGULAR.svg",
+    "href": "https://www.sngular.com/"
   }
 ]
