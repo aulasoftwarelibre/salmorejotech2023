@@ -58,5 +58,11 @@
     "type": "PERA",
     "imageUrl": "/sponsors/SNGULAR.svg",
     "href": "https://www.sngular.com/"
+  },
+  {
+    "name": "Genially",
+    "type": "PERA",
+    "imageUrl": "/sponsors/genially.svg",
+    "href": "https://genial.ly/"
   }
 ]
