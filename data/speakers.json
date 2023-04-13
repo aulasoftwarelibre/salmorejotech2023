@@ -111,5 +111,16 @@
         "link": "https://github.com/IronSenior"
       }
     ]
+  },
+  {
+    "name": "Jesús Serrano",
+    "bio": "Ingeniero informático, máster en ciberseguridad.",
+    "urlPhoto": "/speakers/JesusSerrano.jpg",
+    "contacts": [
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/jes%C3%BAs-serrano-mu%C3%B1oz"
+      }
+    ]
   }
 ]
