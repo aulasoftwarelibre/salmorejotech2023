@@ -122,5 +122,20 @@
         "link": "https://www.linkedin.com/in/jes%C3%BAs-serrano-mu%C3%B1oz"
       }
     ]
+  },
+  {
+    "name": "Ana Valle",
+    "bio": "Analista en el área de la seguridad nacional y geopolítica.",
+    "urlPhoto": "/speakers/AnaValle.jpg",
+    "contacts": [
+      {
+        "type": "TWITTER",
+        "link": "https://twitter.com/VallePad"
+      },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/ana-valle-29888091"
+      }
+    ]
   }
 ]
