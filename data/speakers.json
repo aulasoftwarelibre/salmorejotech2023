@@ -137,5 +137,24 @@
         "link": "https://www.linkedin.com/in/ana-valle-29888091"
       }
     ]
+  },
+  {
+    "name": "Marcela Andrea Gotta",
+    "bio": "Frontend Developer en Sngular.",
+    "urlPhoto": "/speakers/MarsGotta.jpeg",
+    "contacts": [
+      {
+        "type": "TWITTER",
+        "link": "https://twitter.com/imarsgotta"
+      },
+      {
+        "type": "GITHUB",
+        "link": "https://github.com/MarsGotta"
+      },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/marcelagotta/"
+      }
+    ]
   }
 ]
