@@ -64,5 +64,11 @@
     "type": "PERA",
     "imageUrl": "/sponsors/genially.svg",
     "href": "https://genial.ly/"
+  },
+  {
+    "name": "Rabanales 21",
+    "type": "CHERRY",
+    "imageUrl": "/sponsors/rab21.svg",
+    "href": "https://rabanales21.com/"
   }
 ]
