@@ -156,5 +156,11 @@
         "link": "https://www.linkedin.com/in/marcelagotta/"
       }
     ]
+  },
+  {
+    "name": "Marina Hernández",
+    "bio": "Ingeniera de telecomunicaciones especializada en proyectos de explotación y analítica de datos.",
+    "urlPhoto": "/speakers/MarinaHernandez.jpg",
+    "contacts": []
   }
 ]
