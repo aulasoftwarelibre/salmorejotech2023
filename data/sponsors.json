@@ -76,5 +76,11 @@
     "type": "PERA",
     "imageUrl": "/sponsors/eprinsa.png",
     "href": "https://www.eprinsa.es/"
+  },
+  {
+    "name": "Codely",
+    "type": "CHERRY",
+    "imageUrl": "/sponsors/codely.svg",
+    "href": "https://codely.com/"
   }
 ]
