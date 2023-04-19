@@ -94,5 +94,11 @@
     "type": "PERA",
     "imageUrl": "/sponsors/nttdata.svg",
     "href": "https://es.nttdata.com/"
+  },
+  {
+    "name": "Consejo Social UCO",
+    "type": "PERA",
+    "imageUrl": "/sponsors/consejo-social.png",
+    "href": "http://www.uco.es/organizacion/consejosocial/index.php/es/"
   }
 ]
