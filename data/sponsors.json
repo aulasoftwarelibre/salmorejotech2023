@@ -82,5 +82,11 @@
     "type": "CHERRY",
     "imageUrl": "/sponsors/codely.svg",
     "href": "https://codely.com/"
+  },
+  {
+    "name": "Mercado Victoria",
+    "type": "PERA",
+    "imageUrl": "/sponsors/mercadoVictoria.png",
+    "href": "https://www.mercadovictoria.com/"
   }
 ]
