@@ -100,5 +100,11 @@
     "type": "PERA",
     "imageUrl": "/sponsors/consejo-social.png",
     "href": "http://www.uco.es/organizacion/consejosocial/index.php/es/"
+  },
+  {
+    "name": "Programa UCO Seguridad",
+    "type": "PERA",
+    "imageUrl": "/sponsors/ucoseguridad.png",
+    "href": ""
   }
 ]
