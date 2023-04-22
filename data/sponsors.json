@@ -106,5 +106,11 @@
     "type": "PERA",
     "imageUrl": "/sponsors/ucoseguridad.png",
     "href": ""
+  },
+  {
+    "name": "Universidad de Cordoba",
+    "type": "PERA",
+    "imageUrl": "/sponsors/uco.png",
+    "href": "http://www.uco.es/"
   }
 ]
