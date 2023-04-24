@@ -45,7 +45,7 @@
     "name": "Cátedra Eprinsa",
     "type": "PERA",
     "imageUrl": "/sponsors/catedra_eprinsa.png",
-    "href": "https://www.uco.es/ucoeprinsa/"
+    "href": "https://www.linkedin.com/in/c%C3%A1tedra-eprinsa-uco-transformaci%C3%B3n-digital-51333a217/"
   },
   {
     "name": "Escuela Politécnica Superior de Cordoba",
@@ -64,5 +64,59 @@
     "type": "PERA",
     "imageUrl": "/sponsors/genially.svg",
     "href": "https://genial.ly/"
+  },
+  {
+    "name": "Rabanales 21",
+    "type": "CHERRY",
+    "imageUrl": "/sponsors/rab21.svg",
+    "href": "https://rabanales21.com/"
+  },
+  {
+    "name": "Eprinsa",
+    "type": "PERA",
+    "imageUrl": "/sponsors/eprinsa.png",
+    "href": "https://www.eprinsa.es/"
+  },
+  {
+    "name": "Codely",
+    "type": "CHERRY",
+    "imageUrl": "/sponsors/codely.svg",
+    "href": "https://codely.com/"
+  },
+  {
+    "name": "Mercado Victoria",
+    "type": "PERA",
+    "imageUrl": "/sponsors/mercadoVictoria.png",
+    "href": "https://www.mercadovictoria.com/"
+  },
+  {
+    "name": "NTT Data",
+    "type": "PERA",
+    "imageUrl": "/sponsors/nttdata.svg",
+    "href": "https://es.nttdata.com/"
+  },
+  {
+    "name": "Consejo Social UCO",
+    "type": "PERA",
+    "imageUrl": "/sponsors/consejo-social.png",
+    "href": "http://www.uco.es/organizacion/consejosocial/index.php/es/"
+  },
+  {
+    "name": "Programa UCO Seguridad",
+    "type": "PERA",
+    "imageUrl": "/sponsors/ucoseguridad.png",
+    "href": ""
+  },
+  {
+    "name": "Universidad de Cordoba",
+    "type": "PERA",
+    "imageUrl": "/sponsors/uco.png",
+    "href": "http://www.uco.es/"
+  },
+  {
+    "name": "Cocacola - Royal Bliss",
+    "type": "PERA",
+    "imageUrl": "/sponsors/royalbliss.png",
+    "href": "https://www.cocacolaespana.es/bebidas/royal-bliss"
   }
 ]

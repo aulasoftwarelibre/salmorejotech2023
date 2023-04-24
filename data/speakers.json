@@ -88,9 +88,9 @@
     ]
   },
   {
-    "name": "Ana Álvarez",
-    "bio": "Matemática especializada en Advanced Analytics.",
-    "urlPhoto": "/speakers/AnaAlvarez.jpg",
+    "name": "Pilar Luna",
+    "bio": "Head of QA en Atmira.",
+    "urlPhoto": "/speakers/PilarLuna.png",
     "contacts": []
   },
   {
@@ -137,5 +137,30 @@
         "link": "https://www.linkedin.com/in/ana-valle-29888091"
       }
     ]
+  },
+  {
+    "name": "Marcela Andrea Gotta",
+    "bio": "Frontend Developer en Sngular.",
+    "urlPhoto": "/speakers/MarsGotta.jpeg",
+    "contacts": [
+      {
+        "type": "TWITTER",
+        "link": "https://twitter.com/imarsgotta"
+      },
+      {
+        "type": "GITHUB",
+        "link": "https://github.com/MarsGotta"
+      },
+      {
+        "type": "LINKEDIN",
+        "link": "https://www.linkedin.com/in/marcelagotta/"
+      }
+    ]
+  },
+  {
+    "name": "Marina Hernández",
+    "bio": "Ingeniera de telecomunicaciones especializada en proyectos de explotación y analítica de datos.",
+    "urlPhoto": "/speakers/MarinaHernandez.jpg",
+    "contacts": []
   }
 ]
