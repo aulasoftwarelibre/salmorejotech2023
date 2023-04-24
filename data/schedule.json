@@ -71,16 +71,16 @@
       }
     },
     "secondaryTalk": {
-      "title": "????",
-      "info": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+      "title": "Sistema de explotación de datos",
+      "info": "Solución de un entorno por componentes para la explotación de datos",
       "timestamp": {
         "startsAt": "10:55",
         "endsAt": "11:40"
       },
       "labels": ["General"],
       "speaker": {
-        "name": "Marina",
-        "imageUrl": "/speakers/primary-placeholder.png"
+        "name": "Marina Hernández",
+        "imageUrl": "/speakers/MarinaHernandez.jpg"
       }
     }
   },
@@ -163,21 +163,21 @@
       },
       "labels": ["Frontend", "IA"],
       "speaker": {
-        "name": "Marcela",
-        "imageUrl": "/speakers/primary-placeholder.png"
+        "name": "Marcela Andrea Gotta",
+        "imageUrl": "/speakers/MarsGotta.jpeg"
       }
     },
     "secondaryTalk": {
-      "title": "También existe el blue team... Y mola",
-      "info": "Hablar sobre blue team, análisis de incidentes/malware",
+      "title": "AutoML: Acelerar y Democratizar la Adopción de la IA",
+      "info": "El Machine Learning ha alcanzado cuotas de éxito considerable en los últimos años. Sin embargo, este éxito depende en gran medida de los expertos en Machine Learning. Debido a la escasez de perfiles expertos y a la demanda de métodos de Machine Learning listos para usar de manera sencilla y sin conocimiento experto, se han desarrollado herramientas que permiten automatizar ciertas tareas que se llevan a cabo para desarrollar e implementar modelos de Machine Learning.",
       "timestamp": {
         "startsAt": "14:00",
         "endsAt": "14:45"
       },
-      "labels": ["Cyber"],
+      "labels": ["IA"],
       "speaker": {
-        "name": "Jesus Serrano",
-        "imageUrl": "/speakers/JesusSerrano.jpeg"
+        "name": "Pilar Luna",
+        "imageUrl": "/speakers/PilarLuna.png"
       }
     }
   },
@@ -207,16 +207,16 @@
       }
     },
     "secondaryTalk": {
-      "title": "AutoML: Acelerar y Democratizar la Adopción de la IA",
-      "info": "El Machine Learning ha alcanzado cuotas de éxito considerable en los últimos años. Sin embargo, este éxito depende en gran medida de los expertos en Machine Learning. Debido a la escasez de perfiles expertos y a la demanda de métodos de Machine Learning listos para usar de manera sencilla y sin conocimiento experto, se han desarrollado herramientas que permiten automatizar ciertas tareas que se llevan a cabo para desarrollar e implementar modelos de Machine Learning.",
+      "title": "También existe el blue team... Y mola",
+      "info": "Hablar sobre blue team, análisis de incidentes/malware",
       "timestamp": {
         "startsAt": "16:00",
         "endsAt": "16:45"
       },
-      "labels": ["IA"],
+      "labels": ["Cyber"],
       "speaker": {
-        "name": "Ana Álvarez",
-        "imageUrl": "/speakers/AnaAlvarez.jpg"
+        "name": "Jesus Serrano",
+        "imageUrl": "/speakers/JesusSerrano.jpeg"
       }
     }
   },
