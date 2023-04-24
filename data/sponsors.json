@@ -112,5 +112,11 @@
     "type": "PERA",
     "imageUrl": "/sponsors/uco.png",
     "href": "http://www.uco.es/"
+  },
+  {
+    "name": "Cocacola - Royal Bliss",
+    "type": "PERA",
+    "imageUrl": "/sponsors/royalbliss.png",
+    "href": "https://www.cocacolaespana.es/bebidas/royal-bliss"
   }
 ]
