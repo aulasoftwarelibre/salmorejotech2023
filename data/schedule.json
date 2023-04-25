@@ -1,95 +1,228 @@
 [
   {
-    "type": 1,
-    "talk": {
-      "title": "Some Project Management Talk",
-      "info": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-      "timestamp": {
-        "startsAt": "9:00",
-        "endsAt": "9:40"
-      },
-      "labels": ["Cyber"],
-      "speaker": {
-        "name": "Jane Doe",
-        "imageUrl": "/speakers/primary-placeholder.png"
-      }
-    }
-  },
-  {
     "type": 0,
     "break": {
-      "title": "Desayuno",
+      "title": "Registro",
       "timestamp": {
-        "startsAt": "9:45",
-        "endsAt": "10:30"
+        "startsAt": "8:30",
+        "endsAt": "8:55"
       }
     }
   },
   {
-    "type": 2,
-    "primaryTalk": {
-      "title": "Interesting QA Things",
-      "info": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+    "type": 1,
+    "talk": {
+      "title": "Como conocí a vuestra QA",
+      "info": "¿Qué es eso de QA? ¿Cuáles son sus tareas? ¿Cómo puedo serlo? ¿Hay trabajo? Intentaré que conozcas otra salida laboral, te mostraré datos recopilados que muestran cómo los QAs del mundo llegamos a serlo y qué tecnologías usamos.",
       "timestamp": {
-        "startsAt": "10:35",
-        "endsAt": "11:15"
+        "startsAt": "9:40",
+        "endsAt": "10:25"
       },
       "labels": ["QA"],
       "speaker": {
-        "name": "John Doe",
-        "imageUrl": "/speakers/secondary-placeholder.png"
-      }
-    },
-    "secondaryTalk": {
-      "title": "Backend using pencil and notebook",
-      "info": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-      "timestamp": {
-        "startsAt": "10:35",
-        "endsAt": "11:15"
-      },
-      "labels": ["Backend", "IA"],
-      "speaker": {
-        "name": "Jona Doe",
-        "imageUrl": "/speakers/primary-placeholder.png"
-      }
-    }
-  },
-  {
-    "type": 2,
-    "primaryTalk": {
-      "title": "Amazing Flying AWS",
-      "info": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-      "timestamp": {
-        "startsAt": "11:20",
-        "endsAt": "12:00"
-      },
-      "labels": ["General"],
-      "speaker": {
-        "name": "Jena Doe",
-        "imageUrl": "/speakers/primary-placeholder.png"
-      }
-    },
-    "secondaryTalk": {
-      "title": "QA in Frontend",
-      "info": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-      "timestamp": {
-        "startsAt": "11:20",
-        "endsAt": "12:00"
-      },
-      "labels": ["QA", "Frontend"],
-      "speaker": {
-        "name": "James Doe",
-        "imageUrl": "/speakers/secondary-placeholder.png"
+        "name": "Marta Mañani",
+        "imageUrl": "/speakers/MartaMagnani.png"
       }
     }
   },
   {
     "type": 0,
     "break": {
-      "title": "Networking y Salmorejo",
+      "title": "Pausa Café",
       "timestamp": {
-        "startsAt": "12:00",
-        "endsAt": "14:00"
+        "startsAt": "10:30",
+        "endsAt": "10:50"
+      }
+    }
+  },
+  {
+    "type": 2,
+    "primaryTalk": {
+      "title": "La ciberseguridad en el Sistema de Seguridad Nacional",
+      "info": "El ciberespacio es un lugar común global en el que se desarrollan actividades esenciales para el desarrollo social y económico de un país. Entre sus notas singulares se encuentran la ausencia de soberanía,  la facilidad de acceso o la dificultad de atribución de acciones, y estos rasgos conllevan numeroso desafíos. Los Estados han empezado a tratar esta cuestión en sus políticas de Estado, entre ellos España, incluyendo la ciberseguridad en el Sistema de Seguridad Nacional.  Con ello, se persigue proteger uno de los ámbitos de la Seguridad Nacional como es la ciberseguridad, pero también los valores de la libertad, el bienestar y la democracia.",
+      "timestamp": {
+        "startsAt": "10:55",
+        "endsAt": "11:40"
+      },
+      "labels": ["Cyber"],
+      "speaker": {
+        "name": "Ana Valle",
+        "imageUrl": "/speakers/AnaValle.jpg"
+      }
+    },
+    "secondaryTalk": {
+      "title": "Explotación y análisis de datos",
+      "info": "Solución de un entorno por componentes para la explotación de datos",
+      "timestamp": {
+        "startsAt": "10:55",
+        "endsAt": "11:40"
+      },
+      "labels": ["Data"],
+      "speaker": {
+        "name": "Marina Hernández",
+        "imageUrl": "/speakers/MarinaHernandez.jpg"
+      }
+    }
+  },
+  {
+    "type": 2,
+    "primaryTalk": {
+      "title": "Running a Smarter world",
+      "info": "El futuro no está solo relacionado con la IA. En esta charla exploramos cómo la tecnología actual está transformando la manera en que interactuamos con el mundo y cómo, desde RTI, estamos contribuyendo a la construcción de un futuro más inteligente y conectado.",
+      "timestamp": {
+        "startsAt": "11:45",
+        "endsAt": "12:30"
+      },
+      "labels": ["Backend"],
+      "speaker": {
+        "name": "Jose Márquez",
+        "imageUrl": "/speakers/JoseMarquez.jpg"
+      }
+    },
+    "secondaryTalk": {
+      "title": "Why Network Security is key?... but sadly not implemented",
+      "info": "Are ISP networks secure? Could Bitcoin be in risk about that? What is the relationship between networks and WhatsApp or Instagram outages?",
+      "timestamp": {
+        "startsAt": "11:45",
+        "endsAt": "12:30"
+      },
+      "labels": ["Cyber"],
+      "speaker": {
+        "name": "Jose Montero",
+        "imageUrl": "/speakers/JoseMontero.jpg"
+      }
+    }
+  },
+  {
+    "type": 0,
+    "break": {
+      "title": "Pausa Tapa",
+      "timestamp": {
+        "startsAt": "12:35",
+        "endsAt": "13:05"
+      }
+    }
+  },
+  {
+    "type": 2,
+    "primaryTalk": {
+      "title": "Los algoritmos que no nos dejan ver el bosque",
+      "info": "Se habla mucho de IA confiable y de evitar los sesgos en los algoritmos de decisión, pero menos veces se dice qué se entiende por confiable, sesgos, discriminación, interpretabilidad… términos que se dan por sentados y universales mientras miramos a una sola parte del sistema. En esta charla vamos a ver que estos conceptos dependen de cada problema y de cómo la teoría y conocer otras disciplinas nos pueden ayudar a ver un poco mejor el bosque. ",
+      "timestamp": {
+        "startsAt": "13:10",
+        "endsAt": "13:55"
+      },
+      "labels": ["IA"],
+      "speaker": {
+        "name": "Javier Sanchez",
+        "imageUrl": "/speakers/JavierSanchez.jpg"
+      }
+    },
+    "secondaryTalk": {
+      "title": "How to build your own data platform (from zero to hero)",
+      "info": "Muchas veces habrás oído que los datos son el nuevo petróleo. Empresas de todo tipo necesitan aprovechar los datos que generan. Para lograr este objetivo se necesitan sistemas capaces de consumir, procesar, analizar y presentar grandes cantidades de datos. Estos sistemas deben ser fáciles de usar, pero al mismo tiempo tienen que ser fiables, capaces de detectar problemas y almacenar datos correctamente. El objetivo de una Data Platform es dar respuestas a estas necesidades. El proceso de construcción de una Data Platform no es tarea fácil, ya que requiere una amplia gama de conocimientos en áreas como infraestructura, programación y gobernanza de datos. El propósito de esta charla es proporcionar una explicación clara y concisa de todos estos aspectos. Al finalizar la charla, los asistentes contarán con los conocimientos necesarios para implementar sus propias soluciones.",
+      "timestamp": {
+        "startsAt": "13:10",
+        "endsAt": "13:55"
+      },
+      "labels": ["Data", "DevOps"],
+      "speaker": {
+        "name": "Gustavo Martin",
+        "imageUrl": "/speakers/GustavoMartin.png"
+      }
+    }
+  },
+  {
+    "type": 2,
+    "primaryTalk": {
+      "title": "Desarrollo de aplicaciones con React y Github Copilot",
+      "info": "En esta charla, exploraremos una de las herramientas más innovadoras en el mundo de la programación: Github Copilot. Descubrirás qué es y cuáles son sus ventajas, así como también aprenderás cómo instalarlo. Pero eso no es todo, también realizaremos un breve ejemplo sobre cómo utilizar Github Copilot en conjunto con React para desarrollar una aplicación. ¡No te pierdas esta oportunidad de aprender sobre esta poderosa herramienta y cómo puedes utilizarla para mejorar tu flujo de trabajo en el desarrollo de aplicaciones!",
+      "timestamp": {
+        "startsAt": "14:00",
+        "endsAt": "14:45"
+      },
+      "labels": ["Frontend", "IA"],
+      "speaker": {
+        "name": "Marcela Andrea Gotta",
+        "imageUrl": "/speakers/MarsGotta.jpeg"
+      }
+    },
+    "secondaryTalk": {
+      "title": "AutoML: Acelerar y Democratizar la Adopción de la IA",
+      "info": "El Machine Learning ha alcanzado cuotas de éxito considerable en los últimos años. Sin embargo, este éxito depende en gran medida de los expertos en Machine Learning. Debido a la escasez de perfiles expertos y a la demanda de métodos de Machine Learning listos para usar de manera sencilla y sin conocimiento experto, se han desarrollado herramientas que permiten automatizar ciertas tareas que se llevan a cabo para desarrollar e implementar modelos de Machine Learning.",
+      "timestamp": {
+        "startsAt": "14:00",
+        "endsAt": "14:45"
+      },
+      "labels": ["IA"],
+      "speaker": {
+        "name": "Pilar Luna",
+        "imageUrl": "/speakers/PilarLuna.png"
+      }
+    }
+  },
+  {
+    "type": 0,
+    "break": {
+      "title": "Pausa Almuerzo",
+      "timestamp": {
+        "startsAt": "14:45",
+        "endsAt": "15:55"
+      }
+    }
+  },
+  {
+    "type": 2,
+    "primaryTalk": {
+      "title": "Functional Driven Design",
+      "info": "En esta charla, descubrirás cómo combinar los principios de Domain Driven Design con la programación funcional para crear una arquitectura de software más sólida y modular. Aprenderás cómo estas dos metodologías pueden trabajar juntas para mejorar la escalabilidad y la flexibilidad de tus proyectos, y cómo puedes aplicarlas en tu propio trabajo de desarrollo.",
+      "timestamp": {
+        "startsAt": "16:00",
+        "endsAt": "16:45"
+      },
+      "labels": ["Backend"],
+      "speaker": {
+        "name": "Adrián Lopéz",
+        "imageUrl": "/speakers/AdrianLopez.jpg"
+      }
+    },
+    "secondaryTalk": {
+      "title": "También existe el blue team... Y mola",
+      "info": "Hablar sobre blue team, análisis de incidentes/malware",
+      "timestamp": {
+        "startsAt": "16:00",
+        "endsAt": "16:45"
+      },
+      "labels": ["Cyber"],
+      "speaker": {
+        "name": "Jesus Serrano",
+        "imageUrl": "/speakers/JesusSerrano.jpeg"
+      }
+    }
+  },
+  {
+    "type": 1,
+    "talk": {
+      "title": "Experimentar el éxito y el síndrome del impostor",
+      "info": "¿Qué onda con el XP? Yo también tenía mucha curiosidad hasta que cambié de trabajo. Desarrollar con prácticas de eXtreme programming no sólo ha facilitado mi onboarding, entender mi nuevo entorno desarrollando backend viniendo del frontend; sino que también me ayudó a entender que las usamos para desarrollar mejor producto. En esta charla les cuento mi experiencia sobre cómo está siendo desarrollar producto, conocerlo y ser parte de él. Ha sido un cambio de 180°, nada fácil pero divertido, con mucho síndrome de la impostora pero mucho aprendizaje también.",
+      "timestamp": {
+        "startsAt": "16:50",
+        "endsAt": "17:35"
+      },
+      "labels": ["Career"],
+      "speaker": {
+        "name": "Ariane (Ari) Jurado",
+        "imageUrl": "/speakers/ArianeJurado.jpeg"
+      }
+    }
+  },
+  {
+    "type": 0,
+    "break": {
+      "title": "Networking",
+      "timestamp": {
+        "startsAt": "18:00",
+        "endsAt": "--"
       }
     }
   }

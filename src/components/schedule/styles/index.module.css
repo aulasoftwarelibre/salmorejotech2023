@@ -38,6 +38,7 @@
   backdrop-filter: blur(10px);
   border-radius: 5px;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -45,7 +46,7 @@
   font-size: calc(0.7rem + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   width: 100%;
   padding: 1rem;
-  background: linear-gradient(-60deg, #8A2666, #f41f4f);
+  background: linear-gradient(-60deg, #8a2666, #f41f4f);
   box-shadow: var(--lightShadow);
   backdrop-filter: blur(10px);
   border-radius: 5px;
@@ -74,10 +75,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.breakTitle {
-  font-size: calc(1.8 * (0.3rem + 1vw));
+  font-weight: 700;
+  text-align: center;
+  font-size: calc(1.4 * (0.3rem + 1vw));
 }
 
 .talkTitle {
@@ -93,6 +93,7 @@
   -webkit-mask-size: cover;
   mask-size: cover;
   width: calc(50px + (50 - 14) * ((100vw - 300px) / (1600 - 300)));
+  height: calc(50px + (50 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .speakerImage.mask1 {
@@ -121,10 +122,10 @@
 }
 
 .label {
-  font-size: 0.8rem;
+  font-size: calc(0.8 * (0.3rem + 1vw));
   padding: 0.2rem;
   border-radius: 5px;
-  border: rgba(255, 255, 255, 0.400) 1px solid;
+  border: rgba(255, 255, 255, 0.4) 1px solid;
 }
 
 @media screen and (min-width: 768px) {
