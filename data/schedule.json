@@ -10,26 +10,6 @@
     }
   },
   {
-    "type": 0,
-    "break": {
-      "title": "Intervención Sr. Consejero de Universidad, Investigación e Innovación",
-      "timestamp": {
-        "startsAt": "9:00",
-        "endsAt": "9:15"
-      }
-    }
-  },
-  {
-    "type": 0,
-    "break": {
-      "title": "Reconocimiento del Consejo Social para los patrocinadores que han participado en las 4 ediciones",
-      "timestamp": {
-        "startsAt": "9:15",
-        "endsAt": "9:30"
-      }
-    }
-  },
-  {
     "type": 1,
     "talk": {
       "title": "Como conocí a vuestra QA",
@@ -71,13 +51,13 @@
       }
     },
     "secondaryTalk": {
-      "title": "Sistema de explotación de datos",
+      "title": "Explotación y análisis de datos",
       "info": "Solución de un entorno por componentes para la explotación de datos",
       "timestamp": {
         "startsAt": "10:55",
         "endsAt": "11:40"
       },
-      "labels": ["General"],
+      "labels": ["Data"],
       "speaker": {
         "name": "Marina Hernández",
         "imageUrl": "/speakers/MarinaHernandez.jpg"
@@ -93,7 +73,7 @@
         "startsAt": "11:45",
         "endsAt": "12:30"
       },
-      "labels": ["General", "Backend"],
+      "labels": ["Backend"],
       "speaker": {
         "name": "Jose Márquez",
         "imageUrl": "/speakers/JoseMarquez.jpg"
@@ -145,7 +125,7 @@
         "startsAt": "13:10",
         "endsAt": "13:55"
       },
-      "labels": ["General"],
+      "labels": ["Data", "DevOps"],
       "speaker": {
         "name": "Gustavo Martin",
         "imageUrl": "/speakers/GustavoMartin.png"
@@ -223,26 +203,16 @@
   {
     "type": 1,
     "talk": {
-      "title": "Reinventandome otra vez: desarrollando producto a través de prácticas XP",
+      "title": "Experimentar el éxito y el síndrome del impostor",
       "info": "¿Qué onda con el XP? Yo también tenía mucha curiosidad hasta que cambié de trabajo. Desarrollar con prácticas de eXtreme programming no sólo ha facilitado mi onboarding, entender mi nuevo entorno desarrollando backend viniendo del frontend; sino que también me ayudó a entender que las usamos para desarrollar mejor producto. En esta charla les cuento mi experiencia sobre cómo está siendo desarrollar producto, conocerlo y ser parte de él. Ha sido un cambio de 180°, nada fácil pero divertido, con mucho síndrome de la impostora pero mucho aprendizaje también.",
       "timestamp": {
         "startsAt": "16:50",
         "endsAt": "17:35"
       },
-      "labels": ["General"],
+      "labels": ["Career"],
       "speaker": {
         "name": "Ariane (Ari) Jurado",
         "imageUrl": "/speakers/ArianeJurado.jpeg"
-      }
-    }
-  },
-  {
-    "type": 0,
-    "break": {
-      "title": "Kahoot con Codely",
-      "timestamp": {
-        "startsAt": "17:40",
-        "endsAt": "18:00"
       }
     }
   },
