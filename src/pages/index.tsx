@@ -39,6 +39,11 @@ const Home: NextPage = () => {
       emphasised: false,
     },
     {
+      title: "Horario",
+      href: "#schedule",
+      emphasised: false,
+    },
+    {
       title: "Ponentes",
       href: "#speakers",
       emphasised: false,
@@ -101,7 +106,7 @@ const Home: NextPage = () => {
       </section>
 
       <WhiteSection id="schedule" className={styles.section}>
-        <h2 className={`${styles.sectionTitle} ${styles.black}`}>Programa</h2>
+        <h2 className={`${styles.sectionTitle} ${styles.black}`}>Horario</h2>
         <Schedule />
       </WhiteSection>
       
