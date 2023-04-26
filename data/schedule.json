@@ -10,6 +10,16 @@
     }
   },
   {
+    "type": 0,
+    "break": {
+      "title": "Acto de bienvenida",
+      "timestamp": {
+        "startsAt": "9:00",
+        "endsAt": "9:35"
+      }
+    }
+  },
+  {
     "type": 1,
     "talk": {
       "title": "Como conocí a vuestra QA",
@@ -73,7 +83,7 @@
         "startsAt": "11:45",
         "endsAt": "12:30"
       },
-      "labels": ["Backend"],
+      "labels": ["General"],
       "speaker": {
         "name": "Jose Márquez",
         "imageUrl": "/speakers/JoseMarquez.jpg"

@@ -19,6 +19,7 @@ export const TalkLabelMap = new Map<string, LabelAsPrimitives>([
   ['Cyber', {text: 'Ciberseguridad', textColor: LabelColor.Black, color: LabelColor.Mint}],
   ['IA', {text: 'IA', textColor: LabelColor.Black, color: LabelColor.Pink}],
   ['Career', {text: 'Dev Career', textColor: LabelColor.Black, color: LabelColor.White}],
+  ['General', {text: 'General', textColor: LabelColor.Black, color: LabelColor.White}],
   ['Data', {text: 'Data', textColor: LabelColor.Black, color: LabelColor.Yellow}],
   ['DevOps', {text: 'DevOps', textColor: LabelColor.Black, color: LabelColor.LightBlue}],
 ])
