@@ -9,7 +9,7 @@ export const InfoTikets = () => {
       <Fragment>
       <div className={styles.info}>
         <div className={styles.text}>
-          <p>Vuelve el <strong>evento teconológico con sabor cordobés. El 28 de Abril</strong> coincidiendo con las <strong>cruces de mayo</strong>. Disfruta de los mejores profesionales del sector durante esta fiesta cordobesa que inunda la ciudad.</p>
+          <p>Vuelve el <strong>evento tecnológico con sabor cordobés. El 28 de Abril</strong> coincidiendo con las <strong>cruces de mayo</strong>. Disfruta de los mejores profesionales del sector durante esta fiesta cordobesa que inunda la ciudad.</p>
           <ul className={styles.centered}>
             <li>+400 asistentes</li>
             <li>13 ponencias</li>
