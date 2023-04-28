@@ -4,12 +4,18 @@
     "bio": "QA Engineer en Genially",
     "urlPhoto": "/speakers/MartaMagnani.png",
     "contacts": [
-      { "type": "TWITTER", "link": "https://twitter.com/martamacfly" },
+      {
+        "type": "TWITTER",
+        "link": "https://twitter.com/martamacfly"
+      },
       {
         "type": "LINKEDIN",
         "link": "https://www.linkedin.com/in/martamagnani/"
       },
-      { "type": "GITHUB", "link": "https://github.com/MartaManani" }
+      {
+        "type": "GITHUB",
+        "link": "https://github.com/MartaManani"
+      }
     ]
   },
   {
@@ -17,13 +23,22 @@
     "bio": "Data Engineer en Adevinta",
     "urlPhoto": "/speakers/GustavoMartin.png",
     "contacts": [
-      { "type": "TWITTER", "link": "https://twitter.com/gumartinm" },
+      {
+        "type": "TWITTER",
+        "link": "https://twitter.com/gumartinm"
+      },
       {
         "type": "LINKEDIN",
         "link": "https://www.linkedin.com/in/gustavo-martin-morcuende/"
       },
-      { "type": "GITHUB", "link": "https://github.com/gumartinm" },
-      { "type": "WEB", "link": "https://gumartinm.name/" }
+      {
+        "type": "GITHUB",
+        "link": "https://github.com/gumartinm"
+      },
+      {
+        "type": "WEB",
+        "link": "https://gumartinm.name/"
+      }
     ]
   },
   {
@@ -31,12 +46,18 @@
     "bio": "Backend developer en Certainly",
     "urlPhoto": "/speakers/AdrianLopez.jpg",
     "contacts": [
-      { "type": "TWITTER", "link": "https://twitter.com/Adrianlopezgue" },
+      {
+        "type": "TWITTER",
+        "link": "https://twitter.com/Adrianlopezgue"
+      },
       {
         "type": "LINKEDIN",
         "link": "https://www.linkedin.com/in/adrianlopezgue/"
       },
-      { "type": "GITHUB", "link": "https://github.com/AdrianLopezGue" }
+      {
+        "type": "GITHUB",
+        "link": "https://github.com/AdrianLopezGue"
+      }
     ]
   },
   {
@@ -44,13 +65,22 @@
     "bio": "Developer en Lifull connect y tech influencer",
     "urlPhoto": "/speakers/ArianeJurado.jpeg",
     "contacts": [
-      { "type": "TWITTER", "link": "https://twitter.com/Ari_Reinventada" },
+      {
+        "type": "TWITTER",
+        "link": "https://twitter.com/Ari_Reinventada"
+      },
       {
         "type": "LINKEDIN",
         "link": "https://www.linkedin.com/in/arianejuradodebilbao/"
       },
-      { "type": "GITHUB", "link": "https://github.com/arianeJDB" },
-      { "type": "YOUTUBE", "link": "https://www.youtube.com/@Ari_reinventada" }
+      {
+        "type": "GITHUB",
+        "link": "https://github.com/arianeJDB"
+      },
+      {
+        "type": "YOUTUBE",
+        "link": "https://www.youtube.com/@Ari_reinventada"
+      }
     ]
   },
   {
@@ -69,21 +99,21 @@
     ]
   },
   {
-    "name": "Javier Sánchez",
-    "bio": "Investigador en el grupo AYRNA de la UCO e investigador asociado al Data Justice Lab de la Universidad de Cardiff.",
-    "urlPhoto": "/speakers/JavierSanchez.jpg",
+    "name": "Rafa, Javi eT Isma",
+    "bio": "Co-fundadores de codely.",
+    "urlPhoto": "/speakers/codely.jpeg",
     "contacts": [
       {
         "type": "TWITTER",
-        "link": "https://twitter.com/javisamo"
+        "link": "https://twitter.com/codelytv"
       },
       {
-        "type": "LINKEDIN",
-        "link": "https://www.linkedin.com/in/javier-s%C3%A1nchez-monedero-b3896693/"
+        "type": "YOUTUBE",
+        "link": "https://www.youtube.com/c/CodelyTv"
       },
       {
         "type": "GITHUB",
-        "link": "https://github.com/javism"
+        "link": "https://github.com/codelytv"
       }
     ]
   },

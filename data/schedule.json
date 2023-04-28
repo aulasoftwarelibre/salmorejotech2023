@@ -28,7 +28,9 @@
         "startsAt": "9:40",
         "endsAt": "10:25"
       },
-      "labels": ["QA"],
+      "labels": [
+        "QA"
+      ],
       "speaker": {
         "name": "Marta Mañani",
         "imageUrl": "/speakers/MartaMagnani.png"
@@ -54,7 +56,9 @@
         "startsAt": "10:55",
         "endsAt": "11:40"
       },
-      "labels": ["Cyber"],
+      "labels": [
+        "Cyber"
+      ],
       "speaker": {
         "name": "Ana Valle",
         "imageUrl": "/speakers/AnaValle.jpg"
@@ -67,7 +71,9 @@
         "startsAt": "10:55",
         "endsAt": "11:40"
       },
-      "labels": ["Data"],
+      "labels": [
+        "Data"
+      ],
       "speaker": {
         "name": "Marina Hernández",
         "imageUrl": "/speakers/MarinaHernandez.jpg"
@@ -83,7 +89,9 @@
         "startsAt": "11:45",
         "endsAt": "12:30"
       },
-      "labels": ["General"],
+      "labels": [
+        "General"
+      ],
       "speaker": {
         "name": "Jose Márquez",
         "imageUrl": "/speakers/JoseMarquez.jpg"
@@ -96,7 +104,9 @@
         "startsAt": "11:45",
         "endsAt": "12:30"
       },
-      "labels": ["Cyber"],
+      "labels": [
+        "Cyber"
+      ],
       "speaker": {
         "name": "Jose Montero",
         "imageUrl": "/speakers/JoseMontero.jpg"
@@ -116,16 +126,18 @@
   {
     "type": 2,
     "primaryTalk": {
-      "title": "Los algoritmos que no nos dejan ver el bosque",
-      "info": "Se habla mucho de IA confiable y de evitar los sesgos en los algoritmos de decisión, pero menos veces se dice qué se entiende por confiable, sesgos, discriminación, interpretabilidad… términos que se dan por sentados y universales mientras miramos a una sola parte del sistema. En esta charla vamos a ver que estos conceptos dependen de cada problema y de cómo la teoría y conocer otras disciplinas nos pueden ayudar a ver un poco mejor el bosque. ",
+      "title": "Aprende a convivir con monolito legacy (o no) v2",
+      "info": "Uno de los problemas más comunes desarrollando es cómo gestionar con el legacy. Y una de las soluciones más comunes a ese problema es reemplazarlo por la v2. El problema es que dentro de 4 años esa v2 se vuelve legacy y la solución es montar la v3… ¿o no? 👀",
       "timestamp": {
         "startsAt": "13:10",
         "endsAt": "13:55"
       },
-      "labels": ["IA"],
+      "labels": [
+        "General"
+      ],
       "speaker": {
-        "name": "Javier Sanchez",
-        "imageUrl": "/speakers/JavierSanchez.jpg"
+        "name": "Rafa, Javi e Isma",
+        "imageUrl": "/speakers/codely.jpeg"
       }
     },
     "secondaryTalk": {
@@ -135,7 +147,10 @@
         "startsAt": "13:10",
         "endsAt": "13:55"
       },
-      "labels": ["Data", "DevOps"],
+      "labels": [
+        "Data",
+        "DevOps"
+      ],
       "speaker": {
         "name": "Gustavo Martin",
         "imageUrl": "/speakers/GustavoMartin.png"
@@ -151,7 +166,10 @@
         "startsAt": "14:00",
         "endsAt": "14:45"
       },
-      "labels": ["Frontend", "IA"],
+      "labels": [
+        "Frontend",
+        "IA"
+      ],
       "speaker": {
         "name": "Marcela Andrea Gotta",
         "imageUrl": "/speakers/MarsGotta.jpeg"
@@ -164,7 +182,9 @@
         "startsAt": "14:00",
         "endsAt": "14:45"
       },
-      "labels": ["IA"],
+      "labels": [
+        "IA"
+      ],
       "speaker": {
         "name": "Pilar Luna",
         "imageUrl": "/speakers/PilarLuna.png"
@@ -190,7 +210,9 @@
         "startsAt": "16:00",
         "endsAt": "16:45"
       },
-      "labels": ["Backend"],
+      "labels": [
+        "Backend"
+      ],
       "speaker": {
         "name": "Adrián Lopéz",
         "imageUrl": "/speakers/AdrianLopez.jpg"
@@ -203,7 +225,9 @@
         "startsAt": "16:00",
         "endsAt": "16:45"
       },
-      "labels": ["Cyber"],
+      "labels": [
+        "Cyber"
+      ],
       "speaker": {
         "name": "Jesus Serrano",
         "imageUrl": "/speakers/JesusSerrano.jpeg"
@@ -219,7 +243,9 @@
         "startsAt": "16:50",
         "endsAt": "17:35"
       },
-      "labels": ["Career"],
+      "labels": [
+        "Career"
+      ],
       "speaker": {
         "name": "Ariane (Ari) Jurado",
         "imageUrl": "/speakers/ArianeJurado.jpeg"
