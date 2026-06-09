@@ -1,0 +1,48 @@
+FROM node:18-alpine AS builder
+
+ARG NEXT_PUBLIC_BASE_PATH=/2023
+ENV NEXT_PUBLIC_BASE_PATH=$NEXT_PUBLIC_BASE_PATH
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+RUN npm ci
+
+COPY . .
+RUN npm run build && npm run export
+
+
+FROM nginx:alpine
+
+RUN addgroup -g 1001 -S appgroup && \
+    adduser -u 1001 -S appuser -G appgroup
+
+COPY --from=builder /app/out /usr/share/nginx/html
+
+RUN printf 'server {\n\
+    listen 3000;\n\
+    port_in_redirect off;\n\
+    absolute_redirect off;\n\
+    real_ip_header X-Forwarded-For;\n\
+    set_real_ip_from 0.0.0.0/0;\n\
+    location /health {\n\
+        return 200 "ok";\n\
+        add_header Content-Type text/plain;\n\
+    }\n\
+    location / {\n\
+        root /usr/share/nginx/html;\n\
+        index index.html;\n\
+        try_files $uri $uri/ $uri.html =404;\n\
+    }\n\
+}\n' > /etc/nginx/conf.d/default.conf && \
+    sed -i '/^user /d' /etc/nginx/nginx.conf && \
+    sed -i 's|^pid .*;|pid /tmp/nginx.pid;|' /etc/nginx/nginx.conf && \
+    chown -R appuser:appgroup /var/cache/nginx /var/log/nginx /usr/share/nginx/html && \
+    touch /tmp/nginx.pid && chown appuser:appgroup /tmp/nginx.pid
+
+USER appuser
+
+EXPOSE 3000
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+    CMD wget -qO- http://127.0.0.1:3000/health || exit 1

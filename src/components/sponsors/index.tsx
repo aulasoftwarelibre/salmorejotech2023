@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './sponsors.module.css'
+import { withBasePath } from '../../lib/withBasePath'
 
 
 export type PossibleType = "PERA" | "CHERRY"
@@ -14,7 +15,7 @@ export interface SponsorProps extends React.AnchorHTMLAttributes<HTMLAnchorEleme
 export const Sponsor = ({name, type, imageUrl, href, ...props}: SponsorProps) => {
   const label = `Logo de ${name}, click para ir a su web!`
   const backgroundImage = {
-    backgroundImage: `url(${imageUrl})`,
+    backgroundImage: `url(${withBasePath(imageUrl)})`,
   }
   const classes = styles.sponsor
   return (

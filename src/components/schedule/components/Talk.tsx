@@ -2,6 +2,7 @@
 import { TalkAsPrimitives } from "../../../contexts/talk/domain/Talk";
 import styles from "../styles/index.module.css";
 import { Labels } from "./Labels";
+import { withBasePath } from '../../../lib/withBasePath';
 
 export type TalkParameters = TalkAsPrimitives & {mask:  string}
 
@@ -17,7 +18,7 @@ export const Talk = (talk: TalkParameters) => {
         </div>
         <img
           className={`${styles[talk.mask]} ${styles.speakerImage}`}
-          src={talk.speakerInfo.imageUrl}
+          src={withBasePath(talk.speakerInfo.imageUrl)}
           alt={`Imagen de ${talk.speakerInfo.name}`}
         />
       </div>

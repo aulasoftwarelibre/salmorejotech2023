@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './footer.module.css';
+import { withBasePath } from '../../lib/withBasePath';
 import { BiWorld } from 'react-icons/bi';
 import { BsTwitter, BsInstagram, BsGithub, BsYoutube, BsTelegram, BsFacebook, BsPinFill } from 'react-icons/bs';
 import { RiCopyleftLine } from 'react-icons/ri';
@@ -12,7 +13,7 @@ export const Footer = () => {
       <div className={styles.row_wrapper}>
         <section className={styles.SM} id="SocialMedia">
           <img className={styles.logo}
-            src="/images/logo-cuadrado-invertido-blender.svg"
+            src={withBasePath("/images/logo-cuadrado-invertido-blender.svg")}
             alt="Logo del Aula de Software Libre"
           />
         </section>

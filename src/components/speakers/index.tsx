@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import styles from './speakers.module.css'
+import { withBasePath } from '../../lib/withBasePath'
 import { BsTwitter, BsGithub, BsLinkedin, BsGlobe, BsYoutube } from 'react-icons/bs';
 
 export interface Contact {
@@ -47,7 +48,7 @@ export const SpeakerCard = ({name, bio, urlPhoto, contacts}:  SpeakerProps) => {
 
   return (
     <div className={styles.card}>
-      <img className={styles.speakerImage} src={urlPhoto} alt={`Foto de ${name}`} />
+      <img className={styles.speakerImage} src={withBasePath(urlPhoto)} alt={`Foto de ${name}`} />
       <div className={styles.cardBody}>
         <div className={styles.cardInfo}>
           <p className={styles.name}>{name}</p>

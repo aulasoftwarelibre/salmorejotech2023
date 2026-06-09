@@ -19,6 +19,7 @@ import sponsors from '../../data/sponsors.json'
 import { SponsorProps } from '../components/sponsors'
 
 import styles from '../styles/index.module.css'
+import { withBasePath } from '../lib/withBasePath'
 import WhiteSection from '../components/whiteSection'
 import { SpeakerProps } from '../components/speakers'
 import { InfoTikets } from '../components/infoTikets'
@@ -84,7 +85,7 @@ const Home: NextPage = () => {
       <Moleculas />
       <div className='anchoMaximo'>
         <section id="Hero" className={styles.hero}>
-          <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="logo-salmorejo-hero" alt="Logo de Salmorejo Tech" />
+          <img className={styles.logo} src={withBasePath('/sprites/isologo-blanco.svg')} id="logo-salmorejo-hero" alt="Logo de Salmorejo Tech" />
           <h1 style={{visibility: 'hidden', height: 0}}>Salmorejo Tech</h1>
           <h2 className={styles.subtitle}>Más <span>{content}</span></h2>
           <h2 className={styles.date}>28 de abril de 2023</h2>

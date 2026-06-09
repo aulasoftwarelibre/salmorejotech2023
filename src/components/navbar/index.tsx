@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import styles from './navbar.module.css';
+import { withBasePath } from '../../lib/withBasePath';
 import { useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
@@ -64,7 +65,7 @@ const Navbar = ({contents, variant='primary'}: NavbarProps) => {
       <nav className={styles.nav}>
         <div className={styles.left}>
           <div className={styles.icon}>
-              <Link href="/"><img src='/sprites/isotipo-blanco.svg' alt="Logo reducido de Salmorejo Tech" /></Link>
+              <Link href="/"><img src={withBasePath('/sprites/isotipo-blanco.svg')} alt="Logo reducido de Salmorejo Tech" /></Link>
           </div>
           <div id="compact-navbar" className={styles.base_compact}>
             {compactNavbar}
@@ -84,7 +85,7 @@ const Navbar = ({contents, variant='primary'}: NavbarProps) => {
       <nav className={styles.nav}>
         <div className={styles.left}>
           <div className={styles.icon}>
-              <Link href="/"><img src='/sprites/isotipo-blanco.svg' alt="Logo reducido de Salmorejo Tech" /></Link>
+              <Link href="/"><img src={withBasePath('/sprites/isotipo-blanco.svg')} alt="Logo reducido de Salmorejo Tech" /></Link>
           </div>
             {formatedNonEmphasisedLinks}
         </div>

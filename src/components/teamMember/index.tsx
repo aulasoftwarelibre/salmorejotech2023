@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import styles from './teamMembers.module.css'
+import { withBasePath } from '../../lib/withBasePath'
 import { BsTwitter, BsGithub, BsLinkedin, BsGlobe } from 'react-icons/bs';
 
 export interface Contact {
@@ -41,7 +42,7 @@ export const TeamMemberCard = ({name, bio, urlPhoto, contacts}:  TeamMemberProps
 
   return (
     <div className={styles.card}>
-      <img className={styles.teamMemberImage} src={urlPhoto} alt={`Foto de ${name}`} />
+      <img className={styles.teamMemberImage} src={withBasePath(urlPhoto)} alt={`Foto de ${name}`} />
       <div className={styles.spaceBetween}>
         <div className={styles.cardInfo}>
           <p className={styles.name}>{name}</p>

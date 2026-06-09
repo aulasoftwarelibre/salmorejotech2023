@@ -6,6 +6,7 @@ import { Moleculas } from '../components/moleculas'
 import Navbar from '../components/navbar'
 import WhiteSection from '../components/whiteSection'
 import styles from '../styles/team.module.css'
+import { withBasePath } from '../lib/withBasePath'
 
 
 import team from '../../data/team.json';
@@ -47,7 +48,7 @@ const Team: NextPage = () => {
         <Navbar contents={navbarContents} variant='secondary'/>
         <Moleculas/>
           <section id="team-hero" className={styles.hero}>
-            <img className={styles.logo} src='/sprites/isologo-blanco.svg' id="logo-salmorejo-hero" alt="Logo de Salmorejo Tech" />
+            <img className={styles.logo} src={withBasePath('/sprites/isologo-blanco.svg')} id="logo-salmorejo-hero" alt="Logo de Salmorejo Tech" />
             <h1 style={{visibility: 'hidden', height: 0}}>Salmorejo Tech</h1>
             <h2 className={styles.heroSubtitle}>Todo es más fácil cuando tienes un equipo lleno de crácks!</h2>
           </section>
@@ -61,7 +62,7 @@ const Team: NextPage = () => {
             <h2 className={`${styles.sectionTitle} ${styles.black}`}>🐧Aula de Software Libre🐧</h2>
             <div className={styles.wrapper}>
               <div className={`${styles.column} ${styles.imageWrapper}`}>
-                <img src="/images/logo-aula-negro.png" alt="Logo del aula de software libre"/>
+                <img src={withBasePath("/images/logo-aula-negro.png")} alt="Logo del aula de software libre"/>
               </div>
               <div className={`${styles.column} ${styles.aulaInfo}`}>
                 <h3 className={styles.title}>Más que un grupo de estudiantes🚀</h3>
